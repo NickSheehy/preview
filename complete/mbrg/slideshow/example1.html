@@ -1,0 +1,1405 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="x-apple-disable-message-reformatting">
+<title>Litmus</title>
+<style type="text/css">
+/***************
+PADDING 0px
+***************/
+.pt0 {
+    padding-top: 0px;
+}
+.pb0 {
+    padding-bottom: 0px;
+}
+.pr0 {
+	padding-right: 0px;
+}
+.pl0 {
+	padding-left: 0px;
+}
+
+/***************
+PADDING 5px
+***************/
+.pt5 {
+    padding-top: 5px;
+}
+.pb5 {
+    padding-bottom: 5px;
+}
+.pr5 {
+    padding-right: 5px;
+}
+.pl5 {
+    padding-left: 5px;
+}
+
+/***************
+PADDING 10px
+***************/
+.pt10 {
+    padding-top: 10px;
+}
+.pb10 {
+    padding-bottom: 10px;
+}
+.pr10 {
+	padding-right: 10px;
+}
+.pl10 {
+	padding-left: 10px;
+}
+
+/***************
+PADDING 15px
+***************/
+.pt15 {
+    padding-top: 15px;
+}
+.pb15 {
+    padding-bottom: 15px;
+}
+.pr15 {
+    padding-right: 15px;
+}
+.pl15 {
+    padding-left: 15px;
+}
+
+/***************
+PADDING 20px
+***************/
+.pt20 {
+    padding-top: 20px;
+}
+.pb20 {
+    padding-bottom: 20px;
+}
+.pr20 {
+    padding-right: 20px;
+}
+.pl20 {
+    padding-left: 20px;
+}
+
+/***************
+PADDING 25px
+***************/
+.pt25 {
+    padding-top: 25px;
+}
+.pb25 {
+    padding-bottom: 25px;
+}
+.pr25 {
+    padding-right: 25px;
+}
+.pl25 {
+    padding-left: 25px;
+}
+
+/***************
+PADDING 30px
+***************/
+.pt30 {
+    padding-top: 30px;
+}
+.pb30 {
+    padding-bottom: 30px;
+}
+.pr30 {
+    padding-right: 30px;
+}
+.pl30 {
+    padding-left: 30px;
+}
+
+/***************
+PADDING 35px
+***************/
+.pt35 {
+    padding-top: 35px;
+}
+.pb35 {
+    padding-bottom: 35px;
+}
+.pr35 {
+    padding-right: 35px;
+}
+.pl35 {
+    padding-left: 35px;
+}
+
+/***************
+PADDING 40px
+***************/
+.pt40 {
+    padding-top: 40px;
+}
+.pb40 {
+    padding-bottom: 40px;
+}
+.pr40 {
+    padding-right: 40px;
+}
+.pl40 {
+    padding-left: 40px;
+}
+
+/***************
+PADDING 45px
+***************/
+.pt45 {
+    padding-top: 45px;
+}
+.pb45 {
+    padding-bottom: 45px;
+}
+.pr45 {
+    padding-right: 45px;
+}
+.pl45 {
+    padding-left: 45px;
+}
+
+/***************
+PADDING 50px
+***************/
+.pt50 {
+    padding-top: 50px;
+}
+.pb50 {
+    padding-bottom: 50px;
+}
+.pr50 {
+    padding-right: 50px;
+}
+.pl50 {
+    padding-left: 50px;
+}
+
+/***************
+PADDING 55px
+***************/
+.pt55 {
+    padding-top: 55px;
+}
+.pb55 {
+    padding-bottom: 55px;
+}
+.pr55 {
+    padding-right: 55px;
+}
+.pl55 {
+    padding-left: 55px;
+}
+
+/***************
+PADDING 60px
+***************/
+.pt60 {
+    padding-top: 60px;
+}
+.pb60 {
+    padding-bottom: 60px;
+}
+.pr60 {
+    padding-right: 60px;
+}
+.pl60 {
+    padding-left: 60px;
+}
+
+/***************
+PADDING 65px
+***************/
+.pt65 {
+    padding-top: 65px;
+}
+.pb65 {
+    padding-bottom: 65px;
+}
+.pr65 {
+    padding-right: 65px;
+}
+.pl65 {
+    padding-left: 65px;
+}
+
+/***************
+PADDING 70px
+***************/
+.pt70 {
+    padding-top: 70px;
+}
+.pb70 {
+    padding-bottom: 70px;
+}
+.pr70 {
+    padding-right: 70px;
+}
+.pl70 {
+    padding-left: 70px;
+}
+
+/***************
+PADDING 75px
+***************/
+.pt75 {
+    padding-top: 75px;
+}
+.pb75 {
+    padding-bottom: 75px;
+}
+.pr75 {
+    padding-right: 75px;
+}
+.pl75 {
+    padding-left: 75px;
+}
+
+/***************
+PADDING 100px
+***************/
+.pt100 {
+    padding-top: 100px;
+}
+.pb100 {
+    padding-bottom: 100px;
+}
+.pr100 {
+    padding-right: 100px;
+}
+.pl100 {
+    padding-left: 100px;
+}
+
+/***************
+PADDING 125px
+***************/
+.pt125 {
+    padding-top: 125px;
+}
+.pb125 {
+    padding-bottom: 125px;
+}
+.pr125 {
+    padding-right: 125px;
+}
+.pl125 {
+    padding-left: 125px;
+}
+
+/***************
+PADDING 150px
+***************/
+.pt150 {
+    padding-top: 150px;
+}
+.pb150 {
+    padding-bottom: 150px;
+}
+.pr150 {
+    padding-right: 150px;
+}
+.pl150 {
+    padding-left: 150px;
+}
+</style>
+<style type="text/css">
+    td, a, p, h1, h2, h3 {
+        font-family: 'proxima_nova_rgregular', Proxima Nova, Helvetica, Arial, sans-serif;
+    }
+    h1, h2, h3 {
+        margin: 0;
+    }
+    p {
+        margin: 0;
+        font-size: 16px;
+    }
+    .preheader {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .bold {
+        color: #353a3e;
+        font-family: 'proxima_nova_rgbold', Proxima Nova, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+    }
+    .link {
+        color: #0088cc;
+        text-decoration: underline;
+    }
+    .underline {
+    	text-decoration: underline;
+    }
+	.cta {
+		font-weight: normal;
+		color: #ffffff;
+		text-decoration: none;
+		border-radius: 30px;
+		padding: 15px 30px;
+		display: inline-block;
+		font-weight: bold;
+		mso-padding-alt: 0px;
+		margin-top: 20px;
+	}
+
+    /**********
+    FONT SIZES
+    ***********/
+    .fsz0 {
+    	font-size: 0;
+    }
+    .fsz11 {
+    	font-size: 11px;
+    }
+    .fsz12 {
+    	font-size: 12px;
+    }
+    .fsz13 {
+    	font-size: 13px;
+    }
+    .fsz14 {
+    	font-size: 14px;
+    }
+    .fsz15 {
+    	font-size: 15px;
+    }
+    .fsz16 {
+    	font-size: 16px;
+    }
+    .fsz18 {
+    	font-size: 18px;
+    }
+    .fsz20 {
+        font-size: 20px;
+    }
+    .fsz22 {
+    	font-size: 22px;
+    }
+    .fsz24 {
+    	font-size: 24px;
+    }
+    .fsz26 {
+    	font-size: 26px;
+    }
+    .fsz28 {
+    	font-size: 28px;
+    }
+    .fsz30 {
+    	font-size: 30px;
+    }
+    .fsz32 {
+    	font-size: 32px;
+    }
+    .fsz34 {
+    	font-size: 34px;
+    }
+    .fsz36 {
+    	font-size: 36px;
+    }
+    .fsz38 {
+    	font-size: 38px;
+    }
+    .fsz40 {
+    	font-size: 40px;
+    }
+    .fsz42 {
+    	font-size: 42px;
+    }
+    .fsz44 {
+    	font-size: 44px;
+    }
+    .fsz46 {
+    	font-size: 46px;
+    }
+    .fsz48 {
+    	font-size: 48px;
+    }
+    .fsz60 {
+    	font-size: 60px;
+    }
+    .fsz72 {
+    	font-size: 72px;
+    }
+
+    /***********
+    LINE HEIGHTS
+    ***********/
+    .lh14 {
+    	line-height: 14px;
+    }
+    .lh15 {
+    	line-height: 15px;
+    }
+    .lh16 {
+        line-height: 16px;
+    }
+    .lh18 {
+    	line-height: 18px;
+    }
+    .lh20 {
+    	line-height: 20px;
+    }
+    .lh22 {
+        line-height: 22px;
+    }
+    .lh24 {
+        line-height: 24px;
+    }
+    .lh26 {
+        line-height: 26px;
+    }
+    .lh28 {
+        line-height: 28px;
+    }
+    .lh30 {
+        line-height: 30px;
+    }
+    .lh32 {
+        line-height: 32px;
+    }
+    .lh34 {
+        line-height: 34px;
+    }
+    .lh36 {
+        line-height: 36px;
+    }
+    .lh40 {
+        line-height: 40px;
+    }
+    .lh48 {
+        line-height: 48px;
+    }
+    .lh60 {
+        line-height: 60px;
+    }
+    .lh72 {
+        line-height: 72px;
+    }
+
+    /***********
+    COLORS
+    ***********/
+    .black {
+    color: #353a3e;
+    }
+    .white {
+        color: #ffffff;
+    }
+
+    /***********
+    ALIGNMENT
+    ***********/
+    .tal {
+    	text-align: left;
+    }
+    .tac {
+        text-align: center;
+    }
+    .tar {
+    	text-align: right;
+    }
+</style>
+<style type="text/css" data-ignore-inlining>
+    a {
+        text-decoration: none;
+    }
+    .link:hover {
+        text-decoration: none !important;
+    }
+	u + #body a {
+		color: inherit;
+		text-decoration: none;
+		font-size: inherit;
+		font-family: inherit;
+		font-weight: inherit;
+		line-height: inherit;
+	}
+</style>
+<style type="text/css" data-ignore-inlining>
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+    @media { }
+    @media screen {
+        @font-face {
+            font-family: 'proxima_nova_rgregular';
+            src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+            src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+                 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+                 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'proxima_nova_rgbold';
+            src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+            src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+                 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+                 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 0), and (min--moz-device-pixel-ratio: 0) {
+        #normal {
+            font-weight: normal !important;
+        }
+    }
+</style>
+<style>
+h1 {
+	font-size: 40px;
+    line-height: 44px;
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block;
+    mso-margin-top-alt: 20px;
+    font-family: 'proxima_nova_rgbold', Proxima Nova, Helvetica, Arial, sans-serif;
+}
+h2 {
+	font-family: 'proxima_nova_rgbold', Proxima Nova, Helvetica, Arial, sans-serif;
+}
+p {
+    mso-margin-top-alt: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'proxima_nova_rgregular', Proxima Nova, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+.cta {
+	font-family: 'proxima_nova_rgbold', Proxima Nova, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    display: inline-block;
+    font-weight: bold;
+    mso-padding-alt: 0px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.max650 {
+	max-width: 700px;
+    margin: 0 auto;
+}
+.vam {
+	vertical-align: middle;
+}
+@media screen and (min-width: 750px) {
+    h1 {
+        font-size: 48px !important;
+        line-height: 54px !important;
+    }
+}
+.td {
+display: table-cell;
+}
+.table {
+	display: table;
+    width: 100% !important;
+}
+.frame {
+	background: #a884d3;
+}
+    </style>
+    <style data-ignore-inlining>
+        u + .body .pt50 {
+        	padding-top: 150px !important;
+        }
+    </style>
+    <style>
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 800px) {
+.frame {
+/*display: table-cell;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+min-width: 100vw;
+    overflow: scroll;*/
+}
+.webkit-hide {
+display: none !important;
+}
+.webkit-show {
+	display: block !important;
+}
+.webkit-show-td {
+	display: table-cell !important;
+}
+.arrow {
+padding: 18px 20px;
+margin: 15px;
+font-family: Trebuchet MS;
+color: #fff;
+cursor: pointer;
+font-size: 30px;
+line-height: 40px;
+width: 40px;
+display: inline-block;
+border-radius: 50%;
+}
+.arrow:hover {
+background: rgba(0,0,0,.2);
+}
+.arrow:hover:before {
+    position: absolute;
+    font-size: 12px;
+    font-family: arial;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 1;
+    margin-top: 50px;
+}
+.arrow[name="next"]:hover:before {
+	content: 'Next article';
+    margin-left: -22px;
+}
+.arrow[name="prev"]:hover:before {
+	content: 'Last article';
+    margin-left: -18px;
+}
+.arrow[title="grey"]:hover:before {
+	color: #888888;
+}
+.slider-dots {
+	position: fixed; bottom: 30px; margin: 0 auto; width: 100%;
+}
+.dot {
+	display: inline-block;
+    border: 6px solid rgba(255,255,255,0.4);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.dot:hover {
+	border-color: #fff;
+}
+.dot:hover:before {
+    position: absolute;
+    font-size: 12px;
+    font-family: arial;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 1;
+    margin-top: -40px;
+    transform: translateX(-50%);
+    font-family: 'proxima_nova_rgregular', Proxima Nova, Helvetica, Arial, sans-serif;
+}
+#one:checked ~ .slider-dots .dot[name="one"] {
+	border-color: #ffffff !important;
+}
+#two:checked ~ .slider-dots .dot[name="two"] {
+	border-color: #ffffff !important;
+}
+#three:checked ~ .slider-dots .dot[name="three"] {
+	border-color: #ffffff !important;
+}
+#four:checked ~ .slider-dots .dot[name="four"] {
+	border-color: #ffffff !important;
+}
+#five:checked ~ .slider-dots .dot[name="five"] {
+	border-color: #ffffff !important;
+}
+#six:checked ~ .slider-dots .dot[name="six"] {
+	border-color: #ffffff !important;
+}
+#seven:checked ~ .slider-dots .dot[name="seven"] {
+	border-color: #ffffff !important;
+}
+#eight:checked ~ .slider-dots .dot[name="eight"] {
+	border-color: #ffffff !important;
+}
+.dot[name="one"]:hover:before {
+	content: 'Interactive Email: Opportunities and Challenges';
+    width: 260px;
+}
+.dot[name="two"]:hover:before {
+	content: 'The Ultimate Guide to List-Unsubscribe';
+    width: 210px;
+}
+.dot[name="three"]:hover:before {
+	content: 'iPhone X Email Previews Are Here';
+    width: 190px;
+}
+.dot[name="four"]:hover:before {
+	content: 'Everything You Need to Know About Bulletproof Buttons';
+    width: 305px;
+}
+.dot[name="five"]:hover:before {
+	content: 'Email Pixel Art: The Rarest and Coolest Defensive Design Tactic';
+    width: 340px;
+}
+.dot[name="six"]:hover:before {
+	content: 'The Root Cause of Poor Email Deliverability Webinar Recording and Q&A';
+    width: 390px;
+}
+.dot[name="seven"]:hover:before {
+	content: 'New episodes of The Email Design Podcast';
+    width: 240px;
+}
+.dot[name="eight"]:hover:before {
+	content: 'Sign Up for a Free Litmus Demo';
+    width: 180px;
+}
+.slide-content {
+	display: table;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    vertical-align: middle;
+    background: none !important;
+}
+.abc {
+display: block !important;
+}
+#ok:checked, #ok:checked~[type="radio"] {
+    display: inline-block !important;
+}
+#one:not(:checked)~* .def {
+display: none;
+}
+#two:not(:checked)~* .ghi {
+display: none;
+opacity: 0;
+}
+#three:not(:checked)~* .jkl {
+display: none;
+}
+#four:not(:checked)~* .mno {
+display: none;
+}
+#five:not(:checked)~* .pqr {
+display: none;
+}
+#six:not(:checked)~* .stu {
+display: none;
+}
+#seven:not(:checked)~* .vwx {
+display: none;
+}
+#eight:not(:checked)~* .yz {
+display: none;
+}
+.def, .ghi, .jkl {
+animation: fadein 1s;
+}
+@keyframes fadein {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+input {
+-display: none;
+}
+#two:checked ~ .frame  {
+	background: #f3863d !important;
+    -transition: 1.5s;
+}
+#three:checked ~ .frame {
+	background: #444 !important;
+    -transition: 1.5s;
+    height: 105% !important;
+}
+#four:checked ~ .frame {
+    background: #56c2b8 !important;
+    -transition: 1.5s;
+    height: 105% !important;
+}
+#five:checked ~ .frame {
+    background: #f06d65 !important;
+    -transition: 1.5s;
+}
+#six:checked ~ .frame {
+    background: #54c2a2 !important;
+    -transition: 1.5s;
+    height: 140% !important;
+}
+#six:checked~* .deliv {
+	-padding-top: 300px !important;
+}
+#seven:checked ~ .frame {
+    background: #f3b35c !important;
+    -transition: 1.5s;
+    height: 135% !important;
+}
+#seven:checked~* .podcast {
+	-padding-top: 250px !important;
+}
+#eight:checked ~ .frame {
+    background: #f0f0f0 !important;
+    -transition: 1.5s;
+    height: 130% !important;
+}
+#eight:checked~* .demo {
+	-padding-top: 250px !important;
+}
+</style>
+
+</head>
+<body style="padding: 0; margin: 0;" class="body">
+
+    <div class="preheader">
+    	Interactive email, iPhone X previews, list-unsubscribe, bulletproof buttons, and more.
+    </div>
+
+    <div style="display: none; width: 0px; height: 0px; max-height: 0px; overflow: hidden;"> &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+</div>
+
+<!--[if (gte mso 9)|(IE)]><!-->
+<input type="checkbox" style="display: none;" id="check">
+<input type="radio" name="page" style="display: none;" id="one" checked>
+<input type="radio" name="page" style="display: none;" id="two">
+<input type="radio" name="page" style="display: none;" id="three">
+<input type="radio" name="page" style="display: none;" id="four">
+<input type="radio" name="page" style="display: none;" id="five">
+<input type="radio" name="page" style="display: none;" id="six">
+<input type="radio" name="page" style="display: none;" id="seven">
+<input type="radio" name="page" style="display: none;" id="eight">
+<!--<![endif]-->
+
+  	<div class="frame">
+        <div style="background-color:#333; -width: 100%; position: relative; z-index: 9999;" class="pt5 pb5 pl10 pr10">
+            <p class="tac">
+                <a href="http://litmus.com/community/discussions/7014-litmus-full-interactive-email-slider-newsletter?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" target="_blank" class="white fsz12 lh16 link">Read how we created the interactive slider in this month&rsquo;s newsletter.</a>
+            </p>
+        </div>
+        <div class="abc">
+          	<div class="def">
+                <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td align="center" bgcolor="#a884d3" style="mso-padding-top-alt: 50px; mso-padding-bottom-alt: 50px;">
+<![endif]-->
+                <div class="slide-content table center">
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="eight" name="prev" class="arrow">&#9664;</label>
+                    </div>
+                    <div class="td pl25 pr25 tac pb50 pt25 vam">
+                        <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="700" align="center" role="presentation">
+<tr>
+<td align="center">
+<![endif]-->
+                        <div class="max650 center">
+                            <a href="http://litmus.com/blog/interactive-email-opportunities-and-challenges?utm_campaign=newsletter&utm_source=pardot&utm_medium=email"><img src="http://pages.litmus.com/l/31032/2017-11-15/dfjz1z/31032/131967/interactive_challenges.png" alt="interactive email, oh my!" width="300" height="{height}" border="0" class="fsz16 white" style="max-width: 60%;" /></a>
+                        <h1 class="pt15">Interactive Email: Opportunities and Challenges</h1>
+                        <p class="pt25">Hamburger menus, image carousels, and even shopping carts&mdash;interactive elements we never thought were possible in email are becoming more common. We break down the opportunities and challenges of interactive email.</p>
+                            <!--[if (gte mso 12)]><br><![endif]-->
+                        <a href="http://litmus.com/blog/interactive-email-opportunities-and-challenges?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" class="cta" style="background-color: #e86f42; border: 1px solid #e86f42; mso-border-alt: 8px solid #e86f42;" target="_blank">See the pros and cons &rarr;</a>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+                    </div>
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="two" name="next" class="arrow">&#9654;</label>
+                    </div>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+          	</div>
+          	<div class="ghi">
+                <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td align="center" bgcolor="#f3863d" style="mso-padding-top-alt: 50px; mso-padding-bottom-alt: 50px;">
+<![endif]-->
+                <div class="slide-content table center" style="background: #f3863d;">
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="one" name="prev" class="arrow">&#9664;</label>
+                    </div>
+                    <div class="td pl50 pr50 tac pt25 pb50 vam">
+                        <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="700" align="center" role="presentation">
+<tr>
+<td align="center">
+<![endif]-->
+                        <div class="max650 center">
+                            <a href="http://litmus.com/blog/the-ultimate-guide-to-list-unsubscribe?utm_campaign=newsletter&utm_source=pardot&utm_medium=email"><img src="http://pages.litmus.com/l/31032/2017-11-15/dfjz2d/31032/131971/list_unsubscribe.png" alt="embrace it" width="380" height="{height}" border="0"/></a>
+                        <h1 class="pt15">The Ultimate Guide to List-Unsubscribe</h1>
+                        <p class="pt25">List-unsubscribe strikes fear into the hearts of many marketers. But it shouldn&rsquo;t! Discover what list-unsubscribe is, how it works, and why an easy unsubscribe is actually a good thing.</p>
+                            <!--[if gte mso 12]><br><![endif]-->
+                        <a href="http://litmus.com/blog/the-ultimate-guide-to-list-unsubscribe?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" class="cta" style="background-color: #549AE1; border: 1px solid #549AE1; mso-border-alt: 8px solid #549AE1;" target="_blank">Don&rsquo;t fear the unsubscribe &rarr;</a>
+                        </div>
+<!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+                    </div>
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="three" name="next" class="arrow">&#9654;</label>
+                    </div>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+          	</div>
+          	<div class="jkl">
+                <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td align="center" bgcolor="#444444" style="mso-padding-top-alt: 50px; mso-padding-bottom-alt: 50px;">
+<![endif]-->
+                <div class="slide-content table center" style="background: #444444;">
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="two" name="prev" class="arrow">&#9664;</label>
+                    </div>
+                    <div class="td pl35 pr35 tac pt25 pb50 vam">
+                        <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="700" align="center" role="presentation">
+<tr>
+<td align="center">
+<![endif]-->
+                        <div class="max650 center">
+                            <a href="http://litmus.com/email-previews?utm_campaign=newsletter&utm_source=pardot&utm_medium=email"><img src="http://pages.litmus.com/l/31032/2017-11-08/ddc5hb/31032/131157/iphonex_new.png" alt="iPhone X" width="200" height="{height}" border="0" class="fsz16 white" style="border-bottom: 1px solid #666; display: block; margin: 0 auto;"/></a>
+                        <h1 class="pt15">iPhone X Email Previews <br>Are Here</h1>
+                        <p class="pt25" style="color: #bbb;">Marketers have moved away from using image-based call-to-action buttons in their emails due to image blocking and accessibility concerns. The alternative? Bulletproof buttons. Learn what a bulletproof button is and how you can use them in your emails.
+                            </p>
+                            <p class="pt20" style="color: #bbbbbb;">
+                            	New email clients can introduce unforeseen rendering issues for your emails. See how your own emails render in iPhone X and run a Checklist on your next campaign.
+                            </p>
+                            <!--[if gte mso 12]><br><![endif]-->
+                        <a href="http://litmus.com/checklist?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" class="cta" style="background-color: #e86f42; border: 1px solid #e86f42; mso-border-alt: 8px solid #e86f42;" target="_blank">Test my emails &rarr;</a>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+                    </div>
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="four" name="next" class="arrow">&#9654;</label>
+                    </div>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+          	</div>
+          	<div class="mno">
+                <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td align="center" bgcolor="#56c2b8" style="mso-padding-top-alt: 50px; mso-padding-bottom-alt: 50px;">
+<![endif]-->
+                <div class="slide-content table center" style="background: #56c2b8;">
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="three" name="prev" class="arrow">&#9664;</label>
+                    </div>
+                    <div class="td pl50 pr50 tac pt25 pb50 vam">
+                        <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="700" align="center" role="presentation">
+<tr>
+<td align="center">
+<![endif]-->
+                        <div class="max650 center">
+                            <a href="http://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design?utm_campaign=newsletter&utm_source=pardot&utm_medium=email"><img src="http://pages.litmus.com/l/31032/2017-11-15/dfjz4n/31032/131977/bb_button2.png" alt="buttons buttons buttons" width="300" height="{height}" border="0" class="fsz16 white"/></a>
+                        <h1>Everything You Need to Know About Bulletproof Buttons</h1>
+                        <p class="pt25">
+                            Marketers have moved away from using image-based call-to-action buttons in their emails due to image blocking and accessibility concerns. The alternative? Bulletproof buttons. Learn what a bulletproof button is and how you can use them in your emails.
+                        </p>
+                        <p class="pt20">
+                            New email clients can introduce unforeseen rendering issues for your emails. See how your own emails render in iPhone X and run a Checklist on your next campaign.
+                        </p>
+<!--[if gte mso 12]><br><![endif]-->
+                        <a href="http://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" class="cta" style="background-color: #e86f42; border: 1px solid #e86f42; mso-border-alt: 8px solid #e86f42;" target="_blank">Build better buttons &rarr;</a>
+                        </div>
+<!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+                    </div>
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="five" name="next" class="arrow">&#9654;</label>
+                    </div>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+          	</div>
+          	<div class="pqr">
+                <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td align="center" bgcolor="#f06d65" style="mso-padding-top-alt: 50px; mso-padding-bottom-alt: 50px;">
+<![endif]-->
+                <div class="slide-content table center" style="background: #f06d65;">
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="four" name="prev" class="arrow">&#9664;</label>
+                    </div>
+                    <div class="td pl50 pr50 tac pt25 pb50 vam">
+                        <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="700" align="center" role="presentation">
+<tr>
+<td align="center">
+<![endif]-->
+                        <div class="max650 center">
+                            <a href="http://litmus.com/blog/email-pixel-art-the-rarest-and-coolest-defensive-design-tactic?utm_campaign=newsletter&utm_source=pardot&utm_medium=email"><img src="http://pages.litmus.com/l/31032/2017-11-15/dfjz4s/31032/131979/email_pixel_art_the_rarest_and_coolest_defensive_design_tactic.png" alt="the coolest tactic" width="400" height="{height}" border="0" style="max-width: 80%;" /></a>
+                        <h1>Email Pixel Art: The Rarest and Coolest Defensive Design Tactic</h1>
+                        <p class="pt25">
+                            Including pictures in your emails even when images are blocked is possible with pixel art. Learn how and understand some of the issues you need to consider before using them.
+                        </p>
+                            <!--[if gte mso 12]><br><![endif]-->
+                        <a href="http://litmus.com/blog/email-pixel-art-the-rarest-and-coolest-defensive-design-tactic?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" class="cta" style="background-color: #54C1E3; border: 1px solid #54C1E3; mso-border-alt: 8px solid #54C1E3;" target="_blank">Transform your emails &rarr;</a>
+                        </div>
+<!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+                    </div>
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="six" name="next" class="arrow">&#9654;</label>
+                    </div>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+          	</div>
+            <div class="stu">
+                <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td align="center" bgcolor="#55c2a2" style="mso-padding-top-alt: 50px; mso-padding-bottom-alt: 50px;">
+<![endif]-->
+                <div class="slide-content table center deliv" style="background: #55c2a2;">
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="five" name="prev" class="arrow">&#9664;</label>
+                    </div>
+                    <div class="td pl35 pr35 tac pt25 pb50">
+                        <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="700" align="center" role="presentation">
+<tr>
+<td align="center">
+<![endif]-->
+                        <div class="max650 center">
+                            <a href="http://litmus.com/blog/the-root-cause-of-poor-email-deliverability-webinar-recording-qa?utm_campaign=newsletter&utm_source=pardot&utm_medium=email"><img src="http://pages.litmus.com/l/31032/2017-11-15/dfjzjb/31032/132011/deliv_qa.png" alt="{alt}" width="450" height="{height}" border="0" style="max-width: 100%;" /></a>
+                     	<p class="white bold pt15">
+                     		&ndash; WEBINAR RECORDING AND Q&amp;A &ndash;
+                     	</p>
+                        <h1>
+                            The Root Cause of Poor Email Deliverability
+                        </h1>
+                        <p class="pt25">
+                            Discover the various ways that marketers try to improve their poor email deliverability and learn which tactics work best. Download the slides or catch up on the webinar recording and let Litmus Research Director Chad White and Product Manager Jay Brangiforte answer your burning deliverability questions.
+                        </p>
+                            <!--[if gte mso 12]><br><![endif]-->
+                        <a href="http://litmus.com/blog/the-root-cause-of-poor-email-deliverability-webinar-recording-qa?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" class="cta" style="background-color: #e86f42; border: 1px solid #e86f42; mso-border-alt: 8px solid #e86f42;" target="_blank">Watch the webinar &rarr;</a>
+                        <br><br><br><br>
+                        	<div class="pt25 pb25 pl25 pr25" style="background: #1d9a75; border-radius: 3px;">
+                                <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td align="center" style="mso-padding-alt: 25px;" bgcolor="#1d9a75">
+<![endif]-->
+                                <h2 class="white">
+                                    Make It to the Inbox, Not the Spam Folder
+                                </h2>
+                                <p class="pt10" style="-color: #fff;">
+                                    Quickly identify issues preventing your email from being delivered and improve your chances of reaching the inbox with Litmus Spam Testing. Try it free for 7 days when you start a free trial of a Litmus Plus plan.
+                                </p>
+                                <br>
+                                <p><a href="http://litmus.com/signup/plus-plan?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" class="link fsz20 white lh30" target="_blank">Start my free trial &rarr;</a></p>
+                                <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+                            </div>
+                    	</div>
+<!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+                    </div>
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="seven" name="next" class="arrow">&#9654;</label>
+                    </div>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+          	</div>
+            <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td align="center" bgcolor="#f3b35c" style="mso-padding-top-alt: 50px; mso-padding-bottom-alt: 50px;">
+<![endif]-->
+          	<div class="vwx">
+                <div class="slide-content table center podcast" style="background: #f3b35c;">
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="six" name="prev" class="arrow">&#9664;</label>
+                    </div>
+                    <div class="td pl35 pr35 tac pt25 pb50 vam">
+                        <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="700" align="center" role="presentation">
+<tr>
+<td align="center">
+<![endif]-->
+                        <div class="max650 center">
+                            <a href="http://emaildesignpodcast.com?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" target="_blank"><img src="http://pages.litmus.com/l/31032/2017-02-09/bqvf44/31032/107351/podcast_icon2.png" width="225" height="218" alt="music to your emails" style="display: block; border: 0px; margin: 0 auto;" class="center"/></a>
+                        <h1 class="pt25">The Email Design Podcast</h1>
+                        <p class="pt25">
+                            Join hosts Kevin Mandeville &amp; Jason Rodriguez as they talk about the latest news in the email world.
+                        </p>
+                        <p class="pt25 fsz20 lh26">
+                        <a href="http://litmus.com/blog/email-design-podcast-80-mailchimp-moves-to-single-opt-in-forms-and-alto-mail-to-be-retired?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" class="link white" target="_blank">#81: MailChimp moves to single-opt-in and Alto Mail to be retired</a><br><br>
+                        <a href="http://litmus.com/blog/email-design-podcast-80-popimap-accounts-come-to-gmail-ios-and-a-new-email-mentorship-program?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" class="link white" target="_blank">#80: A new email mentorship program and POP/IMAP accounts come to Gmail iOS</a><br><br>
+                        <a href="http://litmus.com/blog/email-design-podcast-82-litmus-community-qa-rapid-fire?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" class="link white" target="_blank">#82: Litmus Community Q&amp;A Rapid Fire</a>
+                            </p>
+                        <p class="pt25 pb25">
+                        	Subscribe to the #EmailDesignPodcast on iTunes, YouTube, SoundCloud or follow along on Twitter.
+                        </p>
+                            <div class="tac vam pl50">
+                <!--[if (gte mso 9)|(IE)]>
+                <table cellspacing="0" cellpadding="0" border="0" width="500" role="presentation" style="mso-padding-alt: 25px;" align="center">
+                <tr>
+                <td align="center" valign="top">
+                <![endif]-->
+                <a href="http://www.youtube.com/playlist?list=PLd-cITFC7iyh9D4DtBAnWowjyPBKN4vmF" target="_blank">
+                    <img src="http://pages.litmus.com/l/31032/2017-02-09/bqvf48/31032/107355/YouTube_logo_dark1.png" width="100" height="57" alt="youtube" style="display:inline-block;border:0px;" class="center podcast-hover"/>
+                </a>
+                &nbsp; &nbsp; &nbsp;
+                <!--[if (gte mso 9)|(IE)]>
+</td><td align="center">
+                    <![endif]-->
+                <a href="http://soundcloud.com/email-design-podcast" target="_blank">
+                    <img src="http://pages.litmus.com/l/31032/2017-02-09/bqvf4b/31032/107357/soundcloud_logo.png" width="100" height="57" style="display:inline-block;border:0px;" alt="soundcloud" class="center podcast-hover vat"/>
+                </a>
+                &nbsp; &nbsp; &nbsp;
+                <!--[if (gte mso 9)|(IE)]>
+</td><td align="center">
+                    <![endif]-->
+                <a href="http://itunes.apple.com/us/podcast/litmus-email-design-podcast/id904262438" target="_blank">
+                    <img src="http://pages.litmus.com/l/31032/2017-02-09/bqvf4d/31032/107359/itunes_logo.png" width="150" height="45" alt="itunes" style="display:inline-block;border:0px;" class="center podcast-hover vat pt5"/></a>
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+            </div>
+                        </div>
+<!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+                    </div>
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="eight" name="next" class="arrow">&#9654;</label>
+                    </div>
+                </div>
+          	</div>
+            <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+
+          	<div class="yz">
+                <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td align="center" bgcolor="#f0f0f0" style="mso-padding-top-alt: 50px; mso-padding-bottom-alt: 50px;">
+<![endif]-->
+                <div class="slide-content table center" style="background: #f0f0f0;">
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="seven" name="prev" title="grey" class="arrow">&#9664;</label>
+                    </div>
+                    <div class="td pl35 pr35 tac pt25 pb50 vam">
+                        <!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="700" align="center" role="presentation">
+<tr>
+<td align="center">
+<![endif]-->
+                        <div class="max650 center">
+
+            <!--[if (gte mso 9)|(IE)]>
+            <table cellspacing="0" padding="0" border="0" width="600" role="presentation">
+            <tr>
+            <td align="center">
+            <![endif]-->
+            <div class="max600 center pl25 pr25" style="max-width: 600px; margin: 0 auto;">
+                <div class="session tac">
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table cellspacing="0" padding="0" border="0" width="100%" role="presentation">
+                    <tr>
+                    <td align="center" valign="top">
+                    <![endif]-->
+                    <img src="http://pages.litmus.com/l/31032/2014-10-06/h3mtw/31032/36290/litmus_logo_wheel.png" alt="Litmus" width="90" height="90" border="0" style="display: block; margin: 0 auto; color: #888888; font-family: sans-serif;" class="center" />
+                    <h1 style="mso-margin-top-alt: 15px; font-size: 36px !important; color: #333333; line-height: 40px !important;" class="pt15">
+                        Sign Up for a Free Litmus Demo
+                    </h1>
+                    <p class="pt15" style="color: #888888; mso-padding-top-alt: 15px;">
+                        New to Litmus, curious, or just need a quick refresher on how Litmus can improve your email creation process? Join our customer support team for a walk through of the Litmus Email Creative Platform.
+                        <!--[if gte mso 12]>
+<br><br>
+<![endif]-->
+
+                    </p>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                </div>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+            <div class="center pt25 pl25 pr25" style="max-width: 600px; margin: 0 auto;">
+            <!--[if gte mso 12]>
+            <table cellspacing="0" padding="0" border="0" width="800" role="presentation" align="center">
+            <tr>
+            <td align="center" valign="top">
+            <![endif]-->
+            <div class="tac">
+                <div class="table w100p">
+                    <!--[if gte mso 12]>
+                    <table cellspacing="0" padding="0" border="0" width="100%" role="presentation">
+                    <tr>
+                    <td width="190" align="center" style="mso-padding-top-alt: 25px;">
+                    <![endif]-->
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+                        <tr>
+                            <td bgcolor="#f36c5e" class="pt5 pb5 pl10 pr10" style="border-radius: 3px 3px 0 0;" align="center">
+                                <p class="white fsz20 bold">OCT</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#ffffff" class="pt15 pb15 pl10 pr10" style="border-radius: 0 0 3px 3px;">
+                                <p class="fsz60 lh60">
+                                    <b style="color: #333333;">26</b>
+                                </p>
+                                <p style="color: #333333;">2PM EDT</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if gte mso 12]>
+                    </td><td width="13" align="center" style="mso-padding-top-alt: 25px;">
+                    <![endif]-->
+                    <div class="td w5p">&nbsp;</div>
+                    <!--[if gte mso 12]>
+                    </td><td width="190" align="center" style="mso-padding-top-alt: 25px;">
+                    <![endif]-->
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+                        <tr>
+                            <td bgcolor="#f36c5e" class="pt5 pb5 pl10 pr10" style="border-radius: 3px 3px 0 0;" align="center">
+                                <p class="white fsz20 bold">NOV</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#ffffff" class="pt15 pb15 pl10 pr10" style="border-radius: 0 0 3px 3px;">
+                                <p class="fsz60 lh60">
+                                    <b style="color: #333333;">1</b>
+                                </p>
+                                <p style="color: #333333;">11AM EDT</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if gte mso 12]>
+                    </td><td width="14" align="center" style="mso-padding-top-alt: 25px;">
+                    <![endif]-->
+                    <div class="td w5p">&nbsp;</div>
+                    <!--[if gte mso 12]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                </div>
+            </div>
+            <!--[if gte mso 12]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+            </div>
+            <div class="pt20 max600 center pl25 pr25" style="max-width: 600px; margin: 0 auto;">
+                <!--[if (gte mso 9)|(IE)]>
+                <table cellspacing="0" padding="0" border="0" width="600" role="presentation" align="center">
+                <tr>
+                <td align="center" valign="top" style="mso-padding-top-alt: 25px;" >
+                <![endif]-->
+                <div class="tac">
+                    <p>
+                        <a href="https://register.gotowebinar.com/rt/8307007545656357377" target="_blank" class="cta fsz18" style="background-color: #f36c5e; border: 1px solid #f36c5e; mso-border-alt: 8px solid #f36c5e; color: #ffffff;">Register now &rarr;</a>
+                    </p>
+
+                    <br><br><br><br>
+
+                    <h2 class="lh36 fsz30" style="color:#333333;">
+                    Want more email news in your inbox?
+                  </h2>
+                  <p class="p pt20" style="color: #888888;">
+                    Get a weekly dose of Litmus and the latest email marketing news when you sign up for Litmus Weekly.<br>
+                    <!--[if gte mso 12]><br><![endif]-->
+                    <a href="http://litmus.com/litmus-weekly?utm_campaign=newsletter&utm_source=pardot&utm_medium=email" style="background-color: #aaaaaa; border: 1px solid #aaaaaa; mso-border-alt: 8px solid #aaaaaa;" class="cta fsz18">Sign up now &rarr;</a><br><br><style data-ignore-inlining>@media print{ #_t { background-image: url('https://afjry7z8.emltrk.com/afjry7z8?p&d=%%email%%');}} div.OutlookMessageHeader {background-image:url('https://afjry7z8.emltrk.com/afjry7z8?f&d=%%email%%')} table.moz-email-headers-table {background-image:url('https://afjry7z8.emltrk.com/afjry7z8?f&d=%%email%%')} blockquote #_t {background-image:url('https://afjry7z8.emltrk.com/afjry7z8?f&d=%%email%%')} #MailContainerBody #_t {background-image:url('https://afjry7z8.emltrk.com/afjry7z8?f&d=%%email%%')}</style><div id="_t"></div>
+<img src="https://afjry7z8.emltrk.com/afjry7z8?d=%%email%%" width="1" height="1" border="0" alt="" />
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+            </div>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+        </div>
+                        </div>
+
+                    <div class="td tac vam webkit-show-td" style="display: none;">
+                        <label for="one" name="next" title="grey" class="arrow">&#9654;</label>
+                    </div>
+                </div>
+            <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+          	</div>
+            <!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+
+            </div>
+          </div>
+
+
+    <!--[if (gte mso 9)|(IE)]><!-->
+    <div class="slider-dots webkit-show" style="display: none;">
+        <div style="position:absolute;left: 0;right: 0;margin: 0 auto; width: 300px; text-align: center;">
+            <label name="one" for="one" class="dot"></label>
+            &nbsp;
+            <label name="two" for="two" class="dot"></label>
+            &nbsp;
+            <label name="three" for="three" class="dot"></label>
+            &nbsp;
+            <label name="four" for="four" class="dot"></label>
+            &nbsp;
+            <label name="five" for="five" class="dot"></label>
+            &nbsp;
+            <label name="six" for="six" class="dot"></label>
+            &nbsp;
+            <label name="seven" for="seven" class="dot"></label>
+            &nbsp;
+            <label name="eight" for="eight" class="dot"></label>
+        </div>
+    </div>
+    <!--<![endif]-->
+
+
+  </body>
+</html>
