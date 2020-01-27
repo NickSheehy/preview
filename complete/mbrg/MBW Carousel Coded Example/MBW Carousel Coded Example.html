@@ -1,0 +1,1209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width" />
+<title>Mercedes-Benz</title>
+ 
+<style type="text/css">
+/*GENERAL FIXES FOR DESKTOP CLIENTS*/
+.ReadMsgBody, .ExternalClass {
+width : 100%;
+}
+.ExternalClass * {
+line-height : 110%;
+}
+body {
+width : 100% !important ;
+margin : 0 !important ;
+padding : 0;
+}
+table {
+border-collapse : collapse !important ;
+border-width : 0 !important ;
+}
+sup, sub {
+vertical-align : baseline;
+position : relative;
+top : -0.4em;
+font-size : 85%;
+}
+a {
+text-decoration : none;
+}
+div[style*="margin: 16px 0;"] {
+margin : 0 !important ;
+}
+div {
+margin : 0 !important ;
+padding : 0 !important ;
+}
+span > a {
+color : inherit !important ;
+text-decoration : none;
+}
+.footer span > a {
+color : #757575 !important ;
+}
+table .show, .show, .desktop-hide, .show * {
+display : none;
+max-height : 0;
+max-width : 0;
+height : 0;
+width : 0;
+padding : 0;
+margin : 0;
+visibility : hidden;
+background : none;
+}
+i input {
+display : none;
+}
+@media screen {
+body[data-outlook-cycle] .flight-one-desktop {
+display : none !important ;
+}
+body[data-outlook-cycle] .flight-one-mobile {
+display : none !important ;
+}
+body[data-outlook-cycle] .flight-two-desktop {
+display : none !important ;
+}
+body[data-outlook-cycle] .flight-two-mobile {
+display : none !important ;
+}
+body[data-outlook-cycle] .outlook-mobile-fallback {
+display : block !important ;
+}
+body[data-outlook-cycle] .outlook-mobile-anim-hide {
+display : none !important ;
+}
+.fallback {
+display : none;
+}
+.carousel {
+display : block !important ;
+max-height : none !important ;
+position : relative;
+}
+.fade-block {
+display : block !important ;
+}
+.fade {
+display : block !important ;
+max-height : none !important ;
+position : relative;
+}
+.slide-block {
+display : block !important ;
+max-height : none !important ;
+position : relative;
+}
+#MessageViewBody .fallback, body.MsgBody .fallback {
+display : block;
+}
+#MessageViewBody .carousel, body.MsgBody .carousel {
+display : none !important ;
+}
+#MessageViewBody .slide-block, body.MsgBody .slide-block {
+display : none !important ;
+}
+input {
+display : none;
+}
+.carousel a {
+width : 100%;
+display : block;
+overflow : hidden;
+}
+.carousel .car-frames img {
+display : block !important ;
+width : 100% !important ;
+height : auto !important ;
+}
+.carousel.responsive {
+width : 100% !important ;
+}
+.carousel.slide a {
+position : absolute;
+top : 0;
+left : 0;
+opacity : 1;
+width : 100%;
+}
+.carousel.slide a:nth-child(1) {
+position : relative;
+}
+.slide-block.responsive {
+width : 100% !important ;
+}
+.carousel.slide .car-radio:checked ~ .car-cont .car-frames {
+position : relative;
+left : 0;
+top : 0;
+width : 400% !important ;
+transition : left 1s;
+}
+.carousel.slide .car-radio2:checked ~ .car-cont .car-frames {
+left : -100%;
+}
+.carousel.slide .car-radio3:checked ~ .car-cont .car-frames {
+left : -200%;
+}
+.carousel.slide .car-radio4:checked ~ .car-cont .car-frames {
+left : -300%;
+}
+.carousel.slide .car-radio:checked ~ .car-cont a {
+width : 25%;
+}
+.carousel.slide .car-radio:checked ~ .car-cont a:nth-child(2) {
+position : absolute;
+left : 25%;
+top : 0;
+}
+.carousel.slide .car-radio:checked ~ .car-cont a:nth-child(3) {
+position : absolute;
+left : 50%;
+top : 0;
+}
+.carousel.slide .car-radio:checked ~ .car-cont a:nth-child(4) {
+position : absolute;
+left : 75%;
+top : 0;
+}
+.carousel .car-ltn, .carousel .car-rtn {
+z-index : 100;
+display : none;
+width : 10%;
+height : 100%;
+position : absolute;
+background-color : transparent;
+top : 0;
+cursor : pointer;
+}
+.car-ltn {
+left : 0;
+}
+.car-rtn {
+right : 0;
+}
+.carousel .car-ltn::after, .carousel .car-rtn::after {
+content : '';
+width : 0;
+height : 0;
+border-top : 8px solid transparent;
+border-bottom : 8px solid transparent;
+position : absolute;
+top : 50%;
+margin-top : -8px;
+}
+.car-ltn::after {
+border-right : 8px solid #ffffff;
+left : 30%;
+}
+.car-rtn::after {
+border-left : 8px solid #ffffff;
+right : 30%;
+}
+.carousel #car-cbox-support:checked ~ .car-cont .car-nav-1 {
+display : block;
+}
+.car-radio2:checked ~ .car-cont .car-controls .car-nav-2, .car-radio3:checked ~ .car-cont .car-controls .car-nav-3, .car-radio4:checked ~ .car-cont .car-controls .car-nav-4 {
+display : block;
+}
+.carousel #car-cbox-support:checked ~ .car-thumbnails {
+display : block !important ;
+text-align : center;
+position : relative;
+}
+.carousel .car-thumb {
+width : 20%;
+opacity : 0.5;
+z-index : 100;
+border : black solid 3px;
+cursor : pointer;
+display : inline-block;
+margin : 1.5% 0.8%;
+}
+.carousel .car-thumb img {
+width : 100%;
+height : auto;
+}
+.car-radio:checked ~ .car-thumbnails .car-thumb:nth-child(1) {
+opacity : 0.5 !important ;
+}
+.car-radio1:checked ~ .car-thumbnails .car-thumb:nth-child(1) {
+opacity : 1 !important ;
+}
+.car-radio2:checked ~ .car-thumbnails .car-thumb:nth-child(2), .car-radio3:checked ~ .car-thumbnails .car-thumb:nth-child(3), .car-radio4:checked ~ .car-thumbnails .car-thumb:nth-child(4) {
+opacity : 1;
+}
+}
+@media screen and (max-width: 9999px) {
+.cboxcheck:checked + * .thumb-carousel, * [summary="cboxcheck"]:checked + * [summary^="thumb-carousel"] {
+height : auto !important ;
+max-height : none !important ;
+line-height : 0;
+}
+.thumb-carousel span, * [summary^="thumb-carousel"] span {
+font-size : 0;
+line-height : 0;
+}
+.cboxcheck:checked + * .thumb-carousel .car-content, * [summary="cboxcheck"]:checked + * [summary^="thumb-carousel"] [summary^="content"] {
+display : none;
+max-height : 0;
+overflow : hidden;
+}
+.thumb-carousel .cbox1:checked + span .content-1, .thumb-carousel .cbox2:checked + span .content-2, .thumb-carousel .cbox3:checked + span .content-3, .thumb-carousel .cbox4:checked + span .content-4, * [summary^="thumb-carousel"] [summary="cbox1"]:checked + span [summary="content-1"], * [summary^="thumb-carousel"] [summary="cbox2"]:checked + span [summary="content-2"], * [summary^="thumb-carousel"] [summary="cbox3"]:checked + span [summary="content-3"], * [summary^="thumb-carousel"] [summary="cbox4"]:checked + span [summary="content-4"] {
+display : block !important ;
+max-height : none !important ;
+overflow : visible !important ;
+float : left;
+}
+.thumb-carousel .thumb, * [summary^="thumb-carousel"] [summary="thumb"] {
+cursor : pointer;
+display : inline-block !important ;
+width : 20%;
+margin : 1% 2%;
+}
+.thumbpic {
+border-bottom : 2px solid #e3e3e3;
+}
+.thumb-carousel .thumbpic:hover, * [summary^="thumb-carousel"] [summary="thumbpic"]:hover {
+border-bottom : 2px solid #d71440;
+}
+.thumb-carousel input:checked + span > span, * [summary^="thumb-carousel"] [summary^="cbox"]:checked + span > span {
+border-color : #444444;
+}
+.thumb-carousel .thumb img, * [summary^="thumb-carousel"] [summary="thumb"] img {
+width : 100%;
+height : auto;
+}
+.thumb-carousel img, * [summary^="thumb-carousel"] img {
+max-height : none !important ;
+}
+.cboxcheck:checked + * .fallback {
+display : none !important ;
+display : none;
+max-height : 0;
+height : 0;
+overflow : hidden;
+}
+* [summary="cboxcheck"]:checked + * [summary="fallback"] {
+max-height : 0;
+height : 0;
+overflow : hidden;
+}
+.fallback-alt {
+width : 100%;
+margin : 0 auto;
+text-align : center;
+}
+.thumb-fallback {
+width : 140px;
+display : inline-block;
+}
+.thumbpic-hov {
+border-bottom : 2px solid #e3e3e3;
+}
+.thumbpic-hov:hover {
+border-bottom : 2px solid #d71440;
+}
+}
+@media screen and (max-width: 480px) {
+.car-table.responsive, .car-table.responsive .thumb-carousel, .car-table.responsive .thumb-carousel .car-content img, .car-table.responsive .fallback .car-content img {
+width : 100% !important ;
+height : auto !important ;
+}
+td[class="nav-mobile"] {
+width : 100% !important ;
+display : block !important ;
+background : #d71440 !important ;
+padding : 10px 0 10px 0 !important ;
+border-bottom : 1px solid #d58295 !important ;
+}
+td[class="nav-mobile-first"] {
+width : 100% !important ;
+display : block !important ;
+background : #d71440 !important ;
+padding : 0 0 10px 0 !important ;
+border-bottom : 1px solid #d58295 !important ;
+}
+td[class="desktop-hide-nav"] {
+display : block !important ;
+background : #d71440 !important ;
+padding : 10px 5px 10px 5px !important ;
+}
+body[data-outlook-cycle] .flight-one-desktop {
+display : none !important ;
+}
+body[data-outlook-cycle] .flight-one-mobile {
+display : none !important ;
+}
+body[data-outlook-cycle] .flight-two-desktop {
+display : none !important ;
+}
+body[data-outlook-cycle] .flight-two-mobile {
+display : none !important ;
+}
+body[data-outlook-cycle] .outlook-mobile-fallback {
+display : block !important ;
+}
+body[data-outlook-cycle] .outlook-mobile-anim-hide {
+display : none !important ;
+}
+td[class="mobile-hide"] {
+display : none;
+}
+td[class="nav-mobile-last"] {
+width : 100% !important ;
+display : block !important ;
+background : #d71440 !important ;
+padding : 10px 0 0 0 !important ;
+}
+}
+@media only screen and (max-width: 480px) {
+table .main {
+width : 100% !important ;
+}
+.main-padding {
+padding : 0 10px !important ;
+}
+html, body {
+width : 100% !important ;
+min-width : 100% !important ;
+}
+.hide, .hide * {
+display : none !important ;
+max-height : 0 !important ;
+max-width : 0 !important ;
+height : 0 !important ;
+width : 0 !important ;
+padding : 0 !important ;
+margin : 0 !important ;
+visibility : hidden !important ;
+line-height : 0 !important ;
+font-size : 0 !important ;
+background : none !important ;
+}
+.desktop-hide {
+display : block;
+visibility : visible;
+height : auto;
+width : auto;
+max-height : none;
+min-height : inherit;
+max-width : inherit;
+line-height : 120%;
+}
+table .show, .show, .show * {
+display : block !important ;
+visibility : visible !important ;
+height : auto !important ;
+width : auto !important ;
+max-height : none !important ;
+min-height : inherit !important ;
+max-width : inherit !important ;
+line-height : 120% !important ;
+}
+.float-left {
+float : left !important ;
+clear : none !important ;
+}
+.float-right {
+float : right !important ;
+clear : none !important ;
+}
+.half-width {
+width : 48% !important ;
+display : inline-block !important ;
+}
+.block, .drop, .drop table, .drop tr {
+float : none !important ;
+clear : both !important ;
+width : 100% !important ;
+padding : 0 !important ;
+display : block !important ;
+}
+.center {
+text-align : center !important ;
+}
+.align-left {
+text-align : left !important ;
+}
+.align-right {
+text-align : right !important ;
+}
+.absolute {
+position : absolute !important ;
+}
+table .block, table .show, .show table, table .drop, .drop table {
+display : table !important ;
+}
+tr .block, tr .show, .show tr, tr .drop, .drop tr {
+display : table-row !important ;
+}
+td .block, td .show, .show td, td .drop, .drop td {
+display : table-cell !important ;
+}
+.center img, img .center, .align-left img, img .align-left, .align-right img, img .align-right {
+display : inline-block !important ;
+}
+.center table.center, .align-right > table, .align-left > table {
+display : inline-table !important ;
+}
+.border-none {
+border : none !important ;
+}
+.background-none {
+background : transparent !important ;
+}
+.background-image-none {
+background-image : none !important ;
+}
+.bold {
+font-weight : bold !important ;
+}
+.no-bold {
+font-weight : normal !important ;
+}
+.text-size {
+line-height : 130% !important ;
+}
+.text-10px {
+font-size : 10px !important ;
+}
+.text-11px {
+font-size : 11px !important ;
+}
+.text-12px {
+font-size : 12px !important ;
+}
+.text-13px {
+font-size : 13px !important ;
+}
+.text-14px {
+font-size : 14px !important ;
+}
+.text-15px {
+font-size : 15px !important ;
+}
+.text-16px {
+font-size : 16px !important ;
+}
+.text-17px {
+font-size : 17px !important ;
+}
+.text-18px {
+font-size : 18px !important ;
+}
+.text-19px {
+font-size : 19px !important ;
+}
+.text-20px {
+font-size : 20px !important ;
+}
+.text-21px {
+font-size : 21px !important ;
+}
+.text-22px {
+font-size : 22px !important ;
+}
+.text-23px {
+font-size : 23px !important ;
+}
+.text-24px {
+font-size : 24px !important ;
+}
+.text-25px {
+font-size : 25px !important ;
+}
+.text-26px {
+font-size : 26px !important ;
+}
+.text-27px {
+font-size : 27px !important ;
+}
+.text-28px {
+font-size : 28px !important ;
+}
+.text-29px {
+font-size : 29px !important ;
+}
+.text-30px {
+font-size : 30px !important ;
+}
+.text-38px {
+font-size : 38px !important ;
+}
+.text-50px {
+font-size : 50px !important ;
+}
+.width-100, table .width-100 {
+width : 100% !important ;
+height : auto !important ;
+}
+.width-90, table .width-90 {
+width : 90% !important ;
+height : auto !important ;
+}
+.width-80, table .width-80 {
+width : 80% !important ;
+height : auto !important ;
+}
+.width-70, table .width-70 {
+width : 70% !important ;
+height : auto !important ;
+}
+.width-60, table .width-60 {
+width : 60% !important ;
+height : auto !important ;
+}
+.width-50, table .width-50 {
+width : 50% !important ;
+height : auto !important ;
+}
+.width-40, table .width-40 {
+width : 40% !important ;
+height : auto !important ;
+}
+.width-0, table .width-0 {
+width : 0 !important ;
+height : auto !important ;
+}
+.width-auto, table .width-auto {
+width : auto !important ;
+}
+.height-auto, table .height-auto {
+height : auto !important ;
+}
+.height-40 {
+height : 40px !important ;
+}
+.pad-0 {
+padding : 0 !important ;
+}
+.pad-5 {
+padding : 5px !important ;
+}
+.pad-10 {
+padding : 10px !important ;
+}
+.pad-15 {
+padding : 15px !important ;
+}
+.pad-20 {
+padding : 20px !important ;
+}
+.pad-30 {
+padding : 30px !important ;
+}
+.pad-horz-0 {
+padding-left : 0 !important ;
+padding-right : 0 !important ;
+}
+.pad-horz-5 {
+padding-left : 5px !important ;
+padding-right : 5px !important ;
+}
+.pad-horz-10 {
+padding-left : 10px !important ;
+padding-right : 10px !important ;
+}
+.pad-horz-15 {
+padding-left : 15px !important ;
+padding-right : 15px !important ;
+}
+.pad-horz-20 {
+padding-left : 20px !important ;
+padding-right : 20px !important ;
+}
+.pad-horz-30 {
+padding-left : 30px !important ;
+padding-right : 30px !important ;
+}
+.pad-horz-40 {
+padding-left : 40px !important ;
+padding-right : 40px !important ;
+}
+.pad-vert-0 {
+padding-top : 0 !important ;
+padding-bottom : 0 !important ;
+}
+.pad-vert-5 {
+padding-top : 5px !important ;
+padding-bottom : 5px !important ;
+}
+.pad-vert-10 {
+padding-top : 10px !important ;
+padding-bottom : 10px !important ;
+}
+.pad-vert-15 {
+padding-top : 15px !important ;
+padding-bottom : 15px !important ;
+}
+.pad-vert-20 {
+padding-top : 20px !important ;
+padding-bottom : 20px !important ;
+}
+.pad-vert-30 {
+padding-top : 30px !important ;
+padding-bottom : 30px !important ;
+}
+.pad-right-0 {
+padding-right : 0 !important ;
+}
+.pad-right-5 {
+padding-right : 5px !important ;
+}
+.pad-right-10 {
+padding-right : 10px !important ;
+}
+.pad-right-15 {
+padding-right : 15px !important ;
+}
+.pad-right-20 {
+padding-right : 20px !important ;
+}
+.pad-right-30 {
+padding-right : 30px !important ;
+}
+.pad-left-0 {
+padding-left : 0 !important ;
+}
+.pad-left-5 {
+padding-left : 5px !important ;
+}
+.pad-left-10 {
+padding-left : 10px !important ;
+}
+.pad-left-15 {
+padding-left : 15px !important ;
+}
+.pad-left-20 {
+padding-left : 20px !important ;
+}
+.pad-left-30 {
+padding-left : 30px !important ;
+}
+.pad-top-0 {
+padding-top : 0 !important ;
+}
+.pad-top-5 {
+padding-top : 5px !important ;
+}
+.pad-top-10 {
+padding-top : 10px !important ;
+}
+.pad-top-15 {
+padding-top : 15px !important ;
+}
+.pad-top-20 {
+padding-top : 20px !important ;
+}
+.pad-top-25 {
+padding-top : 25px !important ;
+}
+.pad-top-30 {
+padding-top : 30px !important ;
+}
+.pad-bottom-0 {
+padding-bottom : 0 !important ;
+}
+.pad-bottom-5 {
+padding-bottom : 5px !important ;
+}
+.pad-bottom-10 {
+padding-bottom : 10px !important ;
+}
+.pad-bottom-15 {
+padding-bottom : 15px !important ;
+}
+.pad-bottom-20 {
+padding-bottom : 20px !important ;
+}
+.pad-bottom-30 {
+padding-bottom : 30px !important ;
+}
+.CTA-height40 {
+line-height : 40px !important ;
+}
+.CTA-background {
+background-color : #000000 !important ;
+}
+.CTA-border {
+border : #CB2131 solid 1px !important ;
+color : #CB2131;
+}
+.border-right-0 {
+border-right : 0 !important ;
+}
+.timerwrap {
+padding : 30px !important ;
+}
+.timertext {
+padding : 0 10px !important ;
+}
+.timer {
+height : auto !important ;
+max-width : 220px !important ;
+width : 100% !important ;
+}
+.socialicons {
+width : 48px !important ;
+height : 48px !important ;
+}
+.max-width {
+width : 100% !important ;
+max-width : 320px !important ;
+height : auto !important ;
+}
+.icon-cta {
+width : auto !important ;
+height : auto !important ;
+}
+.thumb-carousel .thumb, * [summary^="thumb-carousel"] [summary="thumb"] {
+cursor : pointer;
+display : inline-block !important ;
+width : 40%;
+margin : 1% 4%;
+}
+}
+</style>
+<!--[if gt mso 15]>
+<style type="text/css" media="all">
+/* Outlook 2016 Height Fix */
+table, tr, td {border-collapse: collapse;}
+tr { font-size:0px; line-height:0px; border-collapse: collapse; }
+</style>
+<![endif]-->
+
+<!--[if (gte mso 9)|(IE)]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+    
+ </head>
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" style="margin:0; padding:0; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust:none;" bgcolor="#FFFFFF">
+<!-- HEADER START -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="border-spacing: 0; mso-line-height-rule: exactly; mso-margin-bottom-alt: 0; mso-margin-top-alt: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+   <tr>
+    <td align="center" valign="top"><table class="main" width="720" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" style="border-spacing: 0; mso-line-height-rule: exactly; mso-margin-bottom-alt: 0; mso-margin-top-alt: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+        <tr>
+          <td class="pad-horz-20" style="padding:0px 50px 20px 50px;" align="left" valign="top" bgcolor="#000000"><table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
+              <tr>
+                <td align="left" valign="top" bgcolor="#000000"><table class="width-100" width="100%" border="0" cellspacing="0" cellpadding="0" align="left" bgcolor="#000000">
+                    <tr> 
+                      <!-- MB logo -->
+                      <td width="50%" align="left" style="text-align:left;" valign="top"><img src="mb_star.jpg" alt="Mercedes-Benz World" title="Mercedes-Benz World" style="display:inline-block; font-family: 'Times New Roman', Times, serif; text-align:center; font-size:18px; line-height: 22px; color: #FFFFFF;" border="0" width="64" height="64" /></a></td>
+                      <!-- MB logo --> 
+                      
+                      <!-- Brand logo -->
+                      <td width="50%" align="right" style="font-family: 'Arial', Helvetica, sans-serif; font-size: 22px; mso-line-height-rule: exactly; line-height: 26px; color: #000000; padding:13px 0px 0px 0px; text-align:right;" valign="top"><img src="mb_logo.jpg" alt="Mercedes-Benz World" title="Mercedes-Benz World" style="display:inline-block; font-family: 'Times New Roman', Times, serif; text-align:center; font-size:18px; line-height: 22px; color: #FFFFFF;" border="0" width="310" height="128" /></td>
+                      <!-- Brand logo --> 
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+ </table>
+<!-- END OF HEADER -->
+<!--CAROUSEL START--> 
+
+<!-- IMAGE PANEL - HEADER IMAGE FOR CAROUSEL
+ ========================================================= -->
+ <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr>
+    <td align="center" valign="top"><table class="main" width="720" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
+        <tr>
+          <td align="left" valign="top" style="padding: 0px 0px 20px 0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+              <tr>
+                <td class="hide" align="center" valign="top"><img src="fallback.png" alt="" title="" style="display:inline-block; font-family: 'Times New Roman', Times, serif; text-align:center; font-size:25px; line-height: 29px; color: #000000;" border="0" width="720" /></td>
+              </tr>
+              <!-- MOBILE IMAGE --> 
+              <!--[if !mso]><!-->
+              <tr>
+                <td class="center show block" align="center" valign="top" style="width: 0; max-height: 0; overflow: hidden; float: left; display: none;"><img class="width-100 height-auto" style="display: block; font-family: 'Arial', Helvetica, sans-serif; font-size:16px; line-height: 20px; color: #333333;" src="fallback.png" alt="" title="" border="0" /></td>
+              </tr>
+              <!--<![endif]--> 
+              <!-- MOBILE IMAGE -->
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<!-- CAROUSEL
+ ========================================================= -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+  <tr>
+    <td align="center" valign="top"><table class="main" width="720" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
+        <tr>
+          <td align="left" valign="top" style="padding:0px 0px 35px 0px"><!-- animated carousel --> 
+            <!--[if !mso]><!-- -->
+<div class="carousel slide responsive" style="overflow:hidden;display:none;max-height:0px;width:500px;">
+
+<input id="car-cbox-support" type="checkbox" checked style="display:none!important">
+<input name="car-radio" type="radio" id="car1-radio-1" class="car-radio car-radio1" style="display:none!important">
+<input name="car-radio" type="radio" id="car1-radio-2" class="car-radio car-radio2" style="display:none!important">
+<input name="car-radio" type="radio" id="car1-radio-3" class="car-radio car-radio3" style="display:none!important">
+<input name="car-radio" type="radio" id="car1-radio-4" class="car-radio car-radio4" style="display:none!important">
+
+<div class="car-cont" style="position:relative;background-color:#ffffff;">
+  <div class="car-frames">
+    <a href="https://www.google.com/search?q=castles"><img class="zoom-in" src="image_offer1.png" border="0"></a>
+    <a href="https://www.google.com/search?q=meadows"><img class="zoom-out" src="image_offer2.png" border="0"></a>
+    <a href="https://www.google.com/search?q=coast"><img class="pan-right" src="image_offer3.png" border="0"></a>
+    <a href="https://www.google.com/search?q=meadows"><img class="zoom-out" src="image_offer4.png" border="0"></a>
+  </div>
+</div>
+
+
+<div class="car-thumbnails" style="display:none;">
+  <label for="car1-radio-1" class="car-thumb"><img src="image_offer1.png"></label>
+  <label for="car1-radio-2" class="car-thumb"><img src="image_offer2.png"></label>
+  <label for="car1-radio-3" class="car-thumb"><img src="image_offer3.png"></label>
+  <label for="car1-radio-4" class="car-thumb"><img src="image_offer4.png"></label>
+</div>
+
+
+</div>
+
+
+
+<!--<![endif]--> 
+            
+            <!-- static fallback content -->
+            
+            <div class="fallback"> <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="nav-mobile-display-block">
+                        <a href="#" target="_blank"><img src="image_offer1.png" width="360" class="width-100"></a>
+                        </td>
+                    <td class="nav-mobile-display-block">
+                        <a href="#" target="_blank"><img src="image_offer2.png" width="360" class="width-100"></a>
+                        </td>
+                    </tr>
+                <tr>
+                    <td class="nav-mobile-display-block">
+                        <a href="#" target="_blank"><img src="image_offer3.png" width="360" class="width-100"></a>
+                        </td>
+                    <td class="nav-mobile-display-block">
+                        <a href="#" target="_blank"><img src="image_offer4.png" width="360" class="width-100"></a>
+                        </td>
+                    </tr>
+                </table></div></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<!-- END CAROUSEL
+ ========================================================= --> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="border-spacing: 0; mso-line-height-rule: exactly; mso-margin-bottom-alt: 0; mso-margin-top-alt: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+   <tr>
+    <td align="center" valign="top"><table class="main" width="720" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" style="border-spacing: 0; mso-line-height-rule: exactly; mso-margin-bottom-alt: 0; mso-margin-top-alt: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+        <tr>
+          <td class="pad-horz-20" style="padding:0px 50px 20px 50px;" align="left" valign="top" bgcolor="#000000"><table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
+              <tr>
+                <td align="left" valign="top" bgcolor="#000000"><table class="width-100" width="100%" border="0" cellspacing="0" cellpadding="0" align="left" bgcolor="#000000">
+                    <tr>
+          <td bgcolor="#ECECEC" align="center">
+            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="690" style="width:690px">
+              <tr>
+                <td align="center" valign="top" width="690" style="width:690px" dir="ltr">
+                  <![endif]-->
+                  <table role="presentation" style="max-width: 690px; border-top: 4px solid #ececec" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
+                    <tbody>
+                      <!-- !Columns -->
+                      <tr>
+                        <td valign="top" align="left" style="padding:30px 19px 0 19px;">
+                          <!--[if (gte mso 9)|(IE)]>
+                          <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="652" style="width:652px">
+                            <tr>
+                              <td align="center" valign="top" width="208" style="width:208px" dir="ltr">
+                                <![endif]-->
+                                <div class="column-1of3" style="">
+                                  <table role="presentation" cellpadding="0" cellborder="0" border="0" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td rowspan="2" width="7" style="width: 7px"></td>
+                                        <td align="left" style="padding-bottom: 30px">
+                                          <a href="https://www.mercedes-benzworld.co.uk">
+                                          <img src="http://t.enews.mercedes-benz.co.uk/res/img/7BFFACC5FDE875FF05E10634C33FC764.jpg" alt="Mercedes-Benz Car" title="Mercedes-Benz Car" style="display:block; border:0px; Margin: 0 0 20px; max-width: 100%; width: 100%;" width="208" />
+                                          </a>
+                                          <h3 style="Margin:20px 0 0 0; line-height: 20px; font-size: 16px; color:#1f1f1f; font-weight: normal; ">
+                                            <img src="http://t.enews.mercedes-benz.co.uk/res/img/3AA73DD4B5BEE421E56F0E0E889A4A2C.png" alt="A thrilling day out for the whole family." title="A thrilling day out for the whole family." style="display: block; max-width: 100%; width: 208px" class="fluid" width="208" border="0">
+                                          </h3>
+                                          <p style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; color: #333333; Margin: 10px 0px 20px 0px;">Three floors of attractions and interactive exhibits. Little Learners electric cars. Recharge Café. Driving Experiences and much more. There’s something for everyone to&nbsp;enjoy.</p>
+                                          <!-- !Hero button -->
+                                          <table role="presentation" class="btn" style="margin: 0;background-color: #00ADEF;border-radius: 1px" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                              <tr>
+                                                <td class="btn-container" style="background-color: #00ADEF; text-align: center;padding: 10px 12px; border-radius: 1px;">
+                                                  <a href="https://www.mercedes-benzworld.co.uk/" style="color: #ffffff; font-family: sans-serif; font-size: 14px; line-height: 14px; text-align: center; text-decoration: none; display: block; ">
+                                                    <!--[if mso]>&nbsp;<![endif]--> <img src="http://t.enews.mercedes-benz.co.uk/res/img/4692FA02A7A016EE942BFB3E2D2CFEC8.png" role="presentation" alt="" width="5" height="8" border="0">&nbsp;Find out more
+                                                    <!--[if mso]>&nbsp;<![endif]-->
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                        <td rowspan="2" width="7" style="width: 7px"></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                              <td align="center" valign="top" width="208" style="width:208px" dir="ltr">
+                                <![endif]-->
+                                <div class="column-2of3" style="">
+                                  <table role="presentation" cellpadding="0" cellborder="0" border="0" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td rowspan="2" width="7" style="width: 7px"></td>
+                                        <td align="left" style="padding-bottom: 30px">
+                                          <a href="https://drivingexperiences.mercedes-benzworld.co.uk/#!/">
+                                          <img src="http://t.enews.mercedes-benz.co.uk/res/img/BADA812A85713B7328C45E6A492E5610.jpg" alt="Track and Off-Road Driving Experiences." title="Track and Off-Road Driving Experiences." style="display:block; border:0px; Margin: 0 0 20px; max-width: 100%; width: 100%;" width="208" />
+                                          </a>
+                                          <h3 style="Margin:20px 0 0 0; line-height: 20px; font-size: 16px; color:#1f1f1f; font-weight: normal; ">
+                                            <img src="http://t.enews.mercedes-benz.co.uk/res/img/9CB529C138E99F2552711FDBF5AD0B65.png" alt="Driving Experiences." title="Driving Experiences." style="display: block; max-width: 100%; width: 208px" class="fluid" width="208" border="0">
+                                          </h3>
+                                          <p style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; color: #333333; Margin: 10px 0px 20px 0px;">If you are over 1.5m tall you can drive the latest Mercedes&#8209;Benz cars on our purpose&#8209;built track and off&#8209;road circuits with a highly trained Driving Specialist by your side to guide&nbsp;you.</p>
+                                          <!-- !Hero button -->
+                                          <table role="presentation" class="btn" style="margin: 0;background-color: #00ADEF;border-radius: 1px" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                              <tr>
+                                                <td class="btn-container" style="background-color: #00ADEF; text-align: center;padding: 10px 12px; border-radius: 1px;">
+                                                  <a href="https://drivingexperiences.mercedes-benzworld.co.uk/#!/" style="color: #ffffff; font-family: sans-serif; font-size: 14px; line-height: 14px; text-align: center; text-decoration: none; display: block; ">
+                                                    <!--[if mso]>&nbsp;<![endif]--> <img src="http://t.enews.mercedes-benz.co.uk/res/img/4692FA02A7A016EE942BFB3E2D2CFEC8.png" role="presentation" alt="" width="5" height="8" border="0">&nbsp;Find out more
+                                                    <!--[if mso]>&nbsp;<![endif]-->
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                        <td rowspan="2" width="7" style="width: 7px"></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                              <td align="center" valign="top" width="208" style="width:208px" dir="ltr">
+                                <![endif]-->
+                                <div class="column-3of3" style="">
+                                  <table role="presentation" cellpadding="0" cellborder="0" border="0" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td rowspan="2" width="7" style="width: 7px"></td>
+                                        <td align="left" style="padding-bottom: 30px">
+                                          <a href="https://www.mercedes-benzworld.co.uk/">
+                                          <img src="http://t.enews.mercedes-benz.co.uk/res/img/209CB94B7B622019D6911DF0CE44803F.jpg" alt="Driving simulator" title="Driving simulator" style="display:block; border:0px; Margin: 0 0 20px; max-width: 100%; width: 100%;" width="208" />
+                                          </a>
+                                          <h3 style="Margin:20px 0 0 0; line-height: 20px; font-size: 16px; color:#1f1f1f; font-weight: normal; ">
+                                            <img src="http://t.enews.mercedes-benz.co.uk/res/img/D7026804214D71D716AC55E32FD40E4D.png" alt="Thrills and spills in our Spooky Simulator Zone." title="Thrills and spills in our Spooky Simulator Zone." style="display: block; max-width: 100%; width: 208px" class="fluid" width="208" border="0">
+                                          </h3>
+                                          <p style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; color: #333333; Margin: 10px 0px 20px 0px;">Challenge your friends and family&nbsp;on our state&#8209;of&#8209;the&#8209;art racing&nbsp;simulators, visit the EQ&nbsp;Zone, or put your driving skills&nbsp;to the test on our latest attraction&nbsp;&#8209;&nbsp;Accelerate.</p>
+                                          <!-- !Hero button -->
+                                          <table role="presentation" class="btn" style="margin: 0;background-color: #00ADEF;border-radius: 1px" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                              <tr>
+                                                <td class="btn-container" style="background-color: #00ADEF; text-align: center;padding: 10px 12px; border-radius: 1px;">
+                                                  <a href="https://drivingexperiences.mercedes-benzworld.co.uk/#!/" style="color: #ffffff; font-family: sans-serif; font-size: 14px; line-height: 14px; text-align: center; text-decoration: none; display: block; ">
+                                                    <!--[if mso]>&nbsp;<![endif]--> <img src="http://t.enews.mercedes-benz.co.uk/res/img/4692FA02A7A016EE942BFB3E2D2CFEC8.png" role="presentation" alt="" width="5" height="8" border="0">&nbsp;Find out more
+                                                    <!--[if mso]>&nbsp;<![endif]-->
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                        <td rowspan="2" width="7" style="width: 7px"></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                            </tr>
+                          </table>
+                          <![endif]-->
+                        </td>
+                      </tr>
+                      <!-- !Spacer -->
+                    </tbody>
+                  </table>
+                  <!--[if (gte mso 9)|(IE)]>
+                </td>
+              </tr>
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ECECEC" align="center">
+            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="690" style="width:690px">
+              <tr>
+                <td align="center" valign="top" width="690" style="width:690px" dir="ltr">
+                  <![endif]-->
+                  <table role="presentation" style="max-width: 690px; border-top: 4px solid #ececec; ;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000">
+                    <tbody>
+                      <!-- !Spacer -->
+                      <tr>
+                        <td colspan="3" style="height: 24px" height="24">
+                        </td>
+                      </tr>
+                      <!-- !Columns -->
+                      <tr>
+                        <td class="medium-hide" style="width: 7.826086957%" width="7.826086957%">&nbsp;</td>
+                        <td valign="top" align="left" style="" class="padding">
+                          <p style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; line-height: 30px; color: #ffffff; Margin: 0px 0px 0px 0px;"> To find out more about Mercedes&#8209;Benz World or to book one of our thrilling Driving Experiences, please visit <a style="color: #ffffff; white-space: nowrap; font-weight: bold" href="https://www.mercedes-benzworld.co.uk">Mercedes&#8209;Benz&nbsp;World</a> or call <strong>0370&nbsp;400&nbsp;4000</strong>.</p>
+                        </td>
+                        <td class="medium-hide" style="width: 7.826086957%" width="7.826086957%">&nbsp;</td>
+                      </tr>
+                      <!-- !Spacer -->
+                      <tr>
+                        <td colspan="3" style="height: 22px" height="22">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--[if (gte mso 9)|(IE)]>
+                </td>
+              </tr>
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ECECEC" align="center">
+            <!-- !OUTLOOK : Wrapper -->
+            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="690" style="width:690px">
+              <tr>
+                <td align="center" valign="top" width="690" style="width:690px">
+                  <![endif]-->
+                  <table role="presentation" style="max-width: 690px;border-top: 4px solid #ececec " width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#0000000">
+                    <tbody>
+                      <!-- !Hero image-->
+                      <tr>
+                        <td valign="top" align="center">
+                          <div class="mobile-hide">
+                            <a href="https://www.mercedes-benzworld.co.uk/about-us/getting-here/"><img src="http://t.enews.mercedes-benz.co.uk/res/img/830A8DD0F0113DED032DD01187FEE764.jpg" alt="Where to find us." title="Where to find us." style="display: block; max-width: 100%; width: 690px" class="fluid" width="690" border="0"></a>
+                          </div>
+                          <!--[if !mso]><!-->
+                          <div class="mobile-show" style="display:none; max-height:0px; height:0; width:0; font-size:0; line-height:0; overflow:hidden; mso-hide:all;">
+                            <a href="https://tools.mercedes-benz.co.uk/current/mercedes-benz-world/html/homepage/getting-here/">
+                            <img src="http://t.enews.mercedes-benz.co.uk/res/img/6E010D852D9091FD2ECE2887A4997DDA.jpg" alt="Where to find us." style="width:100%; display: block;" class="fluid" width="100%" border="0">
+                            </a>
+                          </div>
+                          <!--<![endif]-->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--[if (gte mso 9)|(IE)]>
+                </td>
+              </tr>
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ECECEC" align="center">
+            <!-- !OUTLOOK : Wrapper -->
+            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="690" style="width:690px">
+              <tr>
+                <td align="center" valign="top" width="690" style="width:690px">
+                  <![endif]-->
+                  <table role="presentation" style="max-width: 690px;border-top: 4px solid #ececec " width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000">
+                    <tbody>
+                      <!-- !Spacer -->
+                      <tr>
+                        <td style="height: 25px" height="25">
+                        </td>
+                      </tr>
+                      <!-- !Social icons -->
+                      <tr>
+                        <td style="padding: 0 16px;" class="padding">
+                          <table align="left" role="presentation" style="background-color: #000000" width="" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000">
+                            <tbody>
+                              <tr>
+                                <td><a href="https://www.facebook.com/MercedesBenzUk"><img src="http://t.enews.mercedes-benz.co.uk/res/img/9977811D7FAB7A57F0E7DC505F3B79EA.png" alt="Facebook" title="Facebook" width="20" height="20" border="0"></a></td>
+                                <td width="14"></td>
+                                <td><a href="https://www.twitter.com/MercedesBenzUk"><img src="http://t.enews.mercedes-benz.co.uk/res/img/1688980CC6C5E1EE6BDE976FC969D953.png" alt="twitter" title="twitter" width="30" height="20" border="0"></a></td>
+                                <td width="14"></td>
+                                <!--
+                                  <td><a href="#"><img src="images/icon-youtube@2x.png" alt="Youtube" width="30" height="20" border="0"></a></td>
+                                  <td width="36"></td>
+                                  -->
+                                <td><a href="https://instagram.com/mercedesbenzuk"><img src="http://t.enews.mercedes-benz.co.uk/res/img/66549A2723325E8D0450CD031B83BE90.png" alt="Instagram" title="Instagram" width="20" height="20" border="0"></a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table align="right" role="presentation" style="background-color: #000000" width="" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img src="http://t.enews.mercedes-benz.co.uk/res/img/E070DD751B4482ED9364C449BB725E0E.png" alt="In partnership with continental" title="In partnership with continental" width="" height="20" border="0">
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- !Line -->
+                      <tr>
+                        <td style="padding: 25px 16px 20px 16px;" class="padding">
+                          <table role="presentation" class="full-width" width="100%" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                              <tr>
+                                <td style="height: 1px; line-height: 0; font-size: 1px;border-top:1px solid #666666" width="100%">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- !T&Cs -->
+                      <tr>
+                        <td style="padding: 0 16px;" class="padding">
+                          <p style="font-family: Arial, Helvetica, sans-serif; color: #999999; font-size: 11px; line-height: 16px; Margin: 0px 0px 0px 0px;">
+                            Black Friday offers are available from Friday 29 November – Monday 2 December 2019. Vouchers valid until Sunday 31 May 2020. Please see our website for full terms and conditions.
+                          </p>
+                        </td>
+                      </tr>
+                      <!-- !Spacer -->
+                      <tr>
+                        <td style="height: 20px" height="20">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--[if (gte mso 9)|(IE)]>
+                </td>
+              </tr>
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+ </table>
+
+</body>
+</html>
