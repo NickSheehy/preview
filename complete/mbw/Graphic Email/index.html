@@ -143,7 +143,7 @@
       }
 
       .column-2of3 {
-        float: left;
+        float: right;
         width: 50%;
       }
 
@@ -152,10 +152,35 @@
         width: 50%;
       }
 
+      .small-left {
+        float: left;
+      }
+
+      .small-right {
+        float: right;
+      }
+
+      .clear-small {
+        clear: both;
+      }
+
+      .clear-large {
+        display: none
+      }
+
       /*======== Create columns for larger screens ========*/
       .yfix {}
 
       @media screen and (min-width: 600px) {
+
+        .clear-small {
+          display: none
+        }
+
+        .clear-large {
+        display: block;
+          clear: left;
+        }
 
         .callout-text-left,
         .callout-image-left {
@@ -304,7 +329,7 @@
                   <![endif]-->
                   <!-- !Preview text -->
                   <div style="display:none;font-size:0px;color:#000000;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
-                    Kick-start the new year at Mercedes-Benz World with our new Conference and Events packages. From only £45.00 + VAT per person, this is an ideal way to motivate your team, inspire and set goals for 2020.
+
                   </div>
                   <!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
                   <div style="display: none; max-height: 0px; overflow: hidden;">
@@ -374,9 +399,8 @@
                                     <table cellpadding="0" cellborder="0" border="0" width="100%">
                                       <tbody>
                                         <tr>
-                                          <td align="center" style="padding: 20px">
-                                            <h2 style="font: bold 36px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 10px 0px 20px 0px;">12,450</h2>
-                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">square metres of outdoor space for hire</p>
+                                          <td align="center" >
+                                            <img src="images/grid-img-1@2x.jpg" alt="" style="display: block; max-width: 100%; width: 230px;min-width: 100%" class="fluid" width="230" border="0">
                                           </td>
                                         </tr>
                                       </tbody>
@@ -389,26 +413,43 @@
                                   <div class="column-2of3" style="">
                                     <table cellpadding="0" cellborder="0" border="0" width="100%">
                                       <tbody>
+                                        <!-- !Spacer -->
+                                        <tr>
+                                          <td style="height: 25px" height="25"></td>
+                                        </tr>
+                                        <!-- !Line -->
+                                        <tr>
+                                          <td align="center">
+                                            <table role="presentation" width="56" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 1px; line-height: 0; font-size: 1px;border-top:4px solid #333333" width="100%">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- !Content-->
                                         <tr>
                                           <td align="center" style="padding: 20px">
-                                            <h2 style="font: bold 36px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 10px 0px 20px 0px;">12,450</h2>
-                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">square metres of outdoor space for hire</p>
+                                            <h2 style="font: bold 60px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 20px 0px 30px 0px;letter-spacing: -2px">12,450</h2>
+                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">square metres <br />of outdoor space for&nbsp;hire</p>
                                           </td>
                                         </tr>
                                       </tbody>
                                     </table>
                                   </div>
+                                  <div class="clear-small" style=""></div>
                                   <!--[if true]>
                                 </td>
                                 <td align="center" valign="top" style="width:230px">
                                   <![endif]-->
-                                  <div class="column-3of3" style="">
+                                  <div class="column-3of3 small-right" style="">
                                     <table cellpadding="0" cellborder="0" border="0" width="100%">
                                       <tbody>
                                         <tr>
-                                          <td align="center" style="padding: 20px">
-                                            <h2 style="font: bold 36px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 10px 0px 20px 0px;">12,450</h2>
-                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">square metres of outdoor space for hire</p>
+                                          <td align="center" >
+                                            <img src="images/grid-img-2@2x.jpg" alt="" style="display: block; max-width: 100%; width: 230px;min-width: 100%" class="fluid" width="230" border="0">
                                           </td>
                                         </tr>
                                       </tbody>
@@ -420,6 +461,8 @@
                             </table>
                             <![endif]-->
 
+                            <div class="clear-large"></div>
+
                             <!-- GRID -->
                             <!--[if true]>
                             <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" style="width:690px">
@@ -429,26 +472,43 @@
                                   <div class="column-1of3" style="">
                                     <table cellpadding="0" cellborder="0" border="0" width="100%">
                                       <tbody>
+                                        <!-- !Spacer -->
+                                        <tr>
+                                          <td style="height: 25px" height="25"></td>
+                                        </tr>
+                                        <!-- !Line -->
+                                        <tr>
+                                          <td align="center">
+                                            <table role="presentation" width="56" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 1px; line-height: 0; font-size: 1px;border-top:4px solid #333333" width="100%">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- !Content-->
                                         <tr>
                                           <td align="center" style="padding: 20px">
-                                            <h2 style="font: bold 36px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 10px 0px 20px 0px;">12,450</h2>
-                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">square metres of outdoor space for hire</p>
+                                            <h2 style="font: bold 60px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 20px 0px 30px 0px;letter-spacing: -2px">1,200</h2>
+                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">guest capacity <br />for exclusive&nbsp;hire</p>
                                           </td>
                                         </tr>
                                       </tbody>
                                     </table>
                                   </div>
+                                  <div class="clear-small" style=""></div>
                                   <!--[if true]>
                                 </td>
                                 <td align="center" valign="top" style="width:230px">
                                   <![endif]-->
-                                  <div class="column-2of3" style="">
+                                  <div class="column-2of3 small-left" style="">
                                     <table cellpadding="0" cellborder="0" border="0" width="100%">
                                       <tbody>
                                         <tr>
-                                          <td align="center" style="padding: 20px">
-                                            <h2 style="font: bold 36px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 10px 0px 20px 0px;">12,450</h2>
-                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">square metres of outdoor space for hire</p>
+                                          <td align="center" >
+                                            <img src="images/grid-img-3@2x.jpg" alt="" style="display: block; max-width: 100%; width: 230px;min-width: 100%" class="fluid" width="230" border="0">
                                           </td>
                                         </tr>
                                       </tbody>
@@ -461,10 +521,104 @@
                                   <div class="column-3of3" style="">
                                     <table cellpadding="0" cellborder="0" border="0" width="100%">
                                       <tbody>
+                                        <!-- !Spacer -->
+                                        <tr>
+                                          <td style="height: 25px" height="25"></td>
+                                        </tr>
+                                        <!-- !Line -->
+                                        <tr>
+                                          <td align="center">
+                                            <table role="presentation" width="56" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 1px; line-height: 0; font-size: 1px;border-top:4px solid #333333" width="100%">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- !Content-->
                                         <tr>
                                           <td align="center" style="padding: 20px">
-                                            <h2 style="font: bold 36px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 10px 0px 20px 0px;">12,450</h2>
-                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">square metres of outdoor space for hire</p>
+                                            <h2 style="font: bold 60px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 20px 0px 30px 0px;letter-spacing: -2px">1,000</h2>
+                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">guest capacity in Exhibition&nbsp;Area</p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="clear-small" style=""></div>
+                                  <!--[if true]>
+                                </td>
+                              </tr>
+                            </table>
+                            <![endif]-->
+
+
+                            <div class="clear-large"></div>
+
+
+                            <!-- GRID -->
+                            <!--[if true]>
+                            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" style="width:690px">
+                              <tr>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-1of3 small-right" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" >
+                                            <img src="images/grid-img-4@2x.jpg" alt="" style="display: block; max-width: 100%; width: 230px;min-width: 100%" class="fluid" width="230" border="0">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <!--[if true]>
+                                </td>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-2of3" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <!-- !Spacer -->
+                                        <tr>
+                                          <td style="height: 25px" height="25"></td>
+                                        </tr>
+                                        <!-- !Line -->
+                                        <tr>
+                                          <td align="center">
+                                            <table role="presentation" width="56" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 1px; line-height: 0; font-size: 1px;border-top:4px solid #333333" width="100%">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- !Content-->
+                                        <tr>
+                                          <td align="center" style="padding: 20px">
+                                            <h2 style="font: bold 60px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 20px 0px 30px 0px;letter-spacing: -2px">450</h2>
+                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">guests seated <br />for gala&nbsp;dinners</p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="clear-small" style=""></div>
+                                  <!--[if true]>
+                                </td>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-3of3" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" >
+                                            <img src="images/grid-img-5@2x.jpg" alt="" style="display: block; max-width: 100%; width: 230px;min-width: 100%" class="fluid" width="230" border="0">
                                           </td>
                                         </tr>
                                       </tbody>
@@ -475,6 +629,355 @@
                               </tr>
                             </table>
                             <![endif]-->
+
+
+
+
+
+                            <!-- GRID -->
+                            <!--[if true]>
+                            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" style="width:690px">
+                              <tr>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-1of3" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <!-- !Spacer -->
+                                        <tr>
+                                          <td style="height: 25px" height="25"></td>
+                                        </tr>
+                                        <!-- !Line -->
+                                        <tr>
+                                          <td align="center">
+                                            <table role="presentation" width="56" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 1px; line-height: 0; font-size: 1px;border-top:4px solid #333333" width="100%">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- !Content-->
+                                        <tr>
+                                          <td align="center" style="padding: 20px">
+                                            <h2 style="font: bold 60px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 20px 0px 30px 0px;letter-spacing: -2px">350</h2>
+                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">guests seated <br />theatre&nbsp;style</p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="clear-small" style=""></div>
+                                  <!--[if true]>
+                                </td>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-2of3" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" >
+                                            <img src="images/grid-img-6@2x.jpg" alt="" style="display: block; max-width: 100%; width: 230px;min-width: 100%" class="fluid" width="230" border="0">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <!--[if true]>
+                                </td>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-3of3" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <!-- !Spacer -->
+                                        <tr>
+                                          <td style="height: 25px" height="25"></td>
+                                        </tr>
+                                        <!-- !Line -->
+                                        <tr>
+                                          <td align="center">
+                                            <table role="presentation" width="56" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 1px; line-height: 0; font-size: 1px;border-top:4px solid #333333" width="100%">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- !Content-->
+                                        <tr>
+                                          <td align="center" style="padding: 20px">
+                                            <h2 style="font: bold 60px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 20px 0px 30px 0px;letter-spacing: -2px">160</h2>
+                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">guests seated <br />cabaret&nbsp;style</p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="clear-small" style=""></div>
+                                  <!--[if true]>
+                                </td>
+                              </tr>
+                            </table>
+                            <![endif]-->
+
+
+                            <div class="clear-large"></div>
+
+                            <!-- GRID -->
+                            <!--[if true]>
+                            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" style="width:690px">
+                              <tr>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-1of3" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" >
+                                            <img src="images/grid-img-7@2x.jpg" alt="" style="display: block; max-width: 100%; width: 230px;min-width: 100%" class="fluid" width="230" border="0">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <!--[if true]>
+                                </td>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-2of3" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <!-- !Spacer -->
+                                        <tr>
+                                          <td style="height: 25px" height="25"></td>
+                                        </tr>
+                                        <!-- !Line -->
+                                        <tr>
+                                          <td align="center">
+                                            <table role="presentation" width="56" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 1px; line-height: 0; font-size: 1px;border-top:4px solid #333333" width="100%">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- !Content-->
+                                        <tr>
+                                          <td align="center" style="padding: 20px">
+                                            <h2 style="font: bold 60px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 20px 0px 30px 0px;letter-spacing: -2px">90</h2>
+                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">guests per hour <br />Simulator&nbsp;Zone</p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="clear-small" style=""></div>
+                                  <!--[if true]>
+                                </td>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-3of3 small-right" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" >
+                                            <img src="images/grid-img-8@2x.jpg" alt="" style="display: block; max-width: 100%; width: 230px;min-width: 100%" class="fluid" width="230" border="0">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <!--[if true]>
+                                </td>
+                              </tr>
+                            </table>
+                            <![endif]-->
+
+
+                            <div class="clear-large"></div>
+
+
+ <!-- GRID -->
+                            <!--[if true]>
+                            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" style="width:690px">
+                              <tr>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-1of3" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <!-- !Spacer -->
+                                        <tr>
+                                          <td style="height: 25px" height="25"></td>
+                                        </tr>
+                                        <!-- !Line -->
+                                        <tr>
+                                          <td align="center">
+                                            <table role="presentation" width="56" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 1px; line-height: 0; font-size: 1px;border-top:4px solid #333333" width="100%">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- !Content-->
+                                        <tr>
+                                          <td align="center" style="padding: 20px">
+                                            <h2 style="font: bold 60px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 20px 0px 30px 0px;letter-spacing: -2px">88</h2>
+                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">seat showcase<br />cinema</p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="clear-small" style=""></div>
+                                  <!--[if true]>
+                                </td>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-2of3 small-left" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" >
+                                            <img src="images/grid-img-9@2x.jpg" alt="" style="display: block; max-width: 100%; width: 230px;min-width: 100%" class="fluid" width="230" border="0">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <!--[if true]>
+                                </td>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-3of3" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <!-- !Spacer -->
+                                        <tr>
+                                          <td style="height: 25px" height="25"></td>
+                                        </tr>
+                                        <!-- !Line -->
+                                        <tr>
+                                          <td align="center">
+                                            <table role="presentation" width="56" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 1px; line-height: 0; font-size: 1px;border-top:4px solid #333333" width="100%">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- !Content-->
+                                        <tr>
+                                          <td align="center" style="padding: 20px">
+                                            <h2 style="font: bold 60px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 20px 0px 30px 0px;letter-spacing: -2px">80</h2>
+                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">seated private restaurant <br />with track&nbsp;views</p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="clear-small" style=""></div>
+                                  <!--[if true]>
+                                </td>
+                              </tr>
+                            </table>
+                            <![endif]-->
+
+
+                            <div class="clear-large"></div>
+
+
+                            <!-- GRID -->
+                            <!--[if true]>
+                            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" style="width:690px">
+                              <tr>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-1of3 small-right" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" >
+                                            <img src="images/grid-img-10@2x.jpg" alt="" style="display: block; max-width: 100%; width: 230px;min-width: 100%" class="fluid" width="230" border="0">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <!--[if true]>
+                                </td>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-2of3" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <!-- !Spacer -->
+                                        <tr>
+                                          <td style="height: 25px" height="25"></td>
+                                        </tr>
+                                        <!-- !Line -->
+                                        <tr>
+                                          <td align="center">
+                                            <table role="presentation" width="56" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 1px; line-height: 0; font-size: 1px;border-top:4px solid #333333" width="100%">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- !Content-->
+                                        <tr>
+                                          <td align="center" style="padding: 20px">
+                                            <h2 style="font: bold 60px/20px Arial, Helvetica, sans-serif; color: #ffffff;   Margin: 20px 0px 30px 0px;letter-spacing: -2px">ONE</h2>
+                                            <p style="font: 14px/20px Arial, Helvetica, sans-serif; color: #ffffff; Margin: 10px 0px 20px 0px;">unique venue</p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="clear-small" style=""></div>
+                                  <!--[if true]>
+                                </td>
+                                <td align="center" valign="top" style="width:230px">
+                                  <![endif]-->
+                                  <div class="column-3of3" style="">
+                                    <table cellpadding="0" cellborder="0" border="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" >
+                                            <img src="images/grid-img-11@2x.jpg" alt="" style="display: block; max-width: 100%; width: 230px;min-width: 100%" class="fluid" width="230" border="0">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <!--[if true]>
+                                </td>
+                              </tr>
+                            </table>
+                            <![endif]-->
+
+
+                            <div class="clear-large"></div>
+
+
+
+
+
                           </td>
                         </tr>
                         <!-- !Spacer -->
@@ -504,22 +1007,16 @@
                   <!-- !Preview text -->
                   <table role="presentation" style="max-width: 690px; border-top: 4px solid #ececec" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
                     <tbody>
-                      <!-- !Spacer -->
-                      <tr>
-                        <td colspan="3" style="height: 24px"></td>
-                      </tr>
+
                       <!-- !Columns -->
                       <tr>
                         <td class="medium-hide" style="width: 7.826086957%"></td>
-                        <td valign="top" align="left" style="" class="padding">
+                        <td valign="top" align="left" style="padding:22px 0 24px 0" class="padding">
                           <p style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; line-height: 30px; color: #333333; Margin: 0px 0px 0px 0px;"> To book your conference, meeting or event, <br class="hide-for-medium" />please visit <a style="color: #00ADEF; white-space: nowrap" href="https://www.mercedes-benzworld.co.uk">Mercedes&#8209;Benz&nbsp;World</a>.</p>
                         </td>
                         <td class="medium-hide" style="width: 7.826086957%"></td>
                       </tr>
-                      <!-- !Spacer -->
-                      <tr>
-                        <td colspan="3" style="height: 22px"></td>
-                      </tr>
+
                     </tbody>
                   </table>
                   <!--[if true]>
@@ -585,13 +1082,10 @@
                   <!-- !Preview text -->
                   <table role="presentation" style="max-width: 690px;border-top: 4px solid #ececec " width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000">
                     <tbody>
-                      <!-- !Spacer -->
-                      <tr>
-                        <td style="height: 25px"></td>
-                      </tr>
+
                       <!-- !Social icons -->
                       <tr>
-                        <td style="padding: 0 16px;" class="padding">
+                        <td style="padding: 25px 16px;" class="padding">
                           <table align="left" role="presentation" style="background-color: #000000" width="" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000">
                             <tbody>
                               <tr>
@@ -620,7 +1114,7 @@
                       </tr>
                       <!-- !Line -->
                       <tr>
-                        <td style="padding: 25px 16px 20px 16px;" class="padding">
+                        <td style="padding: 5px 16px 0px 16px;" class="padding">
                           <table role="presentation" class="full-width" width="100%" cellspacing="0" cellpadding="0" border="0">
                             <tbody>
                               <tr>
@@ -632,7 +1126,7 @@
                       </tr>
                       <!-- !T&Cs -->
                       <tr>
-                        <td style="padding: 0 16px;" class="padding">
+                        <td style="padding: 20px 16px;" class="padding">
                           <p style="font-family: Arial, Helvetica, sans-serif; color: #999999; font-size: 11px; line-height: 16px; Margin: 0px 0px 15px 0px;">
                             *Subject to availability. Minimum of 200 guests.
                           </p>
@@ -641,10 +1135,7 @@
                           </p>
                         </td>
                       </tr>
-                      <!-- !Spacer -->
-                      <tr>
-                        <td style="height: 20px"></td>
-                      </tr>
+
                     </tbody>
                   </table>
                   <!--[if true]>
@@ -673,7 +1164,7 @@
                       <!-- !Legal -->
                       <tr>
                         <td style="padding: 10px 16px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666;" class="padding" valign="top" align="left">
-                          ©&nbsp;2019 Daimler AG &nbsp;|&nbsp; <a href="https://www.mercedes-benz.co.uk/passengercars/mercedes-benz-cars/privacy-policy/privacy.html" style="color: #666666; text-decoration: none;">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://www.mercedes-benz.co.uk/passengercars/content-pool/tool-pages/footer-legal-links/legal-notice.html" style="color: #666666; text-decoration: none;">Legal Notice</a> &nbsp;|&nbsp; <a href="https://$UNSUB$" style="color: #666666; text-decoration: none;">Unsubscribe</a>
+                          ©&nbsp;2020 Daimler AG &nbsp;|&nbsp; <a href="https://www.mercedes-benz.co.uk/passengercars/mercedes-benz-cars/privacy-policy/privacy.html" style="color: #666666; text-decoration: none;">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://www.mercedes-benz.co.uk/passengercars/content-pool/tool-pages/footer-legal-links/legal-notice.html" style="color: #666666; text-decoration: none;">Legal Notice</a> &nbsp;|&nbsp; <a href="https://$UNSUB$" style="color: #666666; text-decoration: none;">Unsubscribe</a>
                         </td>
                       </tr>
                     </tbody>
