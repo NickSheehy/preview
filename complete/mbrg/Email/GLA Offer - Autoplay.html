@@ -426,12 +426,19 @@
 
                           <!-- video section -->
                           <div class="video-wrapper" style="display: none">
-
-                              <video muted playsinline loop controls poster="https://i.emlfiles.com/cmpimg/7/8/1/5/8/files/11659828_herostatic2x.jpg" src="http://www.completecreative.net/mbrg/GLA_VW_V05_2.mp4" width="690" style="display: block; width: 690px; max-width: 100%;" class="full-width">
+                            <!-- Clients that support autoplay -->
+                            <div class="mobile-hide">
+                              <video muted playsinline loop autoplay controls poster="https://i.emlfiles.com/cmpimg/7/8/1/5/8/files/11659828_herostatic2x.jpg" src="http://www.completecreative.net/mbrg/GLA_VW_V05_2.mp4" width="690" style="display: block; width: 690px; max-width: 100%;" class="full-width">
                                 <!-- fallback 1 -->
                                 <a href="https://www.mercedes-benzretailgroup.co.uk/"><img src="https://i.emlfiles.com/cmpimg/7/8/1/5/8/files/11659769_heroanimated.gif" style="display: block; width: 690px; max-width: 100%;" class="full-width" width="690" border="0"></a>
                               </video>
-
+                            </div>
+                            <!-- Autoplay on mobile -->
+                            <!--[if !mso]><!-->
+                            <div class="mobile-show" style="display:none; max-height:0px; height:0; width:0; font-size:0; line-height:0; overflow:hidden; mso-hide:all;">
+                              <img src="http://www.completecreative.net/mbrg/GLA_VW_V05_2.mp4" alt="Video" style="width:100%; display: block;" class="fluid" width="100%" border="0">
+                            </div>
+                            <!--<![endif]-->
                           </div>
 
                           <!-- fallback section -->
