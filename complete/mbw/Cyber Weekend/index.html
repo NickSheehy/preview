@@ -340,11 +340,24 @@
         display: none !important;
       }
     </style>
-    <!--[if gt mso 15]>
-    <style type="text/css" media="all">
-      /* Outlook 2016 Height Fix */
-      table, tr, td {border-collapse: collapse;}
-      tr { font-size:0px; line-height:0px; border-collapse: collapse; }
+    <!--[if mso]>
+    <style type="text/css">
+      body, table, td {
+      line-height:1 !important;
+      }
+      body,table,td {
+      -ms-text-size:100%;
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+      margin: 0 auto !important;
+      }
+    </style>
+    <![endif]-->
+    <!--[if mso]>
+    <style>
+      table {
+      padding: 0 !important;
+      }
     </style>
     <![endif]-->
   </head>
