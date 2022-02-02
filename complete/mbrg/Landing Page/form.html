@@ -14,8 +14,9 @@
     <style type="text/css" media="screen">
       body {
         background-color: black;
-        color: #fff;
+        color: #333;
         font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
       }
 
       .page {
@@ -38,16 +39,16 @@
       }
 
       .mb-star {
-        padding: 22px 53px;
+        padding: 20px;
       }
 
       .mb-word-mark {
-        padding: 22px 32px;
+        padding: 20px;
       }
 
       .form-container {
         background-color: #ffffff;
-        padding: 22px 0 0;
+        padding: 40px 20px ;
       }
 
       .legal-container {
@@ -59,8 +60,7 @@
         color: #666666;
       }
 
-      @media screen and (max-device-width: 360px),
-      screen and (max-width: 360px) {
+      @media screen and (max-width: 360px) {
         .mb-star {
           height: 40px !important;
           width: 40px !important;
@@ -71,6 +71,21 @@
           height: 40px !important;
           width: auto !important;
           padding: 14px 25px 14px 0 !important;
+        }
+      }
+
+      @media screen and (min-width: 400px) {
+        .form-container {
+          padding: 10%;
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+        .mb-star {
+          padding: 22px 53px;
+        }
+
+        .mb-word-mark {
+          padding: 22px 32px;
         }
       }
     </style>
@@ -96,6 +111,15 @@
 
 
 
+      <!-- !IMAGE -->
+      <div class="image-container">
+        <img src="images/hero@2x.jpg" alt="Mercedes-Benz" style="display: block; max-width: 100%; width: 100%;" width="690" border="0">
+      </div>
+      <!-- !========== -->
+
+
+
+
       <!-- !CONTENT -->
       <div class="form-container">
         <p>FORM</p>
@@ -107,7 +131,7 @@
 
       <!-- !FOOTER : Legal -->
       <div class="legal-container">
-        ©&nbsp;2022 Mercedes&#8209;Benz Group AG &nbsp;|&nbsp; <a href="https://www.mercedes-benzretailgroup.co.uk/site/privacy-policy/" style="color: #666666; text-decoration: none;">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://www.mercedes-benzretailgroup.co.uk/site/legal-notice/" style="color: #666666; text-decoration: none;">Legal Notice</a>
+        ©&nbsp;2022 Mercedes&#8209;Benz Group AG &nbsp;|&nbsp; <a href="https://www.mercedes-benzretailgroup.co.uk/site/privacy-policy/" style="color: #666666; text-decoration: none;">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://www.mercedes-benzretailgroup.co.uk/site/legal-notice/" style="color: #666666; text-decoration: none;">Legal&nbsp;Notice</a>
       </div>
       <!-- !========== -->
 
