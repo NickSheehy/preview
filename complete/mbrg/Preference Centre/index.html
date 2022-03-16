@@ -64,7 +64,7 @@
 
 
 
-  <site-header class="site-header fixed-wrapper">
+  <site-header class="site-header fixedwrapper">
     <header class="site-header__wrapper" data-site-header="">
       <div class="site-header__container">
         <div class="site-header__home">
@@ -134,7 +134,7 @@
                     form-component__field--type--short-answer">
                   <label for="input-details-firstname" class=" form-field__label label">
                     First Name </label>
-                  <div class="-wrapper">
+                  <div class="wrapper">
                     <input type="text" name="input-details-firstname" id="input-details-firstname" data-umb="input-details-firstname" class="text form-field__input form-field__input--text input" value="" maxlength="500" placeholder="Enter first name" data-val="true" data-val-required="Please provide a value for First Name">
                     <span class="field-validation-valid" data-valmsg-for="input-details-firstname" data-valmsg-replace="true"></span>
                   </div>
@@ -147,7 +147,7 @@
                     form-component__field--type--short-answer">
                   <label for="input-details-surname" class=" form-field__label label">
                     Surname </label>
-                  <div class="-wrapper">
+                  <div class="wrapper">
                     <input type="text" name="input-details-surname" id="input-details-surname" data-umb="input-details-surname" class="text form-field__input form-field__input--text input" value="" maxlength="500" placeholder="Enter surname" data-val="true" data-val-required="Please provide a value for Surname">
                     <span class="field-validation-valid" data-valmsg-for="input-details-surname" data-valmsg-replace="true"></span>
                   </div>
@@ -160,7 +160,7 @@
                     form-component__field--type--short-answer">
                   <label for="input-details-email" class=" form-field__label label">
                     Email Address </label>
-                  <div class="-wrapper">
+                  <div class="wrapper">
                     <input type="text" name="input-details-email" id="input-details-email" data-umb="input-details-email" class="text form-field__input form-field__input--text input" value="" maxlength="500" placeholder="Enter email address" data-val="true" data-val-required="Please provide a value for Email Address" data-val-regex="Please provide a valid value for Email Address" data-val-regex-pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+">
                     <span class="field-validation-valid" data-valmsg-for="input-details-email" data-valmsg-replace="true"></span>
                   </div>
@@ -171,7 +171,7 @@
                     form-field--type--short-answer
                     form-component__field
                     form-component__field--type--short-answer">
-                  <div class="-wrapper">
+                  <div class="wrapper">
                     <div class="rich-text">
                       <h4>Have your details changed?</h4>
 
@@ -190,7 +190,7 @@
                     form-field--type--contact-permissions
                     form-component__field
                     form-component__field--type--contact-permissions">
-                  <div class="-wrapper" style="margin-top: 3.75rem">
+                  <div class="wrapper" style="margin-top: 3.75rem">
                     <div class="form-contact-permissions">
                       <div class="rich-text rich-text--no-preline">
                         <div class="form-component__heading rich-text">
@@ -202,7 +202,7 @@
                       <div class="form-multi-checkbox mt-30" id="" data-umb="">
                         <div class="form-contact-permissions__item form-multi-checkbox__item">
                           <div class="checked-item form-checkbox">
-                            <input type="checkbox" class=" checked-item__input" name="input-pref-email" id="input-pref-email" data-umb="input-pref-email" value="Email">
+                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-email" id="input-pref-email" data-umb="input-pref-email" value="Email" onclick="myFunction()">
                             <label class="checked-item__label" for="input-pref-email">
                               <span class="checked-item__icon form-checkbox__icon">
                                 <svg class="icon-tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" width="12" height="10">
@@ -215,7 +215,7 @@
                         </div>
                         <div class="form-contact-permissions__item form-multi-checkbox__item">
                           <div class="checked-item form-checkbox">
-                            <input type="checkbox" class=" checked-item__input" name="input-pref-tel" id="input-pref-tel" data-umb="input-pref-tel" value="Telephone">
+                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-tel" id="input-pref-tel" data-umb="input-pref-tel" value="Telephone" onclick="myFunction()">
                             <label class="checked-item__label" for="input-pref-tel">
                               <span class="checked-item__icon form-checkbox__icon">
                                 <svg class="icon-tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" width="12" height="10">
@@ -228,7 +228,7 @@
                         </div>
                         <div class="form-contact-permissions__item form-multi-checkbox__item">
                           <div class="checked-item form-checkbox">
-                            <input type="checkbox" class=" checked-item__input" name="input-pref-sms" id="input-pref-sms" data-umb="input-pref-sms" value="SMS">
+                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-sms" id="input-pref-sms" data-umb="input-pref-sms" value="SMS" onclick="myFunction()">
                             <label class="checked-item__label" for="input-pref-sms">
                               <span class="checked-item__icon form-checkbox__icon">
                                 <svg class="icon-tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" width="12" height="10">
@@ -241,7 +241,7 @@
                         </div>
                         <div class="form-contact-permissions__item form-multi-checkbox__item">
                           <div class="checked-item form-checkbox">
-                            <input type="checkbox" class=" checked-item__input" name="input-pref-post" id="input-pref-post" data-umb="input-pref-post" value="Post">
+                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-post" id="input-pref-post" data-umb="input-pref-post" value="Post" onclick="myFunction()">
                             <label class="checked-item__label" for="input-pref-post">
                               <span class="checked-item__icon form-checkbox__icon">
                                 <svg class="icon-tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" width="12" height="10">
@@ -257,7 +257,7 @@
                   </div>
 
 
-                  <div class="-wrapper" style="margin-top: 3.75rem">
+                  <div class="wrapper personalise" style="margin-top: 3.75rem; outline: 1px solid red">
                     <div class="form-contact-permissions">
                       <div class="rich-text rich-text--no-preline">
                         <div class="form-component__heading rich-text">
@@ -372,6 +372,14 @@
                     </div>
                     <span class="field-validation-valid" data-valmsg-for="a1dcdc5e-c3be-469f-8ae1-e1c94d89fe08" data-valmsg-replace="true"></span>
                   </div>
+                  <!-- Outlined -->
+
+
+
+
+
+
+
                 </div>
               </fieldset>
 
@@ -396,7 +404,7 @@
                 form-field--type--contact-permissions
                 form-component__field
                 form-component__field--type--contact-permissions">
-              <div class="-wrapper">
+              <div class="wrapper">
                 <div class="information-use collapse-groups">
                   <div class="rich-text rich-text--no-preline">
                     <div class="collapse-group">
@@ -509,6 +517,27 @@
       });
     }
   </script>
+
+
+  <script>
+    function myFunction() {
+      // Get the checkbox
+      var checkBox = document.getElementsByClassName("input-pref");
+      // Get the output text
+      var text = document.getElementsByClassName("personalise");
+
+      // If the checkbox is checked, display the output text
+      if (checkBox.checked == true){
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+    </script>
+
+
+
+
 
 <!--  <script src="./Signup – Mercedes-Benz World_files/umbracoforms.js" defer="defer"></script>-->
   <link rel="stylesheet" href="css/forms.css">
