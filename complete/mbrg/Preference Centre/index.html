@@ -202,7 +202,7 @@
                       <div class="form-multi-checkbox mt-30" id="" data-umb="">
                         <div class="form-contact-permissions__item form-multi-checkbox__item">
                           <div class="checked-item form-checkbox">
-                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-email" id="input-pref-email" data-umb="input-pref-email" value="Email" onclick="myFunction()">
+                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-email" id="input-pref-email" data-umb="input-pref-email" value="Email" >
                             <label class="checked-item__label" for="input-pref-email">
                               <span class="checked-item__icon form-checkbox__icon">
                                 <svg class="icon-tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" width="12" height="10">
@@ -215,7 +215,7 @@
                         </div>
                         <div class="form-contact-permissions__item form-multi-checkbox__item">
                           <div class="checked-item form-checkbox">
-                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-tel" id="input-pref-tel" data-umb="input-pref-tel" value="Telephone" onclick="myFunction()">
+                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-tel" id="input-pref-tel" data-umb="input-pref-tel" value="Telephone" >
                             <label class="checked-item__label" for="input-pref-tel">
                               <span class="checked-item__icon form-checkbox__icon">
                                 <svg class="icon-tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" width="12" height="10">
@@ -228,7 +228,7 @@
                         </div>
                         <div class="form-contact-permissions__item form-multi-checkbox__item">
                           <div class="checked-item form-checkbox">
-                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-sms" id="input-pref-sms" data-umb="input-pref-sms" value="SMS" onclick="myFunction()">
+                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-sms" id="input-pref-sms" data-umb="input-pref-sms" value="SMS" >
                             <label class="checked-item__label" for="input-pref-sms">
                               <span class="checked-item__icon form-checkbox__icon">
                                 <svg class="icon-tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" width="12" height="10">
@@ -241,7 +241,7 @@
                         </div>
                         <div class="form-contact-permissions__item form-multi-checkbox__item">
                           <div class="checked-item form-checkbox">
-                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-post" id="input-pref-post" data-umb="input-pref-post" value="Post" onclick="myFunction()">
+                            <input type="checkbox" class=" checked-item__input input-pref" name="input-pref-post" id="input-pref-post" data-umb="input-pref-post" value="Post" >
                             <label class="checked-item__label" for="input-pref-post">
                               <span class="checked-item__icon form-checkbox__icon">
                                 <svg class="icon-tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" width="12" height="10">
@@ -257,7 +257,7 @@
                   </div>
 
 
-                  <div class="wrapper personalise" style="display:none;margin-top: 3.75rem; outline: 1px solid red">
+                  <div id="personalise" class="wrapper personalise" style="display:none;margin-top: 3.75rem; outline: 1px solid red">
                     <div class="form-contact-permissions">
                       <div class="rich-text rich-text--no-preline">
                         <div class="form-component__heading rich-text">
@@ -519,22 +519,44 @@
   </script>
 
 
+<!--
   <script>
+    function myFunction() {
+      var checkBox = document.getElementById("input-pref-email");
+      var text = document.getElementById("personalise");
+      if (checkBox.checked == true) {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+  </script>
+-->
 
 
-function myFunction() {
-  var checkBox = document.getElementById("input-pref-email");
-  var text = document.getElementsByClassName("personalise");
-  if (checkBox.checked == true){
-    text.style.display = "block";
-  } else {
-     text.style.display = "none";
-  }
-}
+  <script>
+    // Select all checkboxes with the name 'settings' using querySelectorAll.
+    var checkboxes = document.querySelectorAll("input[type=checkbox][class=input-pref]");
+    let enabledSettings = []
 
+    /*
+    For IE11 support, replace arrow functions with normal functions and
+    use a polyfill for Array.forEach:
+    https://vanillajstoolkit.com/polyfills/arrayforeach/
+    */
 
+    // Use Array.forEach to add an event listener to each checkbox.
+    checkboxes.forEach(function(checkbox) {
+      checkbox.addEventListener('change', function() {
+        enabledSettings =
+          Array.from(checkboxes) // Convert checkboxes to an array to use filter and map.
+          .filter(i => i.checked) // Use Array.filter to remove unchecked checkboxes.
+          .map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
 
-    </script>
+        console.log(enabledSettings)
+      })
+    });
+  </script>
 
 
 
