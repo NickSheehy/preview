@@ -257,7 +257,7 @@
                   </div>
 
 
-                  <div id="personalise" class="wrapper personalise" style="display:none;margin-top: 3.75rem; outline: 1px solid red">
+                  <div id="personalise" class="wrapper content personalise" style="margin-top: 3.75rem;">
                     <div class="form-contact-permissions">
                       <div class="rich-text rich-text--no-preline">
                         <div class="form-component__heading rich-text">
@@ -536,7 +536,7 @@
 
   <script>
     // Select all checkboxes with the name 'settings' using querySelectorAll.
-    var checkboxes = document.querySelectorAll("input[type=checkbox][class=input-pref]");
+    var checkboxes = document.querySelectorAll("input.input-pref");
     let enabledSettings = []
 
     /*
@@ -553,7 +553,21 @@
           .filter(i => i.checked) // Use Array.filter to remove unchecked checkboxes.
           .map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
 
-        console.log(enabledSettings)
+        //console.log(enabledSettings)
+
+
+        var hide = document.getElementById("personalise");
+
+        if (enabledSettings.length === 0) {
+          //console.log("yes")
+          hide.style.maxHeight = null;
+
+        } else {
+          //console.log("no")
+          hide.style.maxHeight = hide.scrollHeight + "px";
+
+        }
+
       })
     });
   </script>
