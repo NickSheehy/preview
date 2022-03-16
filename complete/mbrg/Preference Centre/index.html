@@ -257,7 +257,7 @@
                   </div>
 
 
-                  <div class="wrapper personalise" style="margin-top: 3.75rem; outline: 1px solid red">
+                  <div class="wrapper content personalise" style="margin-top: 3.75rem; outline: 1px solid red">
                     <div class="form-contact-permissions">
                       <div class="rich-text rich-text--no-preline">
                         <div class="form-component__heading rich-text">
@@ -520,19 +520,24 @@
 
 
   <script>
-    function myFunction() {
-      // Get the checkbox
-      var checkBox = document.getElementsByClassName("input-pref");
-      // Get the output text
-      var text = document.getElementsByClassName("personalise");
 
-      // If the checkbox is checked, display the output text
-      if (checkBox.checked == true){
-        text.style.display = "block";
-      } else {
-        text.style.display = "none";
-      }
-    }
+
+      var checkBox = document.getElementsByClassName("input-pref");
+      var i;
+
+      for (i = 0; i < checkBox.length; i++) {
+      checkBox[i].addEventListener("change", function() {
+        this.classList.toggle("active");
+        var content = document.getElementsByClassName("personalise");
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+
+
+
     </script>
 
 
