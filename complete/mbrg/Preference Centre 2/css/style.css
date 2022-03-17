@@ -1,0 +1,83 @@
+html {
+  background-color: black;
+}
+
+.collapse-groups {
+  margin-top: 2.5rem;
+}
+
+.collapse-group {
+  position: relative;
+  padding: 1em;
+  border-top: 1px solid;
+}
+
+.collapse-group h3 {
+  margin: 0
+}
+
+.collapse-group p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.collapse-group p:first-of-type {
+  margin-top: 1em
+}
+
+.collapsible {
+  cursor: pointer;
+}
+.collapsible:after {
+  content: "";
+  cursor: pointer;
+  float: right;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 50%;
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 0;
+  top: .55em;
+  background-image: url("../images/Arrow@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 6px;
+  transform: rotate(90deg);
+}
+
+.collapsible.active:after {
+  transform: rotate(-90deg);
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.banner {
+  padding-bottom: 4rem;
+  padding-top: 6.25rem;
+}
+
+.banner img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner {
+    padding-top: 0;
+  }
+}
+
+.button img {
+  margin-left: 10px
+}
+
+.fixedwrapper {
+  position: fixed;
+}
