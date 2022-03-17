@@ -77,3 +77,7 @@ html {
 .button img {
   margin-left: 10px
 }
+
+.fixedwrapper {
+  position: fixed;
+}
