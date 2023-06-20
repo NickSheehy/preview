@@ -113,88 +113,28 @@
       width: 100% !important;
       height: auto !important;
       }
+
+
+
       /* Hide for all clients that support CSS in head */
       .yfix {}
       .no-bg-show {
       display: none !important;
       }
-      @media screen {
-      @font-face{
-      font-family:'MBCorpoATitleCond-Regular-Web';
-      font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.20.0/fonts/WOFF2/MBCorpoATitleCond-Regular-Web.woff2")
-      format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.20.0/fonts/WOFF/MBCorpoATitleCond-Regular-Web.woff") format("woff")
-      }
-      @font-face{
-      font-family:'MBCorpoSText-Regular-Web';
-      font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.20.0/fonts/WOFF2/MBCorpoSText-Regular-Web.woff2")
-      format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.20.0/fonts/WOFF/MBCorpoSText-Regular-Web.woff") format("woff")
-      font-weight: normal; font-style: normal;
-      }
-      }
+
       /*======== Create columns for larger screens ========*/
       .yfix {}
       @media screen and (max-width: 600px) {
-      .panel-left, .panel-right {
-      float: none !important;
-      width: 100% !important;
+      .column-1 {
+        width: 100% !important;
+        float: none !important;
+      }
+      .column-2 {
+        width: 100% !important;
+        float: none !important;
       }
       }
-      @media screen and (min-width: 600px) {
-      .callout-text-left,
-      .callout-image-left {
-      float: left;
-      width: 50%;
-      }
-      .callout-image-right,
-      .callout-text-right {
-      float: right;
-      width: 50%;
-      }
-      .column-1of2 {
-      float: left;
-      width: 50%;
-      }
-      .column-2of2 {
-      float: left;
-      width: 50%;
-      }
-      .column-1of3 {
-      float: left;
-      width: 33.228840125%;
-      }
-      .column-2of3 {
-      float: left;
-      width: 33.228840125%;
-      }
-      .column-3of3 {
-      float: left;
-      width: 33.228840125%;
-      }
-      .column-1of4 {
-      float: left;
-      width: 25%;
-      }
-      .column-2of4 {
-      float: left;
-      width: 25%;
-      }
-      .column-3of4 {
-      float: left;
-      width: 25%;
-      }
-      .column-4of4 {
-      float: left;
-      width: 33.228840125%;
-      }
-      .left-4col {
-      width: 29.553264605%;
-      float: left !important;
-      }
-      .right-8col {
-      width: 65.635738832%;
-      float: right !important;
-      }
-      }
+
       /*======== Mobile-first approach. Create columns for larger screens ========*/
       .yfix {}
       @media screen and (max-width: 600px) {
@@ -212,8 +152,10 @@
       .fluid {
       max-width: 100% !important;
       height: auto !important;
+        width: 100%;
       }
       }
+
       @media screen and (max-width: 600px) {
       .padding {
       padding-left: 30px !important;
@@ -238,6 +180,7 @@
       width: 100% !important;
       }
       }
+
       @media screen and (max-width: 600px) {
       .column-1,
       .column-2,
@@ -246,12 +189,14 @@
       width: 100% !important;
       }
       }
+
       @media screen and (max-width: 599px) {
       .pod-padding {
       padding-left: 10% !important;
       padding-right: 10% !important;
       }
       }
+
       @media screen and (max-width: 400px) {
       .padding {
       padding-left: 20px !important;
@@ -275,34 +220,27 @@
       font: 16px/1.785714286 'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif !important;
       }
       }
-      /*======== Video ========*/
-      .yfix {}
-      .video-wrapper {
-      display: none;
+
+
+    </style>
+
+    <style type="text/css" media="all">
+    @media screen {
+      @font-face{
+      font-family:'MBCorpoATitleCond-Regular-Web';
+      font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.20.0/fonts/WOFF2/MBCorpoATitleCond-Regular-Web.woff2")
+      format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.20.0/fonts/WOFF/MBCorpoATitleCond-Regular-Web.woff") format("woff")
       }
-      @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width:1024px) {
-      .video-wrapper {
-      display: block !important;
+      @font-face{
+      font-family:'MBCorpoSText-Regular-Web';
+      font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.20.0/fonts/WOFF2/MBCorpoSText-Regular-Web.woff2")
+      format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.20.0/fonts/WOFF/MBCorpoSText-Regular-Web.woff") format("woff")
+      font-weight: normal; font-style: normal;
       }
-      .video-fallback {
-      display: none !important;
-      }
-      }
-      @supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
-      div[class^=video-wrapper] {
-      display: block !important;
-      }
-      div[class^=video-fallback] {
-      display: none !important;
-      }
-      }
-      #MessageViewBody .video-wrapper {
-      display: block !important;
-      }
-      #MessageViewBody .video-fallback {
-      display: none !important;
       }
     </style>
+
+
     <!--[if gt mso 15]>
     <style type="text/css" media="all">
       /* Outlook 2016 Height Fix */
@@ -465,17 +403,21 @@
                                 <div class="column-1" style="text-align: left; float: left; width: 50%;">
                                   <table role="presentation" style="" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#00000">
                                     <tr>
-                                      <td width="50%" align="center" style="padding: 22px 0">
+                                      <td valign="top" width="50%" align="center" style="padding: 22px 0">
                                         <a href="https://www.mercedes-benzworld.co.uk/visit/" style="text-decoration: none">
                                           <img src="https://mercedes-mid-prod3-res.adobe-campaign.com/res/img/B0293C1B92F358D43855D3320C856395.png" alt="" width="38" border="0">
-                                          <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">Plan your vist</h3>
                                         </a>
+                                        <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; Margin: 0 0 0px; line-height:22px;">
+                                          <a href="https://www.mercedes-benzworld.co.uk/visit/" style="text-decoration: none; color:#ffffff;">Plan your vist</a>
+                                        </h3>
                                       </td>
-                                      <td width="50%" align="center" style="padding: 22px 0">
+                                      <td valign="top" width="50%" align="center" style="padding: 22px 0">
                                         <a href="https://www.mercedes-benzworld.co.uk/discover/" style="text-decoration: none">
                                           <img src="https://mercedes-mid-prod3-res.adobe-campaign.com/res/img/3C8E8FF419DB33EB558E54CA37D9FFCF.png" alt="" width="38" border="0">
-                                          <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">Discover</h3>
                                         </a>
+                                        <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">
+                                          <a href="https://www.mercedes-benzworld.co.uk/discover/" style="text-decoration: none; color:#ffffff; ">Discover</a>
+                                        </h3>
                                       </td>
                                     </tr>
                                   </table>
@@ -487,17 +429,21 @@
                                 <div class="column-2" style="text-align: left; float: right; width: 50%; ">
                                   <table role="presentation" style="" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000">
                                     <tr>
-                                      <td width="50%" align="center" style="padding: 22px 0">
+                                      <td valign="top" width="50%" align="center" style="padding: 22px 0">
                                         <a href="https://www.mercedes-benzworld.co.uk/driving-experiences/" style="text-decoration: none">
                                           <img src="https://mercedes-mid-prod3-res.adobe-campaign.com/res/img/2CA286C16E7B0CA3EA6ED9D06D52BB4C.png" alt="" width="38" border="0">
-                                          <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">Driving experiences</h3>
                                         </a>
+                                        <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">
+                                          <a href="https://www.mercedes-benzworld.co.uk/driving-experiences/" style="text-decoration: none; color:#ffffff; ">Driving experiences</a>
+                                        </h3>
                                       </td>
-                                      <td width="50%" align="center" style="padding: 22px 0">
+                                      <td valign="top" width="50%" align="center" style="padding: 22px 0">
                                         <a href="https://www.mercedes-benzworld.co.uk/contact-us/" style="text-decoration: none">
                                           <img src="https://mercedes-mid-prod3-res.adobe-campaign.com/res/img/D5EA2574CF913B6E81F36E67FE76C426.png" alt="" width="38" border="0">
-                                          <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">How to find us</h3>
                                         </a>
+                                        <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">
+                                          <a href="https://www.mercedes-benzworld.co.uk/contact-us/" style="text-decoration: none; color: #ffffff">How to find us</a>
+                                        </h3>
                                       </td>
                                     </tr>
                                   </table>
@@ -1134,17 +1080,21 @@
                                 <div class="column-1" style="text-align: left; float: left; width: 50%;">
                                   <table role="presentation" style="" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#00000">
                                     <tr>
-                                      <td width="50%" align="center" style="padding: 22px 0">
+                                      <td valign="top" width="50%" align="center" style="padding: 22px 0">
                                         <a href="https://www.mercedes-benzworld.co.uk/visit/" style="text-decoration: none">
                                           <img src="https://mercedes-mid-prod3-res.adobe-campaign.com/res/img/B0293C1B92F358D43855D3320C856395.png" alt="" width="38" border="0">
-                                          <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">Plan your vist</h3>
                                         </a>
+                                        <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; Margin: 0 0 0px; line-height:22px;">
+                                          <a href="https://www.mercedes-benzworld.co.uk/visit/" style="text-decoration: none; color:#ffffff;">Plan your vist</a>
+                                        </h3>
                                       </td>
-                                      <td width="50%" align="center" style="padding: 22px 0">
+                                      <td valign="top" width="50%" align="center" style="padding: 22px 0">
                                         <a href="https://www.mercedes-benzworld.co.uk/discover/" style="text-decoration: none">
                                           <img src="https://mercedes-mid-prod3-res.adobe-campaign.com/res/img/3C8E8FF419DB33EB558E54CA37D9FFCF.png" alt="" width="38" border="0">
-                                          <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">Discover</h3>
                                         </a>
+                                        <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">
+                                          <a href="https://www.mercedes-benzworld.co.uk/discover/" style="text-decoration: none; color:#ffffff; ">Discover</a>
+                                        </h3>
                                       </td>
                                     </tr>
                                   </table>
@@ -1156,17 +1106,21 @@
                                 <div class="column-2" style="text-align: left; float: right; width: 50%; ">
                                   <table role="presentation" style="" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000">
                                     <tr>
-                                      <td width="50%" align="center" style="padding: 22px 0">
+                                      <td valign="top" width="50%" align="center" style="padding: 22px 0">
                                         <a href="https://www.mercedes-benzworld.co.uk/driving-experiences/" style="text-decoration: none">
                                           <img src="https://mercedes-mid-prod3-res.adobe-campaign.com/res/img/2CA286C16E7B0CA3EA6ED9D06D52BB4C.png" alt="" width="38" border="0">
-                                          <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">Driving experiences</h3>
                                         </a>
+                                        <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">
+                                          <a href="https://www.mercedes-benzworld.co.uk/driving-experiences/" style="text-decoration: none; color:#ffffff; ">Driving experiences</a>
+                                        </h3>
                                       </td>
-                                      <td width="50%" align="center" style="padding: 22px 0">
+                                      <td valign="top" width="50%" align="center" style="padding: 22px 0">
                                         <a href="https://www.mercedes-benzworld.co.uk/contact-us/" style="text-decoration: none">
                                           <img src="https://mercedes-mid-prod3-res.adobe-campaign.com/res/img/D5EA2574CF913B6E81F36E67FE76C426.png" alt="" width="38" border="0">
-                                          <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">How to find us</h3>
                                         </a>
+                                        <h3 style="font-family:'MBCorpoSText-Regular-Web', Arial, Helvetica, sans-serif; font-size:14px; color:#fff; Margin: 0 0 0px; line-height:22px;">
+                                          <a href="https://www.mercedes-benzworld.co.uk/contact-us/" style="text-decoration: none; color: #ffffff">How to find us</a>
+                                        </h3>
                                       </td>
                                     </tr>
                                   </table>
