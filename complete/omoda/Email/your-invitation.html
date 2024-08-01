@@ -313,12 +313,26 @@
     </style>
     <style type="text/css">
       @media only screen and (max-width: 425px) {
-      .scml, th.scml, .scml th {
+      .scml, th.scml, .scml th, .td-head, .td-content {
       display: block !important;
       width: 100% !important;
       max-width: 100% !important;
       text-align: left !important;
       }
+      .td-content {
+      font-weight: normal !important;
+          border-top: 0 !important;
+          padding-top: 0 !important
+      }
+      .first-row .td-content {
+          display: none !important;
+          }
+      .last-row .td-content {
+          border-top:0 !important;
+          }
+      .last-row .td-head {
+          border-bottom:0 !important;
+          }
       .loml {
       text-align: left !important;
       float: left !important;
@@ -450,7 +464,7 @@
                     <tr>
                       <td style="padding: 25px 15px; vertical-align: bottom; font-family: Calibri, Helvetica, Arial, sans-serif; color:#FFFFFF; mso-line-height-rule:exactly; font-weight: normal;">
                         <h1 style="line-height: 1; margin: 0px; text-align: right" class="al darkimage">
-                          <a style="color:#FFFFFF" target="_blank" href="http://www.google.com"><img src="images/omoda-logo-white.png" alt="OMODA" width="160" height="37" style="width: 160px; height: auto"></a>
+                          <a style="color:#FFFFFF" target="_blank" href="http://www.google.com"><img src="images/omoda-logo-white.png" alt="OMODA" width="160" height="38" style="width: 160px; height: auto"></a>
                         </h1>
                       </td>
                     </tr>
@@ -517,22 +531,22 @@
                           We are delighted to invite you to the UK launch event of OMODA, a pioneering new car manufacturer from China. Join us on 29 August 2024, to experience cutting&#8209;edge technology, groundbreaking features and visionary concepts, that ensure OMODA is driving the&nbsp;future.
                         </p>
                           
-                        <table role="presentation" style="max-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="1" bordercolor="#00AEEF" >
-                          <tr>
-                              <th valign="top" align="left" width="25%" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold">Event Details</th>
-                              <th></th>
+                        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" >
+                          <tr class="first-row">
+                              <th class="td-head" valign="top" align="left" width="25%" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold; border-top: 1px solid #00AEEF; border-left: 1px solid #00AEEF;border-right: 1px solid #00AEEF; ">Event Details</th>
+                              <th class="td-content" style="border-top: 1px solid #00AEEF;border-left: 1px solid #00AEEF; border-right: 1px solid #00AEEF;" ></th>
                             </tr>
                             <tr>
-                              <td valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold">Date</td>
-                              <td valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold">29 August 2024</td>
+                              <td class="td-head" valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold; border-top: 1px solid #00AEEF;border-left: 1px solid #00AEEF; border-right: 1px solid #00AEEF;">Date</td>
+                              <td class="td-content" valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold; border-top: 1px solid #00AEEF;border-left: 1px solid #00AEEF; border-right: 1px solid #00AEEF; ">29 August 2024</td>
                             </tr>
                             <tr>
-                              <td valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold">Location</td>
-                              <td valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold">Magazine London, 11 Ordnance Crescent, London SE10&nbsp;0JH</td>
+                              <td class="td-head" valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold; border-top: 1px solid #00AEEF;border-left: 1px solid #00AEEF; border-right: 1px solid #00AEEF;">Location</td>
+                              <td class="td-content" valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold; border-top: 1px solid #00AEEF;border-left: 1px solid #00AEEF; border-right: 1px solid #00AEEF;">Magazine London, 11 Ordnance Crescent, London SE10&nbsp;0JH</td>
                             </tr>
-                            <tr>
-                              <td valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold">Time</td>
-                              <td valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold">XX.XX - XX.XX</td>
+                            <tr class="last-row">
+                              <td class="td-head" valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold; border-top: 1px solid #00AEEF;border-left: 1px solid #00AEEF;border-bottom: 1px solid #00AEEF; border-right: 1px solid #00AEEF; ">Time</td>
+                              <td class="td-content" valign="top" style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 1; color:#FFFFFF; padding: 8px; font-weight: bold; border-top: 1px solid #00AEEF;border-bottom: 1px solid #00AEEF;border-left: 1px solid #00AEEF; border-right: 1px solid #00AEEF; ">XX.XX - XX.XX</td>
                             </tr>
                         </table>
                           

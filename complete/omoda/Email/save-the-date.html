@@ -313,12 +313,26 @@
     </style>
     <style type="text/css">
       @media only screen and (max-width: 425px) {
-      .scml, th.scml, .scml th {
+      .scml, th.scml, .scml th, .td-head, .td-content {
       display: block !important;
       width: 100% !important;
       max-width: 100% !important;
       text-align: left !important;
       }
+      .td-content {
+      font-weight: normal !important;
+          border-top: 0 !important;
+          padding-top: 0 !important
+      }
+      .first-row .td-content {
+          display: none !important;
+          }
+      .last-row .td-content {
+          border-top:0 !important;
+          }
+      .last-row .td-head {
+          border-bottom:0 !important;
+          }
       .loml {
       text-align: left !important;
       float: left !important;
@@ -450,7 +464,7 @@
                     <tr>
                       <td style="padding: 25px 15px; vertical-align: bottom; font-family: Calibri, Helvetica, Arial, sans-serif; color:#FFFFFF; mso-line-height-rule:exactly; font-weight: normal;">
                         <h1 style="line-height: 1; margin: 0px; text-align: right" class="al darkimage">
-                          <a style="color:#FFFFFF" target="_blank" href="http://www.google.com"><img src="images/omoda-logo-white.png" alt="OMODA" width="160" height="37" style="width: 160px; height: auto"></a>
+                          <a style="color:#FFFFFF" target="_blank" href="http://www.google.com"><img src="images/omoda-logo-white.png" alt="OMODA" width="160" height="38" style="width: 160px; height: auto"></a>
                         </h1>
                       </td>
                     </tr>
