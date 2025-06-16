@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en" xml:lang="en">
+  <head>
+    <title>JAECOO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <style>
+      /*
+      * @import url("https://use.typekit.net/tja6pah.css");
+      * breaks design
+      * */
+    </style>
+    <style type="text/css">
+      :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+      .darkimage {
+      display: block !important;
+      width: auto !important;
+      overflow: visible !important;
+      float: none !important;
+      max-height: inherit !important;
+      max-width: inherit !important;
+      line-height: auto !important;
+      margin-top: 0px !important;
+      visibility: inherit !important;
+      background-color: #000000;
+      }
+      .lightimage {
+      display: none !important;
+      }
+      .bgBody {
+      background-color: #000000 !important;
+      }
+      .bgBodyPage {
+      background-color: #333132 !important;
+      }
+      .preview, .page {
+      background-color: #000000 !important;
+      }
+      .bgBodyPage .preview {
+      background-color: #000000 !important;
+      }
+      .module {
+      background-color: #000000 !important;
+      }
+      .heroBG {
+      background-color: none !important;
+      }
+      .width-100 {
+      width: 100%;
+      }
+      .card {
+      background-color: #000000 !important;
+      }
+      .button td {
+      border: 2px solid #ffffff !important;
+      }
+      .button, .button td {
+      text-decoration: none !important;
+      }
+      .button a {
+      Xcolor: #FFFFFF !important;
+      text-decoration: none !important;
+      }
+      h1, h2, h3, h4, h5, h6, p, td, th, ul, ol, li, b, .heading, .heading span, .paragraph, .paragraph span, .p1, .p2, .p3, .p4 {
+      /*color: #ffffff !important;*/
+      }
+      .lightDark {
+      color: #000000 !important;
+      }
+      a {
+      color: inherit !important;
+      text-decoration: underline;
+      }
+      a[href^="x-apple-data-detectors"], a[href^="tel"], a[href^="sms"] {
+      text-decoration: none;
+      pointer-events: none;
+      cursor: default;
+      color: #FFFFFF !important;
+      }
+    </style>
+    <style type="text/css">
+      /*----------------------------- Interactive ------------------------------*/
+      /* Buttons */
+      @media screen {
+      .button:hover {
+      filter: brightness(110%);
+      transition: all ease 0.5s !important;
+      }
+      .button:hover a {
+      Xcolor: inherit !important;
+      transition: all ease 0.5s !important;
+      }
+      .btn-ghost:hover, .btn-ghost:hover a {
+      background-color: rgba(255, 255, 255, 0.025) !important;
+      transition: all ease 0.5s !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      body {
+      margin: 0px !important;
+      padding: 0px !important;
+      width: 100% !important;
+      height: 100% !important;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      }
+      a {
+      color: #ffffff
+      }
+      a img {
+      border: none !important;
+      }
+      p {
+      margin: 0px;
+      padding: 0px;
+      }
+      a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+      }
+      #MessageViewBody, #MessageWebViewDiv {
+      width: 100% !important;
+      }
+      #MessageViewBody a {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      }
+      table {
+      box-sizing: border-box; /* Experiment with this */
+      border-spacing: 0;
+      border-collapse: separate; /* This supports border-radius */
+      table-layout: auto; /* Adjust as necessary */
+      margin: 0 auto;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      }
+      table td {
+      border-collapse: collapse;
+      }
+    </style>
+    <style type="text/css">
+      strong {
+      }
+      h1, h2, h3, h4 {
+      font-family: Calibri, Helvetica, Arial, sans-serif;
+      }
+      p {
+      font-family: Calibri, Helvetica, Arial, sans-serif;
+      }
+      .heading, .para {
+      }
+      .button a {
+      padding: 9px 20px 13px 20px !important;
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 640px) {
+      .width-100, table .width-100 {width:100%!important; height:auto!important; ;}
+      .stack-column {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;}
+        
+        .round {border-radius: 20%;}
+        
+      
+        
+        .inline-fix {display: inline!important}
+      .imageCol, .contentCol, .contentColInner {
+      padding: 0 !important;
+      }
+      .card .imageCol .imgWrap, .card .imageTD {
+      overflow: hidden;
+      border-radius: 3px 3px 0 0 !important;
+      }
+      .contentCol {
+      padding: 20px 0 !important;
+      }
+      .contentCol-card {
+      padding: 20px !important;
+      }
+      .mobileRowFW {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      }
+      .mobileRowFWContent {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .mobileColPad {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      
+      }
+      .mobileColPad-right {
+      padding-right: 20px !important;
+      }
+       .mobileColPad-left {
+      padding-left: 20px !important;
+      }
+        
+      .contentSplit {
+      width: 100% !important;
+      }
+      .splitSides {
+      width: 20px !important;
+      }
+      .appBadges, .appBadges img {
+      width: 130px !important;
+      height: auto !important;
+      }
+      .heading {
+      font-size: 24px !important;
+      line-height: 30px !important;
+      }
+      .paragraph, .p1, .p2, .p3, .p4 {
+      font-size: 14px !important;
+      line-height: 20px !important;
+      }
+      .sct, th.sct .sct th {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      }
+      .sctc, th.sctc, .sctc th {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+      }
+      .sctc .button {
+      float: none !important;
+      margin: 0 auto 0 auto !important;
+      }
+      .hauto {
+      height: auto !important;
+      }
+      .wauto {
+      width: auto !important;
+      }
+      .resp {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .hom {
+      display: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+      width: 0px !important;
+      height: 0px !important;
+      }
+      .som {
+      display: block !important;
+      width: auto !important;
+      max-height: inherit !important;
+      overflow: visible !important;
+      float: none !important;
+      visibility: visible !important;
+      height: auto !important;
+      }
+      .al {
+      text-align: center !important;
+      }
+      .heroBG {
+      height: auto !important;
+      }
+      .dtSpacer {
+      padding: 40px 0 0 0;
+      }
+      .overlayBG {
+      background-image: none !important;
+      }
+      .overlapBG {
+      background-size: contain !important;
+      }
+      .overlapPad {
+      padding: 0 20px 0 20px !important;
+      height: auto !important;
+      }
+      .overlapImg {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .timer .side {
+      display: none !important;
+      }
+      .timer .center {
+      width: 100% !important;
+      }
+      .mpl20 {
+      padding-left: 20px !important;
+      }
+      .mpx20 {
+      padding: 0 20px 0 20px !important;
+      }
+      .mp20 {
+      padding: 20px !important;
+      }
+      .mw20 {
+      width: 20px !important;
+      }
+      .headerBG {
+      background-position: right top !important;
+      background-clip: padding-box;
+      }
+      .headerLogo img {
+      display: none !important;
+      visibility: hidden !important;
+      }
+      .mHeroBG {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .footer-content {
+      padding: 30px !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 425px) {
+      .scml, th.scml, .scml th, .td-head, .td-content {
+      display: block !important;
+      width:94% !important;
+      max-width: 100% !important;
+      text-align: left !important;
+      }
+      .td-head, .td-content {
+      padding: 10px !important;
+      }
+      .td-head {
+      text-transform: uppercase;
+      padding-top: 16px !important;
+      padding-bottom: 4px !important;
+      }
+      .td-content {
+      font-weight: normal !important;
+      border-top: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 16px !important;
+      }
+      .first-row .td-content {
+      display: none !important;
+      }
+      .last-row .td-content {
+      border-top:0 !important;
+      }
+      .last-row .td-head {
+      border-bottom:0 !important;
+      }
+      .loml {
+      text-align: left !important;
+      float: left !important;
+      }
+      h2 {
+      letter-spacing: 2px !important; 
+      font-size: 36px !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 375px) {
+      .hos {
+      display: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+      width: 0px !important;
+      height: 0px !important;
+      }
+      .menuFBtr {
+      text-align: right !important;
+      }
+      .fbMenuItem1 {
+      width: 30% !important;
+      }
+      }
+    </style>
+    <!--[if mso]>
+    <style type="text/css">
+      .body-text { font-family: Arial, Helvetica, sans-serif !important; }
+      body { margin: 0px !important; padding: 0px !important; width: 100% !important; height: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+    </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+    <style type="text/css">
+      p { padding:0px; Margin:0px; }
+      o:p { font-size: 0px; line-height: 0px; margin: 0; }
+    </style>
+    <![endif]-->
+    <!-- Outlook 365 & .com Interactive Fix -->
+    <style type="text/css">
+      [id="x_hide-outlook-web"] {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      max-height: 0px !important;
+      }
+      [id="x_show-outlook-web"] {
+      display: inline-block !important;
+      visibility: visible !important;
+      }
+      body[data-outlook-cycle] .hide-on-om {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      overflow: hidden !important;
+      }
+      body[data-outlook-cycle] .fallback {
+      display: inline-block;
+      }
+    </style>
+    <style>
+      @media only screen and (max-width: 480px) {
+      .responsive-button-table {
+      display: block !important;
+      margin-bottom: 10px !important;
+      width: 100% !important;
+      }
+      .responsive-spacer {
+      display: none !important;
+      }
+      }
+    </style>
+  </head>
+  <body class="bgBodyPage" bgcolor="#939597" style="-webkit-font-smoothing: antialiased; width:100% !important; -webkit-text-size-adjust:none; margin: 0 auto !important; padding: 0px">
+    <table role="presentation" align="center" class="darkmode" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%">
+      <!-- Preheader -->
+      <span style="display:none !important; color:#000000; font-size:1px; line-height:0; overflow:hidden; mso-hide:all;">
+      Whether it’s paws on seats or boots in the boot, <br class="hom">the all-new JAECOO 5 is designed for those who don’t just drive – they explore.&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­
+      </span>
+      <!-- !========== -->
+
+      <!-- !========== -->
+      <!-- Preheader -->
+      <tr class="hom">
+        <td align="center" bgcolor="#E1E8EA">
+          <table role="presentation" style="max-width: 700px; width: 700px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#E1E8EA" class="width-100">
+            <tbody>
+              <tr>
+                <th style="padding: 10px 30px 10px 30px; vertical-align: bottom; font-family: Calibri, Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;"><a style="color:#212121" target="_blank" href="http://www.google.com">View online</a></th>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Masthead -->
+        <tr>
+          <td align="center" bgcolor="#E1E8EA">
+            
+                  <table role="presentation" style="max-width: 700px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" class=" width-100">
+                    <tbody>
+                      <tr>
+                        <td style="">
+                          <h1 style="line-height: 1; margin: 0px; text-align: center" class="al Xdarkimage">
+                            <a style="color:#FFFFFF" target="_blank" href="http://www.google.com">
+                            <img src="images/omoda-jaecoo-logo.png" alt="OMODA | JAECOO - Approved Used" width="461" height="38" style="width: 461px; height: auto;max-width: 100%;">
+                            </a>
+                          </h1>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+        
+          </td>
+        </tr>
+        
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Hero image -->
+      <tr>
+        <td align="center" bgcolor="#E1E8EA">
+          <table role="presentation" style="max-width: 700px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" class="width-100">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="resp" align="center" src="images/hero-img.png" alt="Coming soon: JAECOO 5" width="700" height="488" border="0" style="display: block; width: 700px; max-width: 100%;height: auto">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Hero content -->
+      <tr>
+        <td align="center" bgcolor="#E1E8EA">
+          <table role="presentation" style="max-width: 700px; width: 700px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" class="width-100">
+            <tbody>
+              <tr>
+                <td width="4%" class="hom"><!-- Spacer --></td>
+                <td style="padding: 50px 40px 40px;" align="left">
+                  <h2 style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:36px; line-height: 36px; color:#212121; margin: 0 0 0px; font-weight: bold">Approved Used Cars</h2>
+                  <h3 style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:24px; line-height: 36px; color:#212121; margin: 0 0 20px; font-weight: normal">Inspected. Protected. Approved.</h3>
+                  <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#212121; margin: 0 0 20px">Discover the diﬀerence with OMODA | JAECOO Approved Used&nbsp;Cars.</p>
+                  <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#212121; margin: 0 0 20px">Every Approved OMODA and JAECOO recieves over 120 individual checks to ensure it’s in top&nbsp;condition.</p>
+                  <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#212121; margin: 0 0 30px">You’ll receive the balance of our 7&#8209;year, 100,000&#8209;mile warranty, RAC cover, and flexible finance options of just 8.9%&nbsp;APR.</p>
+                  
+                  <div><!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:60px;v-text-anchor:middle;width:200px;" arcsize="42%" strokecolor="#ffffff" fillcolor="#101827">
+    <w:anchorlock/>
+    <center style="color:#ffffff;font-family:sans-serif;font-size:18px;font-weight:bold;">Explore cars</center>
+  </v:roundrect>
+<![endif]--><a href="http://"
+style="background-color:#101827;border:1px solid #ffffff;border-radius:25px;color:#ffffff;display:inline-block;font-family: Calibri, Helvetica, Arial, sans-serif; font-size:18px; line-height: 60px;font-weight:600;line-height:60px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;letter-spacing: 1px; text-transform: uppercase;"><img src="images/btn-arrow.png" width="16" style="vertical-align: -2px">&nbsp; Explore cars</a></div>
+                  
+                </td>
+                <td width="4%" class="hom"><!-- Spacer --></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Columns -->
+      <tr>
+        <td align="center" bgcolor="#E1E8EA">
+          <table role="presentation" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" style="max-width:700px;" class="width-100">
+            <tr>
+              <!-- Left column -->
+              <td class="stack-column" width="340" style="width: 340px;">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" >
+                  <tr>
+                    <td class="" style="padding-bottom: 20px">
+                      <img class="resp" align="center" src="images/signpost-omoda.png" alt="" width="340" height="360" border="0" style="display: block; width: 340px; max-width: 100%; height: auto;">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="20" style="width: 20px" class="hom"><!-- Spacer --></td>
+              <!-- Right column -->
+              <td class="stack-column" width="340" style="width: 340px; ">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" >
+                  <tr>
+                    <td class="" style="padding-bottom: 20px">
+                      <img class="resp" align="center" src="images/signpost-jaecoo.png" alt="" width="340" height="360" border="0" style="display: block; width: 340px; max-width: 100%; height: auto;">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+     
+      
+      
+      
+      
+      <!-- Hero content -->
+      <tr>
+        <td align="center" bgcolor="#E1E8EA">
+          <table role="presentation" style="max-width: 700px; width: 700px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" class="width-100">
+            <tbody>
+              <tr>
+                <td width="4%" class="hom"><!-- Spacer --></td>
+                <td style="padding: 30px 40px 40px;" align="left">
+                  <h2 style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:36px; line-height: 36px; color:#212121; margin: 0 0 20px; font-weight: bold">Explore our models</h2>
+                  
+                  <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#212121; margin: 0 0 30px">Both OMODA &amp; JAECOO are committed to combining next generation technology and distinctive design with sustainability with&nbsp;accessibility.</p>
+                  
+                  <div><!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:60px;v-text-anchor:middle;width:200px;" arcsize="42%" strokecolor="#ffffff" fillcolor="#101827">
+    <w:anchorlock/>
+    <center style="color:#ffffff;font-family:sans-serif;font-size:18px;font-weight:bold;">Learn more</center>
+  </v:roundrect>
+<![endif]--><a href="http://"
+style="background-color:#101827;border:1px solid #ffffff;border-radius:25px;color:#ffffff;display:inline-block;font-family: Calibri, Helvetica, Arial, sans-serif; font-size:18px; line-height: 60px;font-weight:600;line-height:60px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;letter-spacing: 1px; text-transform: uppercase;"><img src="images/btn-arrow.png" width="16" style="vertical-align: -2px">&nbsp; Learn more</a></div>
+                  
+                </td>
+                <td width="4%" class="hom"><!-- Spacer --></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      
+      <!-- Hero image -->
+      <tr>
+        <td align="center" bgcolor="#E1E8EA">
+          <table role="presentation" style="max-width: 700px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" class="width-100">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="resp" align="center" src="images/special-offer.png" alt="Coming soon: JAECOO 5" width="680" height="370" border="0" style="display: block; width: 680px; max-width: 100%;height: auto">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Hero content -->
+      <tr>
+        <td align="center" bgcolor="#E1E8EA">
+          <table role="presentation" style="max-width: 700px; width: 700px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" class="width-100">
+            <tbody>
+              <tr>
+                <td width="4%" class="hom"><!-- Spacer --></td>
+                <td style="padding: 50px 40px 40px;" align="left">
+                  <h2 style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:36px; line-height: 36px; color:#212121; margin: 0 0 20px; font-weight: bold">12 Free car washes to keep your Used Car looking like&nbsp;new*</h2>
+                  
+                  <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#212121; margin: 0 0 30px">Get 12 free car washes with every OMODA | JAECOO Approved Used Car purchase. Keep your vehicle looking fresh and spotless, ensuring it stays as pristine as the day you drove it&nbsp;home.</p>
+                  
+                  <div><!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:60px;v-text-anchor:middle;width:200px;" arcsize="42%" strokecolor="#ffffff" fillcolor="#101827">
+    <w:anchorlock/>
+    <center style="color:#ffffff;font-family:sans-serif;font-size:18px;font-weight:bold;">Learn more</center>
+  </v:roundrect>
+<![endif]--><a href="http://"
+style="background-color:#101827;border:1px solid #ffffff;border-radius:25px;color:#ffffff;display:inline-block;font-family: Calibri, Helvetica, Arial, sans-serif; font-size:18px; line-height: 60px;font-weight:600;line-height:60px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;letter-spacing: 1px; text-transform: uppercase;"><img src="images/btn-arrow.png" width="16" style="vertical-align: -2px">&nbsp; Learn more</a></div>
+                  
+                </td>
+                <td width="4%" class="hom"><!-- Spacer --></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      <!-- Card -->
+      <tr>
+        <td align="center" bgcolor="#E1E8EA" class="">
+          <table role="presentation" style="max-width: 700px; width: 700px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" class="width-100">
+            <tbody>
+              <tr>
+                <td width="4%" class="hom"><!-- Spacer --></td>
+                <td bgcolor="E1E8EA" style="padding: 50px 40px 40px; border-radius: 50px" align="left">
+                  
+                  <table role="presentation" style="" width="100%" cellspacing="0" cellpadding="0" border="0" class="width-100">
+                    <tbody>
+                      <tr>
+                        <td class="stack-column" ><h2 style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:36px; line-height: 36px; color:#212121; margin: 0 0 0px; font-weight: bold">Get started today</h2>
+                        <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#212121; margin: 0 0 30px">Browse our listings and drive home with confidence. <br>Your next adventure starts&nbsp;here.</p>
+                          
+                          <div><!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:60px;v-text-anchor:middle;width:200px;" arcsize="42%" strokecolor="#ffffff" fillcolor="#101827">
+    <w:anchorlock/>
+    <center style="color:#ffffff;font-family:sans-serif;font-size:18px;font-weight:bold;">Find a car</center>
+  </v:roundrect>
+<![endif]--><a href="http://"
+style="background-color:#101827;border:1px solid #ffffff;border-radius:25px;color:#ffffff;display:inline-block;font-family: Calibri, Helvetica, Arial, sans-serif; font-size:18px; line-height: 60px;font-weight:600;line-height:60px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;letter-spacing: 1px; text-transform: uppercase;"><img src="images/btn-arrow.png" width="16" style="vertical-align: -2px">&nbsp; Find a car</a></div>
+                        </td>
+                        <td width="165" class="hom" ><img class="" align="center" src="images/lozenge.jpg" alt="Coming soon: JAECOO 5" width="165" height="156" border="0" style="display: block; width: 165px; max-width: 100%;height: auto"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </td>
+                <td width="4%" class="hom"><!-- Spacer --></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      
+      
+     
+      
+  
+      
+      
+      
+      
+      <!-- Footer -->
+      <tr>
+        <td align="center" bgcolor="#E1E8EA">
+          
+   
+          
+                <table role="presentation" style="max-width: 700px; width: 700px; " width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" class="width-100">
+                  
+                  <tbody>
+                    <tr><td bgcolor="#ffffff" height="30" colspan="3" style=""><!-- --></td></tr>
+                    <tr><tr><td bgcolor="#101827" height="50" colspan="3" style="border-radius: 50px 50px 0 0"><!-- --></td></tr>
+                    <tr>
+                      <td bgcolor="#101827" width="4%" class="hom"><!-- Spacer --></td>
+                      <td bgcolor="#101827" style="padding: 0 40px 40px">
+                        
+                        <table role="presentation" style="" width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="">
+                                <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; font-weight: bold; margin: 0 0 0; letter-spacing: 0.5px" class="para hauto">
+                                  OMODA | JAECOO <br>
+                                  
+                                  <span style="color: #00AEEF">omodaauto.co.uk/findadealer</span>
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 20px 0">
+                                <table align="left" role="presentation" border="0" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td>
+                      
+                      <a target="_blank" href="https://www.facebook.com/profile.php?id=100089854635629">
+                        <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-facebook.png" alt="Facebook" width="25" height="25" border="0" style="width:25px; height:25px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
+                      </a>
+                    </td>
+                    <td width="15" style="width: 15px;">&nbsp;</td>
+                    <td>
+                      <a target="_blank" href="https://www.linkedin.com/company/omoda-uk/">
+                        <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-linkedin.png" alt="LinkedIn" width="25" height="25" border="0" style="width:25px; height:25px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
+                      </a>
+                    </td>
+                    <td width="15" style="width: 15px;">&nbsp;</td>
+                    <td>
+                      <a target="_blank" href="https://www.instagram.com/omodaglobal">
+                        <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-instagram.png" alt="Instagram" width="25" height="25" border="0" style="width:25px; height:25px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+                              </td>
+                            </tr>
+                            
+                            <tr>
+                              <td style="">
+                                <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#888C93; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;margin: 0 0 16px" class="para hauto">
+                                  You have previously agreed to receive emails from JAECOO Automotive UK&nbsp;Ltd. <br>© OMODA &amp; © OMODA &amp; JAECOO UK LIMITED 2025. www.jaecooauto.co.uk
+                                  <br>Registered in England and Wales with company number&nbsp;15203898.
+                                  <br>Registered address: Building 7 Chiswick Park, 566 Chiswick High Road, London W4 5YG, United&nbsp;Kingdom
+                                </p>
+                                <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#888C93; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;" class="para hauto">
+                                  © 2025 OMODA &amp; JAECOO UK Limited <br /><a href="https://omodaauto.co.uk/privacy-policy/">Privacy Statement</a> &nbsp; <a href="https://omodaauto.co.uk/legal-notice/">Legal Notice</a> &nbsp; <a href="https://omodaauto.co.uk/">Unsubscribe</a>
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td bgcolor="#101827" width="4%" class="hom"><!-- Spacer --></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Spacer -->
+      <tr>
+        <td align="center" bgcolor="#E1E8EA">
+          <table role="presentation" style="max-width: 700px; width: 700px;" width="100%" cellspacing="0" cellpadding="0" border="0" class="hom">
+            <tbody>
+              <tr>
+                <td height="30"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+    </table>
+  </body>
+</html>
