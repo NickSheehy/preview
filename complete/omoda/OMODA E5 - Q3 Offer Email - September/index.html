@@ -1,0 +1,939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en" xml:lang="en">
+  <head>
+    <title>OMODA</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <style>
+      /*@import url("https://use.typekit.net/tja6pah.css");*/
+    </style>
+    <style type="text/css">
+      :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+      .darkimage {
+      display: block !important;
+      width: auto !important;
+      overflow: visible !important;
+      float: none !important;
+      max-height: inherit !important;
+      max-width: inherit !important;
+      line-height: auto !important;
+      margin-top: 0px !important;
+      visibility: inherit !important;
+      background-color: #000000;
+      }
+      .lightimage {
+      display: none !important;
+      }
+      .bgBody {
+      background-color: #000000 !important;
+      }
+      .bgBodyPage {
+      background-color: #333132 !important;
+      }
+      .preview, .page {
+      background-color: #000000 !important;
+      }
+      .bgBodyPage .preview {
+      background-color: #000000 !important;
+      }
+      .module {
+      background-color: #000000 !important;
+      }
+      .heroBG {
+      background-color: none !important;
+      }
+      .card {
+      background-color: #000000 !important;
+      }
+      .button td {
+      border: 2px solid #ffffff !important;
+      }
+      .button, .button td {
+      text-decoration: none !important;
+      }
+      .button a {
+      color: #FFFFFF !important;
+      text-decoration: none !important;
+      }
+      h1, h2, h3, h4, h5, h6, p, td, th, ul, ol, li, b, .heading, .heading span, .paragraph, .paragraph span, .p1, .p2, .p3, .p4 {
+      color: #FFFFFF !important;
+      }
+      td.lightDark {
+        color: #000000 !important; text-shadow: 0 0 0 #000000;
+      }
+      a {
+      color: inherit !important;
+      text-decoration: underline;
+      }
+      a[href^="x-apple-data-detectors"], a[href^="tel"], a[href^="sms"] {
+      text-decoration: none;
+      pointer-events: none;
+      cursor: default;
+      color: #FFFFFF !important;
+      }
+    </style>
+    <style type="text/css">
+      /*----------------------------- Interactive ------------------------------*/
+      /* Buttons */
+      @media screen {
+      .button:hover {
+      filter: brightness(110%);
+      transition: all ease 0.5s !important;
+      }
+      .button:hover a {
+      Xcolor: inherit !important;
+      transition: all ease 0.5s !important;
+      }
+      .btn-ghost:hover, .btn-ghost:hover a {
+      background-color: rgba(255, 255, 255, 0.025) !important;
+      transition: all ease 0.5s !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      body {
+      margin: 0px !important;
+      padding: 0px !important;
+      width: 100% !important;
+      height: 100% !important;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      }
+      a {
+      color: #ffffff
+      }
+      a img {
+      border: none !important;
+      }
+      p {
+      margin: 0px;
+      padding: 0px;
+      }
+      a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+      }
+      #MessageViewBody, #MessageWebViewDiv {
+      width: 100% !important;
+      }
+      #MessageViewBody a {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      }
+      table {
+      box-sizing: content-box;
+      border-spacing: 0;
+      border-collapse: collapse;
+      table-layout: fixed;
+      margin: 0 auto;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      }
+      table td {
+      border-collapse: collapse;
+      }
+    </style>
+    <style type="text/css">
+      strong {
+      }
+      h1, h2, h3, h4 {
+      font-family: Calibri, Helvetica, Arial, sans-serif;
+      }
+      p {
+      font-family: Calibri, Helvetica, Arial, sans-serif;
+      }
+      .heading, .para {
+      }
+      .button a {
+      padding: 9px 20px 13px 20px !important;
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 640px) {
+      .imageCol, .contentCol, .contentColInner {
+      padding: 0 !important;
+      }
+      .card .imageCol .imgWrap, .card .imageTD {
+      overflow: hidden;
+      border-radius: 3px 3px 0 0 !important;
+      }
+      .contentCol {
+      padding: 20px 0 !important;
+      }
+      .contentCol-card {
+      padding: 20px !important;
+      }
+      .mobileRowFW {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      }
+      .mobileRowFWContent {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .mobileColPad {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .contentSplit {
+      width: 100% !important;
+      }
+      .splitSides {
+      width: 20px !important;
+      }
+      .appBadges, .appBadges img {
+      width: 130px !important;
+      height: auto !important;
+      }
+      .heading {
+      font-size: 24px !important;
+      line-height: 30px !important;
+      }
+      .paragraph, .p1, .p2, .p3, .p4 {
+      font-size: 14px !important;
+      line-height: 20px !important;
+      }
+      .sct, th.sct .sct th {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      }
+      .sctc, th.sctc, .sctc th {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+      }
+      .sctc .button {
+      float: none !important;
+      margin: 0 auto 0 auto !important;
+      }
+      .hauto {
+      height: auto !important;
+      }
+      .wauto {
+      width: auto !important;
+      }
+      .resp {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .hom {
+      display: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+      width: 0px !important;
+      height: 0px !important;
+      }
+      .som {
+      display: block !important;
+      width: auto !important;
+      max-height: inherit !important;
+      overflow: visible !important;
+      float: none !important;
+      visibility: visible !important;
+      height: auto !important;
+      }
+      .al {
+      text-align: center !important;
+      }
+      .heroBG {
+      height: auto !important;
+      }
+      .dtSpacer {
+      padding: 40px 0 0 0;
+      }
+      .overlayBG {
+      background-image: none !important;
+      }
+      .overlapBG {
+      background-size: contain !important;
+      }
+      .overlapPad {
+      padding: 0 20px 0 20px !important;
+      height: auto !important;
+      }
+      .overlapImg {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .timer .side {
+      display: none !important;
+      }
+      .timer .center {
+      width: 100% !important;
+      }
+      .mpl20 {
+      padding-left: 20px !important;
+      }
+      .mpx20 {
+      padding: 0 20px 0 20px !important;
+      }
+      .mp20 {
+      padding: 20px !important;
+      }
+      .mw20 {
+      width: 20px !important;
+      }
+      .headerBG {
+      background-position: right top !important;
+      background-clip: padding-box;
+      }
+      .headerLogo img {
+      display: none !important;
+      visibility: hidden !important;
+      }
+      .mHeroBG {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .footer-content {
+      padding: 30px !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 425px) {
+      .scml, th.scml, .scml th, .td-head, .td-content {
+      display: block !important;
+      width:94% !important;
+      max-width: 100% !important;
+      text-align: left !important;
+      }
+      .td-head, .td-content {
+      padding: 10px !important;
+      }
+      .td-head {
+      text-transform: uppercase;
+      padding-top: 16px !important;
+      padding-bottom: 4px !important;
+      }
+      .td-content {
+      font-weight: normal !important;
+      border-top: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 16px !important;
+      }
+      .first-row .td-content {
+      display: none !important;
+      }
+      .last-row .td-content {
+      border-top:0 !important;
+      }
+      .last-row .td-head {
+      border-bottom:0 !important;
+      }
+      .loml {
+      text-align: left !important;
+      float: left !important;
+      }
+      h2 {
+      font-size: 24px !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 375px) {
+      .hos {
+      display: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+      width: 0px !important;
+      height: 0px !important;
+      }
+      .menuFBtr {
+      text-align: right !important;
+      }
+      .fbMenuItem1 {
+      width: 30% !important;
+      }
+      }
+    </style>
+    <!--[if mso]>
+    <style type="text/css">
+      .body-text { font-family: Arial, Helvetica, sans-serif !important; }
+      body { margin: 0px !important; padding: 0px !important; width: 100% !important; height: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+    </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+    <style type="text/css">
+      p { padding:0px; Margin:0px; }
+      o:p { font-size: 0px; line-height: 0px; margin: 0; }
+    </style>
+    <![endif]-->
+    <!-- Outlook 365 & .com Interactive Fix -->
+    <style type="text/css">
+      [id="x_hide-outlook-web"] {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      max-height: 0px !important;
+      }
+      [id="x_show-outlook-web"] {
+      display: inline-block !important;
+      visibility: visible !important;
+      }
+      body[data-outlook-cycle] .hide-on-om {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      overflow: hidden !important;
+      }
+      body[data-outlook-cycle] .fallback {
+      display: inline-block;
+      }
+    </style>
+    <style>
+      @media only screen and (max-width: 480px) {
+      .responsive-button-table {
+      display: block !important;
+      margin-bottom: 10px !important;
+      width: 100% !important;
+      }
+      .responsive-spacer {
+      display: none !important;
+      }
+      }
+    </style>
+  </head>
+  <body class="bgBodyPage" bgcolor="#939597" style="-webkit-font-smoothing: antialiased; width:100% !important; -webkit-text-size-adjust:none; margin: 0 auto !important; padding: 0px">
+    <table role="presentation" align="center" class="darkmode" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%">
+      
+      
+      <!-- Preheader -->
+      <span style="display:none !important; color:#000000; font-size:1px; line-height:0; overflow:hidden; mso-hide:all;">
+      £3,750 OMODA EV Deposit Contribution, plus 0% APR on the all-electric OMODA E5.&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­
+      </span>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Spacer -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <!--[if true]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="width:600px">
+                <![endif]-->
+                <table role="presentation" style="max-width: 600px;" width="100%" cellspacing="0" cellpadding="0" border="0" class="hom">
+                  <tbody>
+                    <tr>
+                      <td height="30"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--[if true]>
+              </td>
+            </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Preheader -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <!--[if true]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="width:600px">
+                <![endif]-->
+                <table role="presentation" style="max-width: 600px;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#303639" class="hom">
+                  <tbody>
+                    <tr>
+                      <th style="padding: 10px 30px 10px 30px; vertical-align: bottom; font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;"><a style="color:#FFFFFF" target="_blank" href="http://www.google.com">View online</a></th>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--[if true]>
+              </td>
+            </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- Hero image -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <!--[if true]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="width:600px">
+                <![endif]-->
+                <table role="presentation" style="max-width: 600px;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#03415E" >
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="resp hom" align="center" src="images/hero-img.jpg" alt="" width="600" height="590" border="0" style="display: block; width: 100%; max-width: 100%;height: auto">
+                        <!--[if !mso]><!-->
+                        <img class="resp som" align="center" src="images/hero-img.jpg" alt="" width="600" border="0" style="display: none; width: 100%; max-width: 100%;height: auto">
+                        <!--<![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--[if true]>
+              </td>
+            </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Content -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <!--[if true]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="width:600px">
+                <![endif]-->
+                <table role="presentation" style="max-width: 600px;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000" >
+                  <tbody style="">
+                    <tr>
+                      <td class="gradient" style="background-image: url('images/hero-bg.jpg');background-size: 100%;background-repeat: no-repeat;background-position: top; background-color:#000000;">
+                        <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:400px">
+                          <v:fill type="frame" src="https://nicksheehy.github.io/preview/complete/omoda/OMODA%20E5%20-%20Q3%20Offer%20Email/images/hero-bg.jpg" color="#000000" />
+                          <v:textbox inset="0,0,0,0">
+                            <![endif]-->
+                            <div style="line-height: 1; margin: 0px; text-align: left;">
+                              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" >
+                                <tbody>
+                                  <tr>
+                                    <td width="3.3333333333%" class="hom">&nbsp;</td>
+                                    <td  style="padding: 20px 30px 0px;" align="">
+                                      <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 22px; color:#FFFFFF; margin: 0 0 20px;mso-color-alt:auto;" class="para hauto">Hello {Name},</p>
+                                      <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 22px; color:#FFFFFF; margin: 0 0 20px;mso-color-alt:auto;" class="para hauto">
+                                        Go electric with the OMODA E5 and enjoy <strong>0% APR Representative PCP finance*</strong> until 30th September 2025. As part of this exclusive offer, you’ll receive a <strong>£3,750 OMODA EV Deposit Contribution**</strong> when you purchase a new OMODA&nbsp;E5.
+                                      </p>
+                                      <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 22px; color:#FFFFFF; margin: 0 0 20px;mso-color-alt:auto;" class="para hauto">
+                                        With its futuristic looks, advanced features and whisper&#8209;quiet electric drive, the OMODA E5 is designed to make every journey&nbsp;better.
+                                      </p>
+                                      <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 22px; color:#FFFFFF; margin: 0 0 20px;mso-color-alt:auto;" class="para hauto">
+                                        Stylish. Practical. 100% electric. And now, even more&nbsp;affordable.
+                                      </p>
+                                      
+                                      <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 22px; color:#FFFFFF; margin: 0 0 20px;mso-color-alt:auto;" class="para hauto">
+                                        These limited&#8209;time offers make now the perfect time to&nbsp;switch.
+                                      </p>
+                                      <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 22px; color:#FFFFFF; margin: 0 0 20px;mso-color-alt:auto;" class="para hauto">
+                                        But they won’t last. Visit {Dealer Name} today, book your test drive and discover the future of driving with the new OMODA&nbsp;E5.
+                                      </p>
+                                      
+                                    </td>
+                                    <td width="3.3333333333%" class="hom">&nbsp;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!--[if gte mso 9]>
+                          </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--[if true]>
+              </td>
+            </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      <!-- Buttons -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <!--[if true]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="width:600px">
+                <![endif]-->
+                <table class="bgBody" role="presentation" style="max-width: 600px;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000" >
+                  <tbody>
+                    <tr>
+                      <td width="3.3333333333%" class="hom">&nbsp;</td>
+                      <td style="padding: 20px 30px 40px" align="left">
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse;" align="left">
+                          <tr>
+                            <!-- First Button -->
+                            <td class="responsive-button-table" style="padding-right: 10px; display: inline-block;">
+                              <table role="presentation" class="cta button btn-ghost" border="0" cellspacing="0" cellpadding="0" style="display: inline-block; Margin: 0; width: auto;">
+                                <tr>
+                                  <td align="center" valign="middle" style="color:#ffffff; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; border: 2px solid #ffffff; padding: 15px 20px; border-radius: 30px;">
+                                    <a target="_blank" href="https://omodaauto.co.uk/enquire/" style="font-size:16px; text-decoration: none; color:#ffffff; font-weight: bold;">Book a test drive</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <!-- Second Button -->
+                            <td class="responsive-button-table" style="display: inline-block;">
+                              <table role="presentation" class="cta button btn-ghost" border="0" cellspacing="0" cellpadding="0" style="display: inline-block; Margin: 0; width: auto;">
+                                <tr>
+                                  <td align="center" valign="middle" style="color:#000000; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; border: 2px solid #ffffff; padding: 15px 20px; border-radius: 30px;">
+                                    <a target="_blank" href="https://omodaauto.co.uk/e5-ev-offers/" style="font-size:16px; text-decoration: none; color:#ffffff; font-weight: bold;">Discover more</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td width="3.3333333333%" class="hom">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--[if true]>
+              </td>
+            </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Gif -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <!--[if true]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="width:600px">
+                <![endif]-->
+                <table role="presentation" style="max-width: 600px;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#03415E" >
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="resp" align="center" src="images/mod-1-img.gif" alt="" width="600" height="340" border="0" style="display: block; width: 100%; max-width: 100%;height: auto">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--[if true]>
+              </td>
+            </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Module -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <!--[if true]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="width:600px">
+                <![endif]-->
+                <table class="bgBody" role="presentation" style="max-width: 600px;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" >
+                  <tbody>
+                    <tr>
+                      <td width="3.3333333333%" class="hom">&nbsp;</td>
+                      <td style="padding: 30px 30px 40px" align="left">
+                        <h2 style="font-family:Calibri, Helvetica, Arial, sans-serif; color: #000000; font-size: 25px; margin: 0 0 20px; font-weight: normal; line-height: 30px">Go electric with 0% APR representative PCP finance* available until 30th&nbsp;September.</h2>
+                        <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height: 22px; color:#000000; margin: 0 0 30px" class="para hauto">
+                          With a 5&#8209;star NCAP safety rating, experience thrilling performance, innovative design, and cutting&#8209;edge technology without paying a penny in interest. It’s time to make every journey unforgettable—drive the future with OMODA interest&#8209;free&nbsp;today!
+                        </p>
+                        <table style="width: 100%; border-collapse: collapse; font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px;">
+                          <thead>
+                            <tr style="background-color: #4F5457; color: #fff;">
+                              <td colspan="2" style="padding: 10px; text-align: left;font-weight: bold">REPRESENTATIVE EXAMPLE: OMODA E5 – Comfort 61kWh.* <br>(Personal Contract Plan)</td>
+                            </tr>
+                          </thead>
+                        </table>
+                        <table style="width: 100%; border-collapse: collapse; font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; color: #000000">
+                          <tbody>
+                            <tr style="background-color: #EAEBEB;">
+                              <td class="lightDark" width="66%" style="padding: 10px; border-right: 1px solid #fff;width:60%">OTR Cash Price</td>
+                              <td class="lightDark" width="33%" style="padding: 10px; text-align: right;">£33,065.00</td>
+                            </tr>
+                            <tr style="background-color: #4F5457;color: #fff;">
+                              <td style="padding: 10px; border-right: 1px solid #fff;">Customer Deposit </td>
+                              <td style="padding: 10px; text-align: right;">£4,937.00
+</td>
+                            </tr>
+                            <tr style="background-color: #EAEBEB;">
+                              <td class="lightDark" style="padding: 10px; border-right: 1px solid #fff;">OMODA EV Deposit Contribution </td>
+                              <td class="lightDark" style="padding: 10px; text-align: right;">£3,750.00
+</td>
+                            </tr>
+                            <tr style="background-color: #4F5457;color: #fff;">
+                              <td style="padding: 10px; border-right: 1px solid #fff;">Total Deposit </td>
+                              <td style="padding: 10px; text-align: right;">£8,687.00</td>
+                            </tr>
+                            <tr style="background-color: #EAEBEB;">
+                              <td class="lightDark" style="padding: 10px; border-right: 1px solid #fff;">Total Amount of Credit </td>
+                              <td class="lightDark" style="padding: 10px; text-align: right;">£24,378.00</td>
+                            </tr>
+                            <tr style="background-color: #4F5457;color: #fff;">
+                              <td style="padding: 10px; border-right: 1px solid #fff;">Agreement Term </td>
+                              <td style="padding: 10px;text-align: right;">48 months</td>
+                            </tr>
+                            <tr style="background-color: #EAEBEB;">
+                              <td class="lightDark" style="padding: 10px; border-right: 1px solid #fff;">Annual Mileage </td>
+                              <td class="lightDark" style="padding: 10px; text-align: right;">8,000 miles</td>
+                            </tr>
+                            <tr style="background-color: #4F5457;color: #fff;">
+                              <td style="padding: 10px; border-right: 1px solid #fff;">Excess per mile </td>
+                              <td style="padding: 10px; text-align: right;">9.0p</td>
+                            </tr>
+                            <tr style="background-color: #EAEBEB;">
+                              <td class="lightDark" style="padding: 10px; border-right: 1px solid #fff;">Option to Purchase Fee </td>
+                              <td class="lightDark" style="padding: 10px; text-align: right;">£0.00</td>
+                            </tr>
+                            <tr style="background-color: #4F5457;color: #fff;">
+                              <td style="padding: 10px; border-right: 1px solid #fff;">47 Payments of</td>
+                              <td style="padding: 10px; text-align: right;">£289.00</td>
+                            </tr>
+                            <tr style="background-color: #EAEBEB;">
+                              <td class="lightDark" style="padding: 10px; border-right: 1px solid #fff;">Followed by Optional Final Payment</td>
+                              <td class="lightDark" style="padding: 10px; text-align: right;">£10,795.00</td>
+                            </tr>
+                            <tr style="background-color: #4F5457;color: #fff;">
+                              <td style="padding: 10px; border-right: 1px solid #fff;">Interest Charges </td>
+                              <td style="padding: 10px; text-align: right;">£0.00</td>
+                            </tr>
+                            <tr style="background-color: #EAEBEB;">
+                              <td class="lightDark" style="padding: 10px; border-right: 1px solid #fff;">Annual Fixed Interest Rate </td>
+                              <td class="lightDark" style="padding: 10px; text-align: right;">0.00%</td>
+                            </tr>
+                            <tr style="background-color: #4F5457;color: #fff;">
+                              <td style="padding: 10px; border-right: 1px solid #fff;">APR </td>
+                              <td style="padding: 10px; text-align: right;">0.00%</td>
+                            </tr>
+                            <tr style="background-color: #EAEBEB;">
+                              <td class="lightDark" style="padding: 10px; border-right: 1px solid #fff;">Total Amount Payable </td>
+                              <td class="lightDark" style="padding: 10px; text-align: right;">£29,315.00</td>
+                            </tr>
+                            
+                            
+                            <tr style="">
+                              <td colspan="2" style="height: 30px">&nbsp;</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse;" align="left">
+                          <tr>
+                            <!-- First Button -->
+                            <td class="responsive-button-table" style="padding-right: 10px; display: inline-block;">
+                              <table role="presentation" class="cta button btn-ghost" border="0" cellspacing="0" cellpadding="0" style="display: inline-block; Margin: 0; width: auto;">
+                                <tr>
+                                  <td align="center" valign="middle" style="color:#000000; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; border: 2px solid #000000; padding: 15px 20px; border-radius: 30px;">
+                                    <a target="_blank" href="https://omodaauto.co.uk/enquire/" style="font-size:16px; text-decoration: none; color:#000000; font-weight: bold;">Book a test drive</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <!-- Second Button -->
+                            <td class="responsive-button-table" style="display: inline-block;">
+                              <table role="presentation" class="cta button btn-ghost" border="0" cellspacing="0" cellpadding="0" style="display: inline-block; Margin: 0; width: auto;">
+                                <tr>
+                                  <td align="center" valign="middle" style="color:#000000; font-family: Calibri, Helvetica, Arial, sans-serif; font-weight: normal; border: 2px solid #000000; padding: 15px 20px; border-radius: 30px;">
+                                    <a target="_blank" href="https://omodaauto.co.uk/e5-ev-offers/" style="font-size:16px; text-decoration: none; color:#000000; font-weight: bold;">Learn more</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td width="3.3333333333%" class="hom">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--[if true]>
+              </td>
+            </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      <!-- !========== -->
+
+      
+      
+      
+      <!-- Footer -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <!--[if true]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="width:600px">
+                <![endif]-->
+                <table role="presentation" style="max-width: 600px;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#292829" >
+                  <tbody>
+                    <tr>
+                      <td style="padding: 0px 30px 20px 30px; background-image: url('images/footer-bg-img.png'); background-size: 190px 230px; background-repeat: no-repeat; background-position: top right" align="center" class="footer-content">
+                        <table role="presentation" style="max-width: 539px;" width="100%" cellspacing="0" cellpadding="0" border="0" >
+                          <tbody>
+                            <tr class="hom">
+                              <td height="30">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 10px">
+                                <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; font-weight: bold; margin: 0 0 10px; letter-spacing: 0.5px" class="para hauto">
+                                  OMODA <span style="color: #00AEEF">{Town}</span><br>
+                                  Tel: <span style="color: #00AEEF">{Retailer Number}</span><br>
+                                  <span style="color: #00AEEF">{Retailer website}</span>
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:10px 10px 30px">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: auto;" width="" align="left">
+                                  <tr>
+                                    <td>
+                                      <a target="_blank" href="https://www.facebook.com/profile.php?id=100089854635629">
+                                        <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-facebook.png" alt="Facebook" width="25" height="25" border="0" style="width:25px; height:25px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
+                                      </a>
+                                    </td>
+                                    <td width="15" style="width: 15px;">&nbsp;</td>
+                                    <td>
+                                      <a target="_blank" href="https://www.linkedin.com/company/omoda-uk/">
+                                        <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-linkedin.png" alt="LinkedIn" width="25" height="25" border="0" style="width:25px; height:25px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
+                                      </a>
+                                    </td>
+                                    <td width="15" style="width: 15px;">&nbsp;</td>
+                                    <td>
+                                      <a target="_blank" href="https://www.instagram.com/omodaglobal">
+                                        <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-instagram.png" alt="Instagram" width="25" height="25" border="0" style="width:25px; height:25px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="border-top: 1px solid #727276; padding: 30px 10px 10px 10px">
+                                <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#828282; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;margin: 0 0 10px" class="para hauto">
+                                  <strong>Terms and conditions.</strong><br>*Representative 0.00% APR, on OMODA E5 – Comfort 61KWL. <br>UK residents 18+. Guarantees may be required. Representative Example based on 8,000 miles per annum. Credit available subject to&nbsp;status.
+                                </p>
+                                <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#828282; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;margin: 0 0 10px" class="para hauto">
+                                  This offer is available to Retail customers only and is not available in conjunction with any other offers unless specified. Images shown for illustration purposes. This offer is only available at participating retailers. With Personal Contract Purchase, once you have paid all of your regular monthly repayments you can either 1) Pay the Optional Final Repayment and own the car. 2) Part exchange the car for a new one (subject to settlement of your existing agreement, new agreements are subject to status). 3) Return the car to Creation without paying the optional final repayment. Providing you’ve not exceeded the maximum agreed mileage and the car is in good condition (fair wear and tear accepted) you will have nothing further to pay. If the vehicle has exceeded the maximum agreed mileage then a charge of 9.0p per excess mile applies. Orders must be placed and accepted by 30th September 2025. Offers may be varied or withdrawn at any&nbsp;time.
+                                </p>
+                                <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#828282; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;margin: 0 0 10px" class="para hauto">
+                                  ** Offer valid for private retail customers only. Not available to Fleet customer or Motability customers. The £3,750 OMODA EV Deposit Contribution (incl. VAT) is redeemable against the purchase of a new OMODA E5 Electric vehicle ordered and registered between 1st August and 30th September 2025. Offer excludes OMODA 5 petrol models. Offer can be used in conjunction with the 0% APR finance offer. Available at participating retailers only. This offer cannot be used in conjunction with any other promotions or discounts. For full details, please contact your local OMODA dealer. OMODA &amp; JAECOO UK Limited reserves the right to amend or withdraw this offer at any time without prior&nbsp;notice.
+                                </p>
+                                <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#ffffff; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;margin: 0 0 30px" class="para hauto">
+                                  <span style="color: magenta">{Insert your financial permissions here. This includes but is not limited to your credit broker statement and additional small print.<br>
+
+                              Example of minimum criteria below. <br>
+
+                              {Full legal entity name plus any trading name(s)} is a credit broker, not a lender {post code}. Finance provided by ** Finance Provider **, ** Finance Providers Postcode**. Finance subject to status, 18+ Ts &amp; Cs apply.}</span>
+                                </p>
+                                
+                                <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#828282; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;margin: 0 0 30px" class="para hauto">
+                                  You have previously agreed to receive emails from OMODA Automotive UK&nbsp;Ltd. <br>© OMODA &amp; JAECOO UK LIMITED 2024. www.omodaauto.co.uk
+                                  <br>Registered in England and Wales with company number&nbsp;15203898.
+                                  <br>Registered address: Building 7 Chiswick Park, 566 Chiswick High Road, London W4 5YG, United&nbsp;Kingdom
+                                </p>
+                                <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#828282; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;" class="para hauto">
+                                  © 2025 OMODA &amp; JAECOO UK Limited <br /><a href="https://omodaauto.co.uk/privacy-policy/">Privacy Statement</a> &nbsp; <a href="https://omodaauto.co.uk/legal-notice/">Legal Notice</a> &nbsp; <a href="https://omodaauto.co.uk/">Unsubscribe</a>
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--[if true]>
+              </td>
+            </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Spacer -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <!--[if true]>
+          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="width:600px">
+                <![endif]-->
+                <table role="presentation" style="max-width: 600px;" width="100%" cellspacing="0" cellpadding="0" border="0" class="hom">
+                  <tbody>
+                    <tr>
+                      <td height="30"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--[if true]>
+              </td>
+            </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+    </table>
+  </body>
+</html>
