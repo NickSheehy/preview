@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en" xml:lang="en">
+  <head>
+    <title>JAECOO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <style>
+      /*
+      * @import url("https://use.typekit.net/tja6pah.css");
+      * breaks design
+      * */
+    </style>
+    <style type="text/css">
+      :root {
+      /*
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+      */
+      }
+      @media (prefers-color-scheme: dark) {
+      .darkimage {
+      display: block !important;
+      width: auto !important;
+      overflow: visible !important;
+      float: none !important;
+      max-height: inherit !important;
+      max-width: inherit !important;
+      line-height: auto !important;
+      margin-top: 0px !important;
+      visibility: inherit !important;
+      background-color: #000000;
+      }
+      .lightimage {
+      display: none !important;
+      }
+      .light-logo {display: none}
+      .dark-logo {display: inline !important}
+      .bgBody {
+      background-color: #000000 !important;
+      }
+      .header {
+      background-color: white;
+      }
+      .bgBodyPage {
+      background-color: #333132 !important;
+      }
+      .preview, .page {
+      background-color: #000000 !important;
+      }
+      .bgBodyPage .preview {
+      background-color: #000000 !important;
+      }
+      .module {
+      background-color: #000000 !important;
+      }
+      .heroBG {
+      background-color: none !important;
+      }
+      .width-100 {
+      width: 100%;
+      }
+      .card {
+      background-color: #2D2E2F !important;
+      }
+      .button td {
+      border: 2px solid #ffffff !important;
+      }
+      .button, .button td {
+      text-decoration: none !important;
+      }
+      .button a {
+      color: #FFFFFF !important;
+      text-decoration: none !important;
+      }
+      h1, h2, h3, h4, h5, h6, p, td, th, ul, ol, li, b, .heading, .heading span, .paragraph, .paragraph span, .p1, .p2, .p3, .p4 {
+      color: #ffffff !important;
+      }
+      .lightDark {
+      color: #000000 !important;
+      }
+      a {
+      color: inherit !important;
+      text-decoration: underline;
+      }
+      a[href^="x-apple-data-detectors"], a[href^="tel"], a[href^="sms"] {
+      text-decoration: none;
+      pointer-events: none;
+      cursor: default;
+      color: #FFFFFF !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media (prefers-color-scheme: light) {
+      }
+    </style>
+    <style type="text/css">
+      /*----------------------------- Interactive ------------------------------*/
+      /* Buttons */
+      @media screen {
+      .button:hover {
+      filter: brightness(110%);
+      transition: all ease 0.5s !important;
+      }
+      .button:hover a {
+      Xcolor: inherit !important;
+      transition: all ease 0.5s !important;
+      }
+      .btn-ghost:hover, .btn-ghost:hover a {
+      background-color: rgba(255, 255, 255, 0.025) !important;
+      transition: all ease 0.5s !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      body {
+      margin: 0px !important;
+      padding: 0px !important;
+      width: 100% !important;
+      height: 100% !important;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      }
+      a {
+      color: #ffffff
+      }
+      a img {
+      border: none !important;
+      }
+      p {
+      margin: 0px;
+      padding: 0px;
+      }
+      a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+      }
+      #MessageViewBody, #MessageWebViewDiv {
+      width: 100% !important;
+      }
+      #MessageViewBody a {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      }
+      table {
+      box-sizing: border-box; /* Experiment with this */
+      border-spacing: 0;
+      border-collapse: separate; /* This supports border-radius */
+      table-layout: auto; /* Adjust as necessary */
+      margin: 0 auto;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      }
+      table td {
+      border-collapse: collapse;
+      }
+    </style>
+    <style type="text/css">
+      strong {
+      }
+      h1, h2, h3, h4 {
+      font-family: Calibri, Helvetica, Arial, sans-serif;
+      }
+      p {
+      font-family: Calibri, Helvetica, Arial, sans-serif;
+      }
+      .heading, .para {
+      }
+      .button a {
+      padding: 9px 20px 13px 20px !important;
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 640px) {
+      .width-100, table .width-100 {width:100%!important; height:auto!important; ;}
+      .stack-column {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;}
+      .round {border-radius: 20%;}
+      .inline-fix {display: inline!important}
+      .imageCol, .contentCol, .contentColInner {
+      padding: 0 !important;
+      }
+      .card .imageCol .imgWrap, .card .imageTD {
+      overflow: hidden;
+      border-radius: 3px 3px 0 0 !important;
+      }
+      .card-cta {
+      padding: 40px 30px 40px !important; 
+      }
+      .contentCol {
+      padding: 20px 0 !important;
+      }
+      .contentCol-card {
+      padding: 20px !important;
+      }
+      .mobileRowFW {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      }
+      .mobileRowFWContent {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .mobileColPad {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .mobileColPad-right {
+      padding-right: 20px !important;
+      }
+      .mobileColPad-left {
+      padding-left: 20px !important;
+      }
+      .contentSplit {
+      width: 100% !important;
+      }
+      .splitSides {
+      width: 20px !important;
+      }
+      .appBadges, .appBadges img {
+      width: 130px !important;
+      height: auto !important;
+      }
+      .heading {
+      font-size: 24px !important;
+      line-height: 30px !important;
+      }
+      .paragraph, .p1, .p2, .p3, .p4 {
+      font-size: 14px !important;
+      line-height: 20px !important;
+      }
+      .sct, th.sct .sct th {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      }
+      .sctc, th.sctc, .sctc th {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+      }
+      .sctc .button {
+      float: none !important;
+      margin: 0 auto 0 auto !important;
+      }
+      .hauto {
+      height: auto !important;
+      }
+      .wauto {
+      width: auto !important;
+      }
+      .resp {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .hom {
+      display: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+      width: 0px !important;
+      height: 0px !important;
+      }
+      .som {
+      display: block !important;
+      width: auto !important;
+      max-height: inherit !important;
+      overflow: visible !important;
+      float: none !important;
+      visibility: visible !important;
+      height: auto !important;
+      }
+      .al {
+      text-align: center !important;
+      }
+      .heroBG {
+      height: auto !important;
+      }
+      .dtSpacer {
+      padding: 40px 0 0 0;
+      }
+      .overlayBG {
+      background-image: none !important;
+      }
+      .overlapBG {
+      background-size: contain !important;
+      }
+      .overlapPad {
+      padding: 0 20px 0 20px !important;
+      height: auto !important;
+      }
+      .overlapImg {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .timer .side {
+      display: none !important;
+      }
+      .timer .center {
+      width: 100% !important;
+      }
+      .mpl20 {
+      padding-left: 20px !important;
+      }
+      .mpx20 {
+      padding: 0 20px 0 20px !important;
+      }
+      .mp20 {
+      padding: 20px !important;
+      }
+      .mw20 {
+      width: 20px !important;
+      }
+      .headerBG {
+      background-position: right top !important;
+      background-clip: padding-box;
+      }
+      .headerLogo img {
+      display: none !important;
+      visibility: hidden !important;
+      }
+      .mHeroBG {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .footer-content {
+      padding: 30px !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 425px) {
+      .scml, th.scml, .scml th, .td-head, .td-content {
+      display: block !important;
+      width:94% !important;
+      max-width: 100% !important;
+      text-align: left !important;
+      }
+      .td-head, .td-content {
+      padding: 10px !important;
+      }
+      .td-head {
+      text-transform: uppercase;
+      padding-top: 16px !important;
+      padding-bottom: 4px !important;
+      }
+      .td-content {
+      font-weight: normal !important;
+      border-top: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 16px !important;
+      }
+      .first-row .td-content {
+      display: none !important;
+      }
+      .last-row .td-content {
+      border-top:0 !important;
+      }
+      .last-row .td-head {
+      border-bottom:0 !important;
+      }
+      .loml {
+      text-align: left !important;
+      float: left !important;
+      }
+      h2 {
+      xletter-spacing: 1px !important; 
+      font-size: 36px !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 375px) {
+      .hos {
+      display: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+      width: 0px !important;
+      height: 0px !important;
+      }
+      .menuFBtr {
+      text-align: right !important;
+      }
+      .fbMenuItem1 {
+      width: 30% !important;
+      }
+      }
+    </style>
+    <!--[if mso]>
+    <style type="text/css">
+      .body-text { font-family: Arial, Helvetica, sans-serif !important; }
+      body { margin: 0px !important; padding: 0px !important; width: 100% !important; height: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+    </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+    <style type="text/css">
+      p { padding:0px; Margin:0px; }
+      o:p { font-size: 0px; line-height: 0px; margin: 0; }
+    </style>
+    <![endif]-->
+    <!-- Outlook 365 & .com Interactive Fix -->
+    <style type="text/css">
+      [id="x_hide-outlook-web"] {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      max-height: 0px !important;
+      }
+      [id="x_show-outlook-web"] {
+      display: inline-block !important;
+      visibility: visible !important;
+      }
+      body[data-outlook-cycle] .hide-on-om {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      overflow: hidden !important;
+      }
+      body[data-outlook-cycle] .fallback {
+      display: inline-block;
+      }
+    </style>
+    <style>
+      @media only screen and (max-width: 480px) {
+      .responsive-button-table {
+      display: block !important;
+      margin-bottom: 10px !important;
+      width: 100% !important;
+      }
+      .responsive-spacer {
+      display: none !important;
+      }
+      }
+    </style>
+  </head>
+  <body class="bgBodyPage" bgcolor="#939597" style="-webkit-font-smoothing: antialiased; width:100% !important; -webkit-text-size-adjust:none; margin: 0 auto !important; padding: 0px">
+    <table role="presentation" align="center" class="darkmode" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%">
+      <!-- Preheader -->
+      <span style="display:none !important; color:#000000; font-size:1px; line-height:0; overflow:hidden; mso-hide:all;">Your invitation to the most anticipated SUV launch of 2025&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­
+      </span>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Preheader -->
+      <tr class="hom">
+        <td align="center" bgcolor="#939598">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#2C3037" class="width-100">
+            <tbody>
+              <tr>
+                <th style="padding: 10px 30px 10px 30px; vertical-align: bottom; font-family: Calibri, Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;"><a style="color:#ffffff" target="_blank" href="http://www.google.com">View online</a></th>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Hero image -->
+      <tr>
+        <td align="center" bgcolor="#939598">
+          <table role="presentation" style="max-width: 600px;width: 600px" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="resp" align="center" src="images/hero-img-d.jpg" alt="" width="600" border="0" style="display: block; width: 600x; max-width: 100%; height: auto">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Hero heading -->
+      <tr>
+        <td align="center" bgcolor="#939598">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#253946" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td style="padding: 40px 30px 0px;" align="center">
+                  <h1 style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:50px; line-height: 50px; color:#ffffff; margin: 0 0 20px">
+                    <img class="resp hom" align="center" src="images/hero-h1-d.png" alt="Your invitation to the most anticipated SUV launch of 2025!" width="540" border="0" style="display: block; width: 100%; max-width: 100%;height: auto">
+                    <!--[if !mso]><!-->
+                    <img class="resp som" align="center" src="images/hero-h1-m.png" alt="Your invitation to the most anticipated SUV launch of 2025!" border="0" style="display: none; width: 100%; max-width: 100%;height: auto">
+                    <!--<![endif]-->
+                  </h1>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Content -->
+      <tr>
+        <td align="center" bgcolor="#939598">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#253946" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td width="30" style="width: 30px" class="hom">
+                  <!-- Spacer -->
+                </td>
+                <td style="padding: 20px 30px 20px;" align="center">
+                  <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; margin: 0 0 20px">Hello&nbsp;[Name],</p>
+                  <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; margin: 0 0 20px">The all&#8209;new JAECOO 5 has arrived, and you can be among the first to drive it at <span style="color: magenta">{Dealer Name}</span> during our official UK launch&nbsp;weekend.</p>
+                  <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; margin: 0 0 20px">Combining stunning design, smart innovation, and exceptional capability, it’s the SUV that changes&nbsp;everything.</p>
+                  <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; margin: 0 0 20px">Take a test drive, enjoy 4 months of Costa Coffee*, and get 3 years’ free servicing, worth up to £555†, when you&nbsp;buy.</p>
+                  <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; margin: 0 0 20px">Spaces are limited. Book your place&nbsp;now.</p>
+                </td>
+                <td width="30" style="width: 30px" class="hom">
+                  <!-- Spacer -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Icon features -->
+      <tr>
+        <td align="center" bgcolor="#939598">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#253946" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <!-- Right column -->
+                <td class="stack-column" width="300" style="width: 300px; ">
+                  <table width="100%" cellspacing="0" cellpadding="0" border="0" >
+                    <tr>
+                      <td width="60" style="width: 60px" class="hom">
+                        <!-- Spacer -->
+                      </td>
+                      <td align="center" dir="ltr" class="" style="padding: 0px 20px">
+                        <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:22px; line-height: 22px; color:#ffffff; margin: 0 0 10px; font-weight: bold">
+                          <img class="" align="center" src="images/icon-coffee.png" alt="" width="48" border="0" style="display: block; width: 48px; max-width: 100%; height: auto;">
+                        </p>
+                        <h3 style="font-family: Raleway, Helvetica, Arial, sans-serif; font-size:15px; line-height: 24px; color:#ffffff; margin: 0 0 20px">4 months of Costa coffee when you take a test&nbsp;drive</h3>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <!-- Left column -->
+                <td valign="top" class="stack-column" width="300" style="width: 300px;">
+                  <table width="100%" cellspacing="0" cellpadding="0" border="0" >
+                    <tr>
+                      <td align="center" dir="ltr" class="" style="padding: 0px 20px">
+                        <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:22px; line-height: 22px; color:#ffffff; margin: 0 0 10px; font-weight: bold">
+                          <img class="" align="center" src="images/icon-service.png" alt="" width="48" border="0" style="display: block; width: 48px; max-width: 100%; height: auto;">
+                        </p>
+                        <h3 style="font-family: Raleway, Helvetica, Arial, sans-serif; font-size:15px; line-height: 24px; color:#ffffff; margin: 0 0 20px">3 years of free servicing when you&nbsp;purchase</h3>
+                      </td>
+                      <td width="60" style="width: 60px" class="hom">
+                        <!-- Spacer -->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- CTA -->
+      <tr>
+        <td align="center" bgcolor="#939598">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#253946" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td width="30" style="width: 30px" class="hom">
+                  <!-- Spacer -->
+                </td>
+                <td style="padding: 30px 30px 30px;" align="center">
+                  <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; margin: 0px">
+                    <a href="http://"
+                      style=""><img src="images/btn-lb-book.png" width="314" style="width: 314px; border: none;margin: 0 0 10px; max-width: 100%" alt="Book a test drive"></a>
+                    <br>
+                    <a href="http://"
+                      style=""><img src="images/btn-lb-email.png" width="150" style="width: 150px; border: none;margin: 0 0 10px" alt="Book a test drive"></a>
+                    &nbsp;
+                    <a href="http://"
+                      style=""><img src="images/btn-lb-call.png" width="150" style="width: 150px; border: none;margin: 0 0 10px" alt="Discover more"></a>
+                  </p>
+                </td>
+                <td width="30" style="width: 30px" class="hom">
+                  <!-- Spacer -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Module 1 -->
+      <tr>
+        <td align="center" bgcolor="#939598">
+          <table role="presentation" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#00788F" style="max-width: 600px; width: 600px;" class="XbgBody width-100" dir="ltr">
+            <tr>
+              <!-- Right column -->
+              <td class="stack-column" width="340" style="width: 300px; ">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" >
+                  <tr>
+                    <td class="" style="">
+                      <img class="resp" align="center" src="images/mod-1-img.jpg" alt="" width="300" border="0" style="display: block; width: 300px; max-width: 100%; height: auto;">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <!-- Left column -->
+              <td valign="top" class="stack-column" width="300" style="width: 300px;">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" >
+                  <tr>
+                    <td dir="ltr" class="" style="padding: 40px 30px  30px">
+                      <h2 style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:22px; line-height: 22px; color:#ffffff; margin: 0 0 10px; font-weight: bold">
+                        <img class="resp" align="center" src="images/mod-1-h2.png" alt="4 months of Costa Coffee*" width="240" border="0" style="display: block; width: 240px; max-width: 100%; height: auto;">
+                      </h2>
+                      <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 22px; color:#ffffff; margin: 0 0 20px">Test drive the all&#8209;new JAECOO 5 at our Launch Event and we’ll reward you with 4 months of Costa Coffee, the perfect way to fuel your&nbsp;journeys.</p>
+                      <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; margin: px"> <a href="http://"
+                        style=""><img src="images/btn-l-secure.png" width="168" style="width: 168px; border: none" alt="Secure your place"></a></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Module 2 -->
+      <tr>
+        <td align="center" bgcolor="#939598">
+          <table role="presentation" width="700" cellspacing="0" cellpadding="0" border="0" bgcolor="#00788F" style="max-width: 600px; width: 600px;" class="XbgBody width-100" dir="rtl">
+            <tr>
+              <!-- Right column -->
+              <td class="stack-column" width="340" style="width: 300px; ">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" >
+                  <tr>
+                    <td class="" style="">
+                      <img class="resp" align="center" src="images/mod-2-img.jpg" alt="" width="300" border="0" style="display: block; width: 300px; max-width: 100%; height: auto;">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <!-- Left column -->
+              <td valign="top" class="stack-column" width="300" style="width: 300px;">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" >
+                  <tr>
+                    <td dir="ltr" class="" style="padding: 40px 30px  30px">
+                      <h2 style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:22px; line-height: 22px; color:#ffffff; margin: 0 0 10px; font-weight: bold">
+                        <img class="resp" align="center" src="images/mod-2-h2.png" alt="3-years free servicing†" width="240" border="0" style="display: block; width: 240px; max-width: 100%; height: auto;">
+                      </h2>
+                      <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 22px; color:#ffffff; margin: 0 0 20px">Purchase a JAECOO 5 at our Launch Event and we’ll also give you 3 years of free servicing, worth up to £555,† so you can enjoy every journey with peace of&nbsp;mind.</p>
+                      <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; margin: px"> <a href="http://"
+                        style=""><img src="images/btn-l-secure.png" width="168" style="width: 168px; border: none" alt="Secure your place"></a></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Footer -->
+      <tr>
+        <td align="center" bgcolor="#939598">
+          <table role="presentation" style="max-width: 600px;background-image: url('https://mcusercontent.com/74b24442c8d7d0b842e25d035/images/776d76d6-94a8-a394-2e0a-8443f236b01b.png');  background-repeat: no-repeat; background-position: top left" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#00788F" class="width-100 XbgBody">
+            <tbody>
+              <tr>
+                <td>
+                  <table role="presentation" style="" width="100%" cellspacing="0" cellpadding="0" border="0" >
+                    <tbody>
+                      <tr>
+                        <td style="border-top: 1px solid #ffffff; padding: 30px 30px 10px; text-align: right">
+                          <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:14px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; font-weight: bold; margin: 0 0 10px; letter-spacing: 0.5px" class="para hauto">
+                            JAECOO <span style="color: magenta">{Town}</span><br>
+                            Tel: <span style="color: magenta">{Retailer Number}</span><br>
+                            <span style="color: magenta">{Retailer website}</span>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="right" style="padding: 0px 30px 20px">
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: auto;" align="right">
+                            <tr>
+                              <td>
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100089854635629">
+                                  <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-facebook.png" alt="Facebook" width="25" height="25" border="0" style="width:25px; height:25px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
+                                </a>
+                              </td>
+                              <td width="15" style="width: 15px;">&nbsp;</td>
+                              <td>
+                                <a target="_blank" href="https://www.linkedin.com/company/omoda-uk/">
+                                  <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-linkedin.png" alt="LinkedIn" width="25" height="25" border="0" style="width:25px; height:25px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
+                                </a>
+                              </td>
+                              <td width="15" style="width: 15px;">&nbsp;</td>
+                              <td>
+                                <a target="_blank" href="https://www.instagram.com/omodaglobal">
+                                  <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-instagram.png" alt="Instagram" width="25" height="25" border="0" style="width:25px; height:25px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px 30px 0px;">
+                          <hr style="border: none; height: 1px; background-color: white; color: white;Margin: 0 0 20px"/>
+                          <h4 style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#ffffff; mso-line-height-rule:exactly; line-height:16px; font-weight: bold;margin: 0px" class="para hauto">
+                            Terms and Conditions
+                          </h4>
+                          <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#ffffff; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;margin: 0 0 10px" class="para hauto">
+                            By participating in any Promotion(s), you agree to be bound by these Terms. General Eligibility (applies to all Promotions). The following eligibility criteria apply to the above Promotion. Open to UK residents aged 18 or over only. Retail customers only – excludes business, fleet, leasing, and Motability customers. Employees of OMODA &amp; JAECOO UK Ltd, its agents, or anyone professionally connected with a Promotion are excluded. Promotions are available only at participating OMODA &amp; JAECOO retailers.Offers are non&#8209; transferable, non&#8209;refundable, have no cash alternative, and cannot be combined with other offers unless expressly stated. We reserve the right to amend, suspend, or withdraw any Promotion without&nbsp;notice.
+                          </p>
+                          <h4 style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#ffffff; mso-line-height-rule:exactly; line-height:16px; font-weight: bold;margin: 0px" class="para hauto">
+                            *COSTA Coffee Promotion
+                          </h4>
+                          <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#ffffff; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;margin: 0 0 10px" class="para hauto">
+                            Eligible customers will receive a reward email entitling them to claim up to 4 Months Free Costa Coffee Hot Drinks in the form of a £3.85 Costa Online Gift Card, claimable once per week for 16 consecutive weeks. Qualifying Activity: To qualify for the Promotion, you must meet the following conditions (collectively referred to as the “Eligibility Criteria”). Book AND test drive either a JAECOO 5 petrol or a JAECOO 5 EV during the promotional period, which runs between 6th November 2025 – 9th November 2025. Test drive of the vehicle to be completed with a participating JAECOO retailer (To find a participating retailer, click the link here and enter your postal code). Be the person test driving (as applicable) the vehicle. Reward Details: Eligible customers will receive a reward email entitling them to claim 16 weekly £3.85 Costa Online Gift Cards (one per week for 16 consecutive weeks, with each new week starting on a Monday). The first Online Gift Card must be claimed within 30 days of receiving the reward email. Customers must download each week’s Online Gift Card from the dedicated reward site; unused weeks are forfeited. One reward per customer per completed test drive (multiple test drives do not entitle additional rewards). Online Gift Cards are valid at participating Costa Coffee stores and are subject to Costa Coffee’s standard terms and conditions, see; https://gifting.costa.co.uk/terms-and-conditions Online Gift Cards will be valid for a minimum of 12 months from date of successful claim. Costa Online Gift Cards are not transferable, for sale, re&#8209;sale or redeemable for cash and there is no cash alternative. No change will be given if the value of the purchase is less than the value of the Online Gift Card. Costa Online Gift Cards can be used in participating stores as full or part payment of products, subject to the in&#8209;store technology. Registration to the dedicated reward site and use of your Online Git Card(s) constitutes acceptance of these terms and&nbsp;conditions.
+                          </p>
+                          <h4 style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#ffffff; mso-line-height-rule:exactly; line-height:16px; font-weight: bold;margin: 0px" class="para hauto">
+                            †JAECOO 5 Complimentary Servicing
+                          </h4>
+                          <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#ffffff; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;margin: 0 0 10px" class="para hauto">
+                            JAECOO 5 EV – 4 Years Complimentary Servicing. Qualifying Activity: Purchase and register a new JAECOO 5 BEV model between 6 &#8209; 9 November 2025, with delivery and registration completed by 31 December 2025. Purchaser must be the registered keeper. Not available with Motability, PCH, or BCH offers. Reward Details: Covers the 1st to 4th scheduled services (up to 40,000 miles or 4 years, whichever comes first). Excludes additional service items outside the standard schedule. If the vehicle reaches 40,000 miles within 3 years, the plan must be renewed for the 50,000&#8209;mile service and beyond. Standard cost of the servicing pack is £349. JAECOO 5 ICE – 3 Years Complimentary Servicing. Qualifying Activity: Purchase and register a new JAECOO 5 ICE model between 6 &#8209; 9 November 2025, with delivery and registration completed by 31 December 2025. Purchaser must be the registered keeper. Not available with Motability, PCH, or BCH offers. Reward Details: Covers the 1st to 3rd scheduled services (up to 30,000 miles or 3 years, whichever comes first). Excludes additional service items outside the standard schedule. If the vehicle reaches 30,000 miles within 3 years, the plan must be renewed for the 40,000&#8209;mile service and beyond. Standard cost of the servicing pack is&nbsp;£555.
+                          </p>
+                          <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#ffffff; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;margin: 0 0 30px" class="para hauto">
+                            Liability &amp; Data Protection. We accept no responsibility for technical errors, delays, or issues outside our control affecting participation or redemption. We are not responsible for the quality, fulfilment, or availability of third&#8209;party services (e.g. COSTA). Any disputes regarding such services must be taken up directly with the service provider. We reserve the right to verify customer eligibility, including identity, residency, and qualifying test drive details. We may withhold or withdraw any reward if fraud, abuse, or breach of these Terms is suspected. Personal data provided for a Promotion will be processed by OMODA &amp; JAECOO UK Ltd and its appointed partners (including Rhino Design (Manchester) Ltd, Grace &amp; Courage Ltd) solely for administering the Promotion and in accordance with our Privacy Policy (Privacy Policy &#8209; Jaecoo). These Terms are governed by and construed in accordance with the laws of England and Wales, and the parties submit to the exclusive jurisdiction of the English courts. Promoter: OMODA &amp; JAECOO UK Limited (Company No. 15203898), Building 7, Chiswick Park, 566 Chiswick High Road, London W4&nbsp;5YG.
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="right" style="padding: 0px 30px 20px">
+                          <p style="font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#ffffff; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;margin: 0 0 0px" class="para hauto">
+                            You have previously agreed to receive emails from JAECOO Automotive UK Ltd. <br>
+                            © OMODA &amp; JAECOO UK LIMITED 2025. www.jaecooauto.co.uk <br>
+                            Registered in England and Wales with company number 15203898. <br>
+                            Registered address: Building 7 Chiswick Park, 566 Chiswick High Road, <br>London W4 5YG, United&nbsp;Kingdom
+                          </p>
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td align="center" bgcolor="#939598">
+                          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#2C3037" class="width-100">
+                            <tbody>
+                              <tr>
+                                <td style="padding: 10px 30px 10px 30px; vertical-align: bottom; font-family: Calibri, Helvetica, Arial, sans-serif; font-size:10px; color:#ffffff; mso-line-height-rule:exactly; line-height:16px; font-weight: normal; text-align: right">© 2025 JAECOO Automotive Limited &nbsp; <a href="https://omodaauto.co.uk/privacy-policy/">Privacy Statement</a> &nbsp; <a href="https://omodaauto.co.uk/legal-notice/">Legal Notice</a> &nbsp; <a href="https://omodaauto.co.uk/">Unsubscribe</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+    </table>
+  </body>
+</html>
