@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en" xml:lang="en">
+  <head>
+    <title>TIGGO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <style>
+      /*
+      * @import url("https://use.typekit.net/tja6pah.css");
+      * breaks design
+      * */
+    </style>
+    <style type="text/css">
+      :root {
+      /*
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+      */
+      }
+      @media (prefers-color-scheme: dark) {
+      .darkimage {
+      display: block !important;
+      width: auto !important;
+      overflow: visible !important;
+      float: none !important;
+      max-height: inherit !important;
+      max-width: inherit !important;
+      line-height: auto !important;
+      margin-top: 0px !important;
+      visibility: inherit !important;
+      background-color: #000000;
+      }
+      .lightimage {
+      display: none !important;
+      }
+      .light-logo {display: none}
+      .dark-logo {display: inline !important}
+      .bgBody {
+      background-color: #000000 !important;
+      }
+      .header {
+      background-color: white;
+      }
+      .bgBodyPage {
+      background-color: #333132 !important;
+      }
+      .preview, .page {
+      background-color: #000000 !important;
+      }
+      .bgBodyPage .preview {
+      background-color: #000000 !important;
+      }
+      .module {
+      background-color: #000000 !important;
+      }
+      .heroBG {
+      background-color: none !important;
+      }
+      .width-100 {
+      width: 100%;
+      }
+      .card {
+      background-color: #2D2E2F !important;
+      }
+      .button td {
+      border: 2px solid #ffffff !important;
+      }
+      .button, .button td {
+      text-decoration: none !important;
+      }
+      .button a {
+      color: #FFFFFF !important;
+      text-decoration: none !important;
+      }
+      h1, h2, h3, h4, h5, h6, p, td, th, ul, ol, li, b, .heading, .heading span, .paragraph, .paragraph span, .p1, .p2, .p3, .p4 {
+      color: #ffffff !important;
+      }
+      .lightDark {
+      color: #000000 !important;
+      }
+      a {
+      Xcolor: inherit !important;
+      text-decoration: underline;
+      }
+      a[href^="x-apple-data-detectors"], a[href^="tel"], a[href^="sms"] {
+      text-decoration: none;
+      pointer-events: none;
+      cursor: default;
+      color: #FFFFFF !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media (prefers-color-scheme: light) {
+      }
+    </style>
+    <style type="text/css">
+      /*----------------------------- Interactive ------------------------------*/
+      /* Buttons */
+      @media screen {
+      .button:hover {
+      filter: brightness(110%);
+      transition: all ease 0.5s !important;
+      }
+      .button:hover a {
+      Xcolor: inherit !important;
+      transition: all ease 0.5s !important;
+      }
+      .btn-ghost:hover, .btn-ghost:hover a {
+      background-color: rgba(255, 255, 255, 0.025) !important;
+      transition: all ease 0.5s !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      body {
+      Margin: 0px !important;
+      padding: 0px !important;
+      width: 100% !important;
+      height: 100% !important;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      }
+      a {
+      color: #ffffff
+      }
+      a img {
+      border: none !important;
+      }
+      p {
+      Margin: 0px;
+      padding: 0px;
+      }
+      a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+      }
+      #MessageViewBody, #MessageWebViewDiv {
+      width: 100% !important;
+      }
+      #MessageViewBody a {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      }
+      table {
+      box-sizing: border-box; /* Experiment with this */
+      border-spacing: 0;
+      border-collapse: separate; /* This supports border-radius */
+      table-layout: auto; /* Adjust as necessary */
+      Margin: 0 auto;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      }
+      table td {
+      border-collapse: collapse;
+      }
+    </style>
+    <style type="text/css">
+      strong {
+      }
+      h1, h2, h3, h4 {
+      font-family: Arial, sans-serif;
+      }
+      p {
+      font-family: Arial, sans-serif;
+      }
+      .heading, .para {
+      }
+      .button a {
+      padding: 9px 20px 13px 20px !important;
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 640px) {
+      .width-100, table .width-100 {width:100%!important; height:auto!important; ;}
+      .stack-column {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      }
+      .round {border-radius: 20%;}
+      .inline-fix {display: inline!important}
+      .imageCol, .contentCol, .contentColInner {
+      padding: 0 !important;
+      }
+      .card .imageCol .imgWrap, .card .imageTD {
+      overflow: hidden;
+      border-radius: 3px 3px 0 0 !important;
+      }
+      .card-cta {
+      padding: 40px 30px 40px !important; 
+      }
+      .contentCol {
+      padding: 20px 0 !important;
+      }
+      .contentCol-card {
+      padding: 20px !important;
+      }
+      .mobileRowFW {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      }
+      .mobileRowFWContent {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .mobileColPad {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .mobileColPad-right {
+      padding-right: 20px !important;
+      }
+      .mobileColPad-left {
+      padding-left: 20px !important;
+      }
+      .contentSplit {
+      width: 100% !important;
+      }
+      .splitSides {
+      width: 20px !important;
+      }
+      .appBadges, .appBadges img {
+      width: 130px !important;
+      height: auto !important;
+      }
+      .heading {
+      font-size: 24px !important;
+      line-height: 30px !important;
+      }
+      .paragraph, .p1, .p2, .p3, .p4 {
+      font-size: 14px !important;
+      line-height: 20px !important;
+      }
+      .sct, th.sct .sct th {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      }
+      .sctc, th.sctc, .sctc th {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+      }
+      .sctc .button {
+      float: none !important;
+      Margin: 0 auto 0 auto !important;
+      }
+      .hauto {
+      height: auto !important;
+      }
+      .wauto {
+      width: auto !important;
+      }
+      .resp {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .hom {
+      display: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+      width: 0px !important;
+      height: 0px !important;
+      }
+      .som {
+      display: block !important;
+      width: auto !important;
+      max-height: inherit !important;
+      overflow: visible !important;
+      float: none !important;
+      visibility: visible !important;
+      height: auto !important;
+      }
+      .al {
+      text-align: center !important;
+      }
+      .heroBG {
+      height: auto !important;
+      }
+      .dtSpacer {
+      padding: 40px 0 0 0;
+      }
+      .overlayBG {
+      background-image: none !important;
+      }
+      .overlapBG {
+      background-size: contain !important;
+      }
+      .overlapPad {
+      padding: 0 20px 0 20px !important;
+      height: auto !important;
+      }
+      .overlapImg {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .timer .side {
+      display: none !important;
+      }
+      .timer .center {
+      width: 100% !important;
+      }
+      .mpl20 {
+      padding-left: 20px !important;
+      }
+      .mpx20 {
+      padding: 0 20px 0 20px !important;
+      }
+      .mp20 {
+      padding: 20px !important;
+      }
+      .mw20 {
+      width: 20px !important;
+      }
+      .headerBG {
+      background-position: right top !important;
+      background-clip: padding-box;
+      }
+      .headerLogo img {
+      display: none !important;
+      visibility: hidden !important;
+      }
+      .mHeroBG {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .footer-content {
+      padding: 30px !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 425px) {
+      .scml, th.scml, .scml th, .td-head, .td-content {
+      display: block !important;
+      width:94% !important;
+      max-width: 100% !important;
+      text-align: left !important;
+      }
+      .td-head, .td-content {
+      padding: 10px !important;
+      }
+      .td-head {
+      text-transform: uppercase;
+      padding-top: 16px !important;
+      padding-bottom: 4px !important;
+      }
+      .td-content {
+      font-weight: normal !important;
+      border-top: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 16px !important;
+      }
+      .first-row .td-content {
+      display: none !important;
+      }
+      .last-row .td-content {
+      border-top:0 !important;
+      }
+      .last-row .td-head {
+      border-bottom:0 !important;
+      }
+      .loml {
+      text-align: left !important;
+      float: left !important;
+      }
+      h2 {
+      xletter-spacing: 1px !important; 
+      Xfont-size: 36px !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 375px) {
+      .hos {
+      display: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+      width: 0px !important;
+      height: 0px !important;
+      }
+      .menuFBtr {
+      text-align: right !important;
+      }
+      .fbMenuItem1 {
+      width: 30% !important;
+      }
+      }
+    </style>
+    <!--[if mso]>
+    <style type="text/css">
+      .body-text { font-family: Arial, Helvetica, sans-serif !important; }
+      body { Margin: 0px !important; padding: 0px !important; width: 100% !important; height: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+    </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+    <style type="text/css">
+      p { padding:0px; Margin:0px; }
+      o:p { font-size: 0px; line-height: 0px; Margin: 0; }
+    </style>
+    <![endif]-->
+    <!-- Outlook 365 & .com Interactive Fix -->
+    <style type="text/css">
+      [id="x_hide-outlook-web"] {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      max-height: 0px !important;
+      }
+      [id="x_show-outlook-web"] {
+      display: inline-block !important;
+      visibility: visible !important;
+      }
+      body[data-outlook-cycle] .hide-on-om {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      overflow: hidden !important;
+      }
+      body[data-outlook-cycle] .fallback {
+      display: inline-block;
+      }
+    </style>
+    <style>
+      @media only screen and (max-width: 480px) {
+      .responsive-button-table {
+      display: block !important;
+      margin-bottom: 10px !important;
+      width: 100% !important;
+      }
+      .responsive-spacer {
+      display: none !important;
+      }
+      }
+    </style>
+  </head>
+  <body class="bgBodyPage" bgcolor="#939597" style="-webkit-font-smoothing: antialiased; width:100% !important; -webkit-text-size-adjust:none; Margin: 0 auto !important; padding: 0px">
+    <table role="presentation" align="center" class="darkmode" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%">
+      <!-- Preheader -->
+      <span style="display:none !important; color:#000000; font-size:1px; line-height:0; overflow:hidden; mso-hide:all;">Chery has officially joined the Motability Scheme, and the adaptable TIGGO 7 is now available with an advance payment of just £1,999.&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­
+      </span>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Preheader -->
+      <tr class="hom">
+        <td align="center" bgcolor="#E6E7E8">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#3D3934" class="width-100">
+            <tbody>
+              <tr>
+                <th style="padding: 10px 30px 10px 30px; vertical-align: bottom; font-family: Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;"><a style="color:#ffffff" target="_blank" href="http://">View online</a></th>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Hero image -->
+      <tr>
+        <td align="center" bgcolor="#E6E7E8">
+          <table role="presentation" style="max-width: 600px; width: 600px" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#DC3A49" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="resp" align="center" src="images/hero-img.jpg" alt="GET GOING WITH MOTABILITY. FROM £1,999 ADVANCED PAYMENT*" width="600" border="0" style="display: block; width: 600x; max-width: 100%; height: auto">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Module 1 - Content -->
+      <tr>
+        <td align="center" bgcolor="#E6E7E8">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#df6c76" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td style="padding: 40px 40px 0px;" align="center">
+                  <p style="font-family: Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; Margin: 0 0 20px">Hello&nbsp;[Name],</p>
+                  <p style="font-family: Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; Margin: 0 0 20px">Chery has officially joined the Motability Scheme, and the adaptable TIGGO 7 is now available with an advance payment of just&nbsp;£1,999.</p>
+                  <p style="font-family: Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; Margin: 0 0 0px">With smart hybrid technology, great equipment and a comfortable, practical interior, the TIGGO 7 is an ideal SUV for everyday life, offering value, space and ease on every&nbsp;journey.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Module 1 - Images -->
+      <tr>
+        <td align="center" bgcolor="#E6E7E8">
+          <table role="presentation" style="max-width: 600px;width: 600px" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#df6c76" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="resp" align="center" src="images/mod-1-img.jpg" alt="" width="600" border="0" style="display: block; width: 600x; max-width: 100%; height: auto">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Module 1 - Content -->
+      <tr>
+        <td align="center" bgcolor="#E6E7E8">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#df6c76" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td style="padding: 20px 40px 30px;" align="center">
+                  <p style="font-family: Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; Margin: 0 0 30px">Chery has officially joined the Motability Scheme, and the adaptable TIGGO 7 is now available with an advance payment of just&nbsp;£1,999.</p>
+                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="" style="">
+                    <!-- Row 1 -->
+                    <tr>
+                      <td width="24" valign="middle" style="padding:0 20px 16px">
+                        <img src="images/3_T7_2.png" style="display: block; height: auto; border: 0; width: 24px" width="24" alt="" height="auto" >
+                      </td>
+                      <td valign="top" style="font-family: Arial, sans-serif; font-size:16px; line-height:24px; color:#FFFFFF; padding-bottom:16px;">
+                        Wireless phone charging
+                      </td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr>
+                      <td width="24" valign="middle" style="padding:0 20px 16px">
+                        <img src="images/5_1.1.png" style="display: block; height: auto; border: 0; width: 24px" width="24" alt="" height="auto" >
+                      </td>
+                      <td valign="top" style="font-family: Arial, sans-serif; font-size:16px; line-height:24px; color:#FFFFFF; padding-bottom:16px;">
+                        Hybrid power: up to 56 miles EV range and <br class="hom">700+ miles&nbsp;combined
+                      </td>
+                    </tr>
+                    <!-- Row 4 -->
+                    <tr>
+                      <td width="24" valign="middle" style="padding:0 20px 16px">
+                        <img src="images/6_T7_4.png" style="display: block; height: auto; border: 0; width: 24px" width="24" alt="" height="auto" >
+                      </td>
+                      <td valign="top" style="font-family: Arial, sans-serif; font-size:16px; line-height:24px; color:#FFFFFF; padding-bottom:16px;">
+                        Remote engine start and climate control
+                      </td>
+                    </tr>
+                    <!-- Row 5 -->
+                    <tr>
+                      <td width="24" valign="middle" style="padding:0 20px 16px">
+                        <img src="images/7_T_1.png" style="display: block; height: auto; border: 0; width: 24px" width="24" alt="" height="auto" >
+                      </td>
+                      <td valign="top" style="font-family: Arial, sans-serif; font-size:16px; line-height:24px; color:#FFFFFF; padding-bottom:16px;">
+                        Twin 12.3&quot; screen with wireless Apple CarPlay and Android&nbsp;Auto
+                      </td>
+                    </tr>
+                    <!-- Row 6 -->
+                    <tr>
+                      <td width="24" valign="middle" style="padding:0 20px 16px">
+                        <img src="images/8_T7_5.png" style="display: block; height: auto; border: 0; width: 24px" width="24" alt="" height="auto" >
+                      </td>
+                      <td valign="top" style="font-family: Arial, sans-serif; font-size:16px; line-height:24px; color:#FFFFFF; padding-bottom:16px;">
+                        Smart driver aids including front and rear sensors <br class="hom">and adaptive cruise&nbsp;assist
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" height="24px">
+                        <!-- Spacer -->
+                      </td>
+                    </tr>
+                  </table>
+                  <p style="font-family: Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; Margin: 0 0 30px">Don't compromise. Find your happy.</p>
+                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" >
+                    <tr>
+                      <!-- Button 1 -->
+                      <td class="stack-column" align="left" style="padding-right:12px; margin-bottom: 10px">
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="padding:16px 28px;
+                              font-family: Arial, sans-serif;
+                              font-size:16px; line-height:15px;
+                              color:#ffffff; text-align:center; 
+                              min-width: 140px; background-color: #C8102E; font-weight: bold; border-radius: 5px">
+                              <a href="https://www.cherycar.co.uk/"
+                                style="color:#ffffff; text-decoration:none; display:inline-block;">
+                              Book a test drive 
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <!-- Button 2 -->
+                      <td class="stack-column" align="left" style="margin-bottom: 10px">
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="padding:16px 28px;
+                              font-family: Arial, sans-serif;
+                              font-size:16px; line-height:15px;
+                              color:#ffffff; text-align:center; 
+                              min-width: 140px; background-color: #C8102E; font-weight: bold; border-radius: 5px">
+                              <a href="https://www.cherycar.co.uk/motability"
+                                style="color:#ffffff; text-decoration:none; display:inline-block;">
+                              Explore Motability
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Module 2 - Text -->
+      <tr>
+        <td align="center" bgcolor="#E6E7E8">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#DC3A49" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td style="padding: 40px 40px 0px;" align="center">
+                  <h2 style="font-family: Arial, sans-serif; font-size:36px; line-height: 36px; color:#ffffff; Margin: 0 0 20px">Want more?</h2>
+                  <p style="font-family: Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; Margin: 0 0 0px">Check out the TIGGO 7 brochure and see why the TIGGO 7 is more than just an SUV — it’s your next adventure waiting to&nbsp;happen.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Module 2 - Image -->
+      <tr>
+        <td align="center" bgcolor="#E6E7E8">
+          <table role="presentation" style="max-width: 600px;width: 600px" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#DC3A49" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="resp" align="center" src="images/mod-2-img.jpg" alt="" width="600" border="0" style="display: block; width: 600x; max-width: 100%; height: auto">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Module 2 - Buttons -->
+      <tr>
+        <td align="center" bgcolor="#E6E7E8">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#DC3A49" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td style="padding: 20px 40px 30px;" align="center">
+                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" >
+                    <tr>
+                      <!-- Button 1 
+                        <td class="stack-column" align="left" style="padding-right:12px;">
+                          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td style="padding:15px 28px;
+                                font-family: Arial, sans-serif;
+                                font-size:16px; line-height:15px;
+                                color:#ffffff; text-align:center; 
+                                min-width: 140px; background-color: #C8102E; font-weight: bold; border-radius: 5px">
+                                <a href="https://omodaauto.co.uk/"
+                                  style="color:#ffffff; text-decoration:none; display:inline-block;">
+                                Book a test drive 
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        -->
+                      <!-- Button 2 -->
+                      <td class="stack-column" align="left" style="margin-bottom: 10px">
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="padding:16px 28px;
+                              font-family: Arial, sans-serif;
+                              font-size:16px; line-height:15px;
+                              color:#ffffff; text-align:center; 
+                              min-width: 140px; background-color: #ffffff; font-weight: bold; border-radius: 5px">
+                              <a href="https://www.cherycar.co.uk/"
+                                style="color:#000000; text-decoration:none; display:inline-block;">
+                              TIGGO 7 brochure
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+      <!-- Footer -->
+      <tr>
+        <td align="center" bgcolor="#E6E7E8">
+          <table role="presentation" style="max-width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#444444" class="width-100 XbgBody">
+            <tbody>
+              <tr>
+                <td style="padding: 30px 30px 20px 30px;" align="center" class="footer-content">
+                  <table role="presentation" style="max-width: 539px;" width="100%" cellspacing="0" cellpadding="0" border="0" >
+                    <tbody>
+                      <tr>
+                        <td style="">
+                          <p style="font-family: Arial, sans-serif; font-size:14px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:20px; Margin: 0 0 20px;" class="para hauto">
+                            *T&amp;Cs apply.
+                          </p>
+                          <p style="font-family: Arial, sans-serif; font-size:14px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:20px; Margin: 0 0 10px; " class="para hauto">
+                            Chery <span style="color: magenta">{Town}</span><br>
+                            Tel: <span style="color: magenta">{Retailer number}</span><br>
+                            <span style="color: magenta">{Retailer website}</span>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding:10px 0px 10px">
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: auto;" width="" align="left">
+                            <tr>
+                              <td>
+                                <a target="_blank" href="https://www.facebook.com/">
+                                  <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/10_facebook2x.png" alt="Facebook" width="32" height="32" border="0" style="width:32px; height:32px; display:block; border:none; Margin: 0px; max-width: 100%;" /></div>
+                                </a>
+                              </td>
+                              <td width="15" style="width: 10px;">&nbsp;</td>
+                              <td>
+                                <a target="_blank" href="https://www.linkedin.com/">
+                                  <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/11_linkedin2x.png" alt="LinkedIn" width="32" height="32" border="0" style="width:32px; height:32px; display:block; border:none; Margin: 0px; max-width: 100%;" /></div>
+                                </a>
+                              </td>
+                              <td width="15" style="width: 10px;">&nbsp;</td>
+                              <td>
+                                <a target="_blank" href="https://www.instagram.com/">
+                                  <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/12_instagram2x.png" alt="Instagram" width="32" height="32" border="0" style="width:32px; height:32px; display:block; border:none; Margin: 0px; max-width: 100%;" /></div>
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="">
+                <td align="center" bgcolor="#444444" style="padding: 0 10px">
+                  <table role="presentation" style="max-width: 580px; width: 580px; border-top: 1px solid #E6E7E8" width="580" cellspacing="0" cellpadding="0" border="0" class="width-100">
+                    <tbody>
+                      <tr>
+                        <td colspan="3" height="10" class=""></td>
+                      </tr>
+                      <tr>
+                        <td class="stack-column" width="33.333333333333336%" style="font-family: Arial, sans-serif; font-size:14px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:20px; text-align: center; padding: 10px 0">
+                          <a href="http://" style="color: #ffffff">Privacy statement</a>
+                        </td>
+                        <td class="stack-column" width="33.333333333333336%" style="font-family: Arial, sans-serif; font-size:14px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:20px; text-align: center; padding: 10px 0">
+                          <a href="http://" style="color: #ffffff">Legal notice</a></td>
+                        <td class="stack-column" width="33.333333333333336%" style="font-family: Arial, sans-serif; font-size:14px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:20px; text-align: center; padding: 10px 0">
+                          <a href="http://" style="color: #ffffff">Unsubscribe</a></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" height="10" class=""></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      
+      
+      
+      
+    </table>
+  </body>
+</html>
