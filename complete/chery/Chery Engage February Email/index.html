@@ -1,0 +1,971 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en" xml:lang="en">
+  <head>
+    <title>TIGGO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <style>
+      /*
+      * @import url("https://use.typekit.net/tja6pah.css");
+      * breaks design
+      * */
+    </style>
+    <style type="text/css">
+      :root {
+      /*
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+      */
+      }
+      @media (prefers-color-scheme: dark) {
+      .darkimage {
+      display: block !important;
+      width: auto !important;
+      overflow: visible !important;
+      float: none !important;
+      max-height: inherit !important;
+      max-width: inherit !important;
+      line-height: auto !important;
+      margin-top: 0px !important;
+      visibility: inherit !important;
+      background-color: #000000;
+      }
+      .lightimage {
+      display: none !important;
+      }
+      .light-logo {display: none}
+      .dark-logo {display: inline !important}
+      .bgBody {
+      background-color: #000000 !important;
+      }
+      .header {
+      background-color: white;
+      }
+      .bgBodyPage {
+      background-color: #333132 !important;
+      }
+      .preview, .page {
+      background-color: #000000 !important;
+      }
+      .bgBodyPage .preview {
+      background-color: #000000 !important;
+      }
+      .module {
+      background-color: #000000 !important;
+      }
+      .heroBG {
+      background-color: none !important;
+      }
+      .width-100 {
+      width: 100%;
+      }
+      .card {
+      background-color: #2D2E2F !important;
+      }
+      .button td {
+      border: 2px solid #ffffff !important;
+      }
+      .button, .button td {
+      text-decoration: none !important;
+      }
+      .button a {
+      color: #FFFFFF !important;
+      text-decoration: none !important;
+      }
+      h1, h2, h3, h4, h5, h6, p, td, th, ul, ol, li, b, .heading, .heading span, .paragraph, .paragraph span, .p1, .p2, .p3, .p4 {
+      color: #ffffff !important;
+      }
+      .lightDark {
+      color: #000000 !important;
+      }
+      a {
+      Xcolor: inherit !important;
+      text-decoration: underline;
+      }
+      a[href^="x-apple-data-detectors"], a[href^="tel"], a[href^="sms"] {
+      text-decoration: none;
+      pointer-events: none;
+      cursor: default;
+      color: #FFFFFF !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media (prefers-color-scheme: light) {
+      }
+    </style>
+    <style type="text/css">
+      /*----------------------------- Interactive ------------------------------*/
+      /* Buttons */
+      @media screen {
+      .button:hover {
+      filter: brightness(110%);
+      transition: all ease 0.5s !important;
+      }
+      .button:hover a {
+      Xcolor: inherit !important;
+      transition: all ease 0.5s !important;
+      }
+      .btn-ghost:hover, .btn-ghost:hover a {
+      background-color: rgba(255, 255, 255, 0.025) !important;
+      transition: all ease 0.5s !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      body {
+      Margin: 0px !important;
+      padding: 0px !important;
+      width: 100% !important;
+      height: 100% !important;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      }
+      a {
+      color: #ffffff
+      }
+      a img {
+      border: none !important;
+      }
+      p {
+      Margin: 0px;
+      padding: 0px;
+      }
+      a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+      }
+      #MessageViewBody, #MessageWebViewDiv {
+      width: 100% !important;
+      }
+      #MessageViewBody a {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      }
+      table {
+      box-sizing: border-box; /* Experiment with this */
+      border-spacing: 0;
+      border-collapse: separate; /* This supports border-radius */
+      table-layout: auto; /* Adjust as necessary */
+      Margin: 0 auto;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      }
+      table td {
+      border-collapse: collapse;
+      }
+    </style>
+    <style type="text/css">
+      strong {
+      }
+      h1, h2, h3, h4 {
+      font-family: Arial, sans-serif;
+      }
+      p {
+      font-family: Arial, sans-serif;
+      }
+      .heading, .para {
+      }
+      .button a {
+      padding: 9px 20px 13px 20px !important;
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 640px) {
+      .width-100, table .width-100 {width:100%!important; height:auto!important; ;}
+      .stack-column {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      }
+      .round {border-radius: 20%;}
+      .inline-fix {display: inline!important}
+      .imageCol, .contentCol, .contentColInner {
+      padding: 0 !important;
+      }
+      .card .imageCol .imgWrap, .card .imageTD {
+      overflow: hidden;
+      border-radius: 3px 3px 0 0 !important;
+      }
+      .card-cta {
+      padding: 40px 30px 40px !important; 
+      }
+      .contentCol {
+      padding: 20px 0 !important;
+      }
+      .contentCol-card {
+      padding: 20px !important;
+      }
+      .mobileRowFW {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      }
+      .mobileRowFWContent {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .mobileColPad {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      }
+      .mobileColPad-right {
+      padding-right: 20px !important;
+      }
+      .mobileColPad-left {
+      padding-left: 20px !important;
+      }
+      .contentSplit {
+      width: 100% !important;
+      }
+      .splitSides {
+      width: 20px !important;
+      }
+      .appBadges, .appBadges img {
+      width: 130px !important;
+      height: auto !important;
+      }
+      .heading {
+      font-size: 24px !important;
+      line-height: 30px !important;
+      }
+      .paragraph, .p1, .p2, .p3, .p4 {
+      font-size: 14px !important;
+      line-height: 20px !important;
+      }
+      .sct, th.sct .sct th {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      }
+      .sctc, th.sctc, .sctc th {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      text-align: center !important;
+      }
+      .sctc .button {
+      float: none !important;
+      Margin: 0 auto 0 auto !important;
+      }
+      .hauto {
+      height: auto !important;
+      }
+      .wauto {
+      width: auto !important;
+      }
+      .resp {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .hom {
+      display: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+      width: 0px !important;
+      height: 0px !important;
+      }
+      .som {
+      display: block !important;
+      width: auto !important;
+      max-height: inherit !important;
+      overflow: visible !important;
+      float: none !important;
+      visibility: visible !important;
+      height: auto !important;
+      }
+      .al {
+      text-align: center !important;
+      }
+      .heroBG {
+      height: auto !important;
+      }
+      .dtSpacer {
+      padding: 40px 0 0 0;
+      }
+      .overlayBG {
+      background-image: none !important;
+      }
+      .overlapBG {
+      background-size: contain !important;
+      }
+      .overlapPad {
+      padding: 0 20px 0 20px !important;
+      height: auto !important;
+      }
+      .overlapImg {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .timer .side {
+      display: none !important;
+      }
+      .timer .center {
+      width: 100% !important;
+      }
+      .mpl20 {
+      padding-left: 20px !important;
+      }
+      .mpx20 {
+      padding: 0 20px 0 20px !important;
+      }
+      .mp20 {
+      padding: 20px !important;
+      }
+      .mw20 {
+      width: 20px !important;
+      }
+      .headerBG {
+      background-position: right top !important;
+      background-clip: padding-box;
+      }
+      .headerLogo img {
+      display: none !important;
+      visibility: hidden !important;
+      }
+      .mHeroBG {
+      width: 100% !important;
+      height: auto !important;
+      }
+      .footer-content {
+      padding: 30px !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 425px) {
+      .scml, th.scml, .scml th, .td-head, .td-content {
+      display: block !important;
+      width:94% !important;
+      max-width: 100% !important;
+      text-align: left !important;
+      }
+      .td-head, .td-content {
+      padding: 10px !important;
+      }
+      .td-head {
+      text-transform: uppercase;
+      padding-top: 16px !important;
+      padding-bottom: 4px !important;
+      }
+      .td-content {
+      font-weight: normal !important;
+      border-top: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 16px !important;
+      }
+      .first-row .td-content {
+      display: none !important;
+      }
+      .last-row .td-content {
+      border-top:0 !important;
+      }
+      .last-row .td-head {
+      border-bottom:0 !important;
+      }
+      .loml {
+      text-align: left !important;
+      float: left !important;
+      }
+      h2 {
+      xletter-spacing: 1px !important; 
+      Xfont-size: 36px !important;
+      }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 375px) {
+      .hos {
+      display: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+      width: 0px !important;
+      height: 0px !important;
+      }
+      .menuFBtr {
+      text-align: right !important;
+      }
+      .fbMenuItem1 {
+      width: 30% !important;
+      }
+      }
+    </style>
+    <!--[if mso]>
+    <style type="text/css">
+      .body-text { font-family: Arial, Helvetica, sans-serif !important; }
+      body { Margin: 0px !important; padding: 0px !important; width: 100% !important; height: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+    </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+    <style type="text/css">
+      p { padding:0px; Margin:0px; }
+      o:p { font-size: 0px; line-height: 0px; Margin: 0; }
+    </style>
+    <![endif]-->
+    <!-- Outlook 365 & .com Interactive Fix -->
+    <style type="text/css">
+      [id="x_hide-outlook-web"] {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      max-height: 0px !important;
+      }
+      [id="x_show-outlook-web"] {
+      display: inline-block !important;
+      visibility: visible !important;
+      }
+      body[data-outlook-cycle] .hide-on-om {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      overflow: hidden !important;
+      }
+      body[data-outlook-cycle] .fallback {
+      display: inline-block;
+      }
+    </style>
+    <style>
+      @media only screen and (max-width: 480px) {
+      .responsive-button-table {
+      display: block !important;
+      margin-bottom: 10px !important;
+      width: 100% !important;
+      }
+      .responsive-spacer {
+      display: none !important;
+      }
+      }
+    </style>
+  </head>
+  <body class="bgBodyPage" bgcolor="#939597" style="-webkit-font-smoothing: antialiased; width:100% !important; -webkit-text-size-adjust:none; Margin: 0 auto !important; padding: 0px">
+    <table role="presentation" align="center" class="darkmode" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%">
+      <!-- Preheader -->
+      <span style="display:none !important; color:#000000; font-size:1px; line-height:0; overflow:hidden; mso-hide:all;">Test drive the new TIGGO 7 and receive a £500 voucher towards your purchase, plus 0% APR finance to make the switch smoother than ever.&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­
+      </span>
+      <!-- !========== -->
+      <!-- View online -->
+      <tr class="hom">
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#3D3934" class="width-100">
+            <tbody>
+              <tr>
+                <th style="padding: 10px 30px 10px 30px; vertical-align: bottom; font-family: Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;"><a style="color:#ffffff" target="_blank" href="http://">View online</a></th>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Hero - Image -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#DC3A49" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="resp" align="center" src="images/hero-img.jpg" alt="£500 TEST DRIVE VOUCHER PLUS 0% APR REPRESENTATIVE PCP FINANCE*" width="600" border="0" style="display: block; width: 600px; max-width: 100%; height: auto">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Hero - Content -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#3D3934" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td style="padding: 40px 40px 0px;" align="center">
+                  <p style="font-family: Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; Margin: 0 0 16px">Hello from <span style="color: magenta">{{Dealer_Name}}</span>,</p>
+                  <p style="font-family: Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; Margin: 0 0 16px">Searching for an SUV you will truly&nbsp;love?</p>
+                  <p style="font-family: Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; Margin: 0 0 16px">The Chery TIGGO 7 brings together smart features, refined interior design, advanced safety systems, and a reassuring 7&#8209;year warranty. It sits proudly within the impressive TIGGO&nbsp;SUV range, built to suit every&nbsp;lifestyle.</p>
+                  <p style="font-family: Arial, sans-serif; font-size:16px; line-height: 24px; color:#ffffff; Margin: 0 0 0px">Visit us during our LOVE AT FIRST DRIVE event this month from 20th&nbsp;&#8209;&nbsp;27th February and find your perfect match at your local Chery&nbsp;retailer.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Module 2 - Button -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#3D3934" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td style="padding: 40px 40px 40px;" align="center">
+                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" >
+                    <tr>
+                      <!-- Button 1 -->
+                      <td class="stack-column" align="left" style="margin-bottom: 10px">
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="padding:16px 28px; font-family: Arial, sans-serif; font-size:16px; line-height:15px; color:#ffffff; text-align:center; min-width: 140px; background-color: #C8102E; font-weight: bold; border-radius: 5px">
+                              <a href="https://www.cherycar.co.uk/offers" style="color:#ffffff; text-decoration:none; display:inline-block;">
+                              Find your match
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Module 2 - Image -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px;width: 600px" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#DF6D77" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="resp" align="center" src="images/mod-1-img.jpg" alt="TIGGO 7" width="600" border="0" style="display: block; width: 600px; max-width: 100%; height: auto">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Module 1 - Feature list -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#DF6D77" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td style="padding: 40px 40px 20px;" align="center">
+                  <h2 style="font-family: Arial, sans-serif; font-size:24px; line-height: 30px; color:#ffffff; Margin: 0 0 20px; ">Chery TIGGO 7: Sporty with substance.</h2>
+                  <p style="font-family: Arial, sans-serif; font-size:15px; line-height: 24px; color:#ffffff; Margin: 0 0 30px">Offering a choice of petrol or plug&#8209;in hybrid powertrains, the Chery&nbsp;TIGGO&nbsp;7 has it all. Whether you’re on the school run or a weekend getaway, premium materials coupled with advanced driver assistance systems make every journey&nbsp;special.</p>
+                  <h4 style="font-family: Arial, sans-serif; font-size:15px; line-height: 24px; color:#ffffff; Margin: 0 0 16px">Features include:</h4>
+                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="80%" style="">
+                    <!-- Row 1 -->
+                    <tr>
+                      <td width="24" valign="top" style="padding: 0 10px 10px 0">
+                        <img src="images/3_T7_2.png" style="display: block; height: auto; border: 0; width: 24px" width="24" alt="" height="auto" >
+                      </td>
+                      <td valign="top" style="font-family: Arial, sans-serif; font-size:15px; line-height:24px; color:#FFFFFF; padding-bottom:16px;">
+                        Wireless phone charging
+                      </td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr>
+                      <td width="24" valign="top" style="padding: 0 10px 10px 0">
+                        <img src="images/4_T7_3.png" style="display: block; height: auto; border: 0; width: 24px" width="24" alt="" height="auto" >
+                      </td>
+                      <td valign="top" style="font-family: Arial, sans-serif; font-size:15px; line-height:24px; color:#FFFFFF; padding-bottom:16px;">
+                        Cloud&#8209;based voice&nbsp;assistant
+                      </td>
+                    </tr>
+                    <!-- Row 4 -->
+                    <tr>
+                      <td width="24" valign="top" style="padding: 0 10px 10px 0">
+                        <img src="images/5_1.1.png" style="display: block; height: auto; border: 0; width: 24px" width="24" alt="" height="auto" >
+                      </td>
+                      <td valign="top" style="font-family: Arial, sans-serif; font-size:15px; line-height:24px; color:#FFFFFF; padding-bottom:16px;">
+                        Hybrid power: up to 56 miles EV range and 700+ miles&nbsp;combined
+                      </td>
+                    </tr>
+                    <!-- Row 5 -->
+                    <tr>
+                      <td width="24" valign="top" style="padding: 0 10px 10px 0">
+                        <img src="images/6_T7_4.png" style="display: block; height: auto; border: 0; width: 24px" width="24" alt="" height="auto" >
+                      </td>
+                      <td valign="top" style="font-family: Arial, sans-serif; font-size:15px; line-height:24px; color:#FFFFFF; padding-bottom:16px;">
+                        Remote engine start and climate&nbsp;control
+                      </td>
+                    </tr>
+                    <!-- Row 6 -->
+                    <tr>
+                      <td width="24" valign="top" style="padding: 0 10px 10px 0">
+                        <img src="images/7_T_1.png" style="display: block; height: auto; border: 0; width: 24px" width="24" alt="" height="auto" >
+                      </td>
+                      <td valign="top" style="font-family: Arial, sans-serif; font-size:15px; line-height:24px; color:#FFFFFF; padding-bottom:16px;">
+                        Twin 12.3” screen with wireless Apple Carplay and Android&nbsp;Auto
+                      </td>
+                    </tr>
+                    <!-- Row 7 -->
+                    <tr>
+                      <td width="24" valign="top" style="padding: 0 10px 10px 0">
+                        <img src="images/8_T7_5.png" style="display: block; height: auto; border: 0; width: 24px" width="24" alt="" height="auto" >
+                      </td>
+                      <td valign="top" style="font-family: Arial, sans-serif; font-size:15px; line-height:24px; color:#FFFFFF; padding-bottom:16px;">
+                        Smart driver aids including front and rear sensors and adaptive cruise&nbsp;assist
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Module 1 - Buttons -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#DF6D77" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td style="padding: 0px 40px 40px;" align="center">
+                  <h3 style="font-family: Arial, sans-serif; font-size:22px; line-height: 30px; color:#ffffff; Margin: 0 0 40px; ">Chery TIGGO 7 is available from&nbsp;<span style="color: #C8102E">£24,995.</span></h3>
+                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" >
+                    <tr>
+                      <!-- Button 1 -->
+                      <td class="stack-column" align="left" style="padding-right:12px; margin-bottom: 10px">
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="padding:16px 28px 15px; font-family: Arial, sans-serif; font-size:16px; line-height:16px; color:#ffffff; text-align:center;  min-width: 140px; background-color: #C8102E; font-weight: bold; border-radius: 5px; border: 1px solid #C8102E">
+                              <a href="https://www.cherycar.co.uk/book-test-drive?model=tiggo-7" style="color:#ffffff; text-decoration:none; display:inline-block;">
+                              Discover TIGGO 7
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <!-- Button 2 -->
+                      <!--
+                        <td class="stack-column" align="left" style="margin-bottom: 10px">
+                          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td style="padding:16px 28px 15px; font-family: Arial, sans-serif; font-size:16px; line-height:16px; color:#ffffff; text-align:center; min-width: 140px; background-color: #C8102E; font-weight: bold; border-radius: 5px; border: 1px solid #C8102E">
+                                <a href="https://www.cherycar.co.uk/offers" style="color:#ffffff; text-decoration:none; display:inline-block;">
+                                Latest offers
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        -->
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Module 2 - Image -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px;width: 600px" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#DC3A49" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="resp" align="center" src="images/mod-2-img.jpg" alt="" width="600" border="0" style="display: block; width: 600px; max-width: 100%; height: auto">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Module 1 - Feature list -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#DF6D77" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td style="padding: 40px 40px 20px; background-image: url('images/bg-gradient.jpg'); background-position: bo; background-repeat: no-repeat; background-size: 100% 100%" align="center">
+                  <h2 style="font-family: Arial, sans-serif; font-size:24px; line-height: 30px; color:#ffffff; Margin: 0 0 20px; ">Your perfect match is waiting to meet&nbsp;you.</h2>
+                  <p style="font-family: Arial, sans-serif; font-size:15px; line-height: 24px; color:#ffffff; Margin: 0 0 30px">Join us from 20th &#8209; 27th February and meet the cheeky and fun TIGGO 7, the dependable TIGGO 8 and irresistible TIGGO 9. Discover which one fits your lifestyle&nbsp;best.</p>
+                  <h4 style="font-family: Arial, sans-serif; font-size:15px; line-height: 24px; color:#ffffff; Margin: 0 0 16px">Swipe right at our Test Drive Event and&nbsp;receive:</h4>
+                  <table width="80%">
+                    <tbody>
+                      <tr>
+                        <td valign="top" style="padding: 4px 10px 10px 0"><img src="images/icon-panda.png" width="42" style="width: 42px; border: 0; display: block"></td>
+                        <td  style="padding: 0 10px 20px 0;font-family: Arial, sans-serif; font-size:14px; line-height: 24px; color:#ffffff; ">
+                          <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height: 24px; color:#ffffff; Margin: 0 0 0px; text-transform: uppercase; font-weight: no">Instant prize</h4>
+                          Sign up for the event and get your very own Plush Chery&nbsp;Panda<sup style="font-size: 10px; line-height: 0; vertical-align: 5px">[1]</sup>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" style="padding: 4px 10px 10px 0"><img src="images/icon-dinner.png" width="40" style="width: 40px; border: 0; display: block"></td>
+                        <td  style="padding: 0 10px 20px 0;font-family: Arial, sans-serif; font-size:14px; line-height: 24px; color:#ffffff; ">
+                          <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height: 24px; color:#ffffff; Margin: 0 0 0px; text-transform: uppercase; font-weight: no">A year’s worth of date nights&nbsp;in</h4>
+                          If you find your match and purchase, you can enjoy a year's worth of date nights in, with £480 worth of Uber Eats vouchers to be&nbsp;claimed<sup style="font-size: 10px; line-height: 0; vertical-align: 5px">[2]</sup>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" style="padding: 4px 10px 10px 0"><img src="images/icon-voucher.png" width="40" style="width: 40px; border: 0; display: block"></td>
+                        <td  style="padding: 0 10px 20px 0;font-family: Arial, sans-serif; font-size:14px; line-height: 24px; color:#ffffff; ">
+                          <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height: 24px; color:#ffffff; Margin: 0 0 0px; text-transform: uppercase; font-weight: no">Exclusive event&#8209;only&nbsp;offers</h4>
+                          And as a Chery on top, we will even open up exclusive event&nbsp;lonly&#8209;offers<sup style="font-size: 10px; line-height: 0; vertical-align: 5px">[3]</sup>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Module 1 - Buttons -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#DF6D77" class="XbgBody width-100">
+            <tbody>
+              <tr>
+                <td style="padding: 0px 40px 40px;" align="center">
+                  <p style="font-family: Arial, sans-serif; font-size:15px; line-height: 24px; color:#ffffff; Margin: 0 0 16px">Find your perfect match at your local Chery&nbsp;retailer.</p>
+                  <h3 style="font-family: Arial, sans-serif; font-size:22px; line-height: 30px; color:#ffffff; Margin: 0 0 40px; ">Reserve your place&nbsp;today.</h3>
+                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" >
+                    <tr>
+                      <!-- Button 1 -->
+                      <td class="stack-column" align="left" style="padding-right:12px; margin-bottom: 10px">
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="padding:16px 28px 15px; font-family: Arial, sans-serif; font-size:16px; line-height:16px; color:#ffffff; text-align:center;  min-width: 140px; background-color: #C8102E; font-weight: bold; border-radius: 5px; border: 1px solid #C8102E">
+                              <a href="https://www.cherycar.co.uk/book-test-drive?model=tiggo-7" style="color:#ffffff; text-decoration:none; display:inline-block;">
+                              Reserve my place
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <!-- Button 2 -->
+                      <!--
+                        <td class="stack-column" align="left" style="margin-bottom: 10px">
+                          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td style="padding:16px 28px 15px; font-family: Arial, sans-serif; font-size:16px; line-height:16px; color:#ffffff; text-align:center; min-width: 140px; background-color: #C8102E; font-weight: bold; border-radius: 5px; border: 1px solid #C8102E">
+                                <a href="https://www.cherycar.co.uk/offers" style="color:#ffffff; text-decoration:none; display:inline-block;">
+                                Latest offers
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        -->
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Don't miss out -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#3D3935" class="XbgBody width-100">
+            <tbody style="">
+              <tr>
+                <td class="" style="">
+                  <div style="line-height: 1; Margin: 0px;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" >
+                      <tbody>
+                        <tr>
+                          <td  style="padding:  40px  40px 40px;" align="left">
+                            <h2 style="font-family: Arial,  Helvetica, sans-serif; font-size:27px; line-height: 30px; color:#3D3935; Margin: 0 0 30px;text-align: center" class="para hauto"><span style="color: #C8102E">Don’t miss out</span>
+                            </h2>
+                            <p style="font-family: Arial,  Helvetica, sans-serif; font-size:22px; line-height: 30px; color:#ffffff; Margin: 0 0 40px; font-weight: 700; text-align: center" class="para hauto">
+                              Enjoy limited time offers on the exceptional Chery TIGGO&nbsp;7, TIGGO&nbsp;8, and TIGGO&nbsp;9&nbsp;range.
+                            </p>
+                            <!-- Button wrapper -->
+                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tr>
+                                <td align="center">
+                                  <!-- Actual button -->
+                                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" 
+                                    style="Margin:0 auto; display:inline-block;">
+                                    <tr>
+                                      <td align="center" valign="middle"
+                                        style="background-color:#C8102E; border-radius:5px; padding:14px 30px;">
+                                        <a href="https://cherycar.co.uk/" target="_blank"
+                                          style="font-size:16px; font-family:Arial, Helvetica, sans-serif;
+                                          color:#ffffff; text-decoration:none; font-weight:bold;
+                                          display:inline-block;">
+                                        Latest offers
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Meet your local dealer -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#E3E1E1" class="XbgBody width-100">
+            <tbody style="">
+              <tr>
+                <td class="" style="">
+                  <div style="line-height: 1; Margin: 0px;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" >
+                      <tbody>
+                        <tr>
+                          <td  style="padding:  40px  40px 40px;" align="left">
+                            <h2 style="font-family: Arial,  Helvetica, sans-serif; font-size:27px; line-height: 30px; color:#3D3935; Margin: 0 0 30px;text-align: center" class="para hauto">Meet your local dealer
+                            </h2>
+                            <p style="font-family: Arial,  Helvetica, sans-serif; font-size:22px; line-height: 30px; color:#7B7976; Margin: 0 0 40px; font-weight: 700; text-align: center" class="para hauto">
+                              {{Dealer_Name}}<br>
+                              {{Address_Line 1}}, {{postcode}
+                            </p>
+                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tr>
+                                <td align="center">
+                                  <!-- Actual button -->
+                                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" 
+                                    style="Margin:0 auto; display:inline-block;">
+                                    <tr>
+                                      <td align="center" valign="middle"
+                                        style="background-color:#C8102E; border-radius:5px; padding:14px 30px;">
+                                        <a href="https://cherycar.co.uk/" target="_blank"
+                                          style="font-size:16px; font-family:Arial, Helvetica, sans-serif;
+                                          color:#ffffff; text-decoration:none; font-weight:bold;
+                                          display:inline-block;">
+                                        Visit website
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Footer -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000" class="XbgBody width-100">
+            <tbody style="">
+              <tr>
+                <td class="" style="">
+                  <div style="line-height: 1; Margin: 0px;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" >
+                      <tbody>
+                        <tr>
+                          <td  style="padding:  40px  40px 40px;" align="left">
+                            <p style="font-family: Arial,  Helvetica, sans-serif; font-size:18px; line-height: 30px; color:#ffffff; Margin: 0 0 20px; text-align: center" class="para hauto">
+                              For any questions, please contact us at<br>
+                              {{Dealer_Phone}
+                            </p>
+                            <p style="font-family: Arial,  Helvetica, sans-serif; font-size:18px; line-height: 30px; color:#ffffff; Margin: 0 0 20px; text-align: center" class="para hauto">
+                              You are receiving this email as part of your interest in <br class="hom">automotive updates&nbsp;from
+                            </p>
+                            <p style="font-family: Arial,  Helvetica, sans-serif; font-size:18px; line-height: 30px; color:#ffffff; Margin: 0 0 20px; text-align: center" class="para hauto">
+                              {{Dealer_Name}}
+                            </p>
+                            <p style="font-family: Arial,  Helvetica, sans-serif; font-size:18px; line-height: 30px; color:#ffffff; Margin: 0 0 0px; text-align: center" class="para hauto">
+                              <a href="http://" style="color: #ffffff">Unsubscribe</a>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+      <!-- Footer -->
+      <tr>
+        <td align="center" bgcolor="#939597">
+          <table role="presentation" style="max-width: 600px; width: 600px" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000" class="XbgBody width-100">
+            <tbody style="">
+              <tr>
+                <td class="" style="">
+                  <div style="line-height: 1; Margin: 0px;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" >
+                      <tbody>
+                        <tr>
+                          <td  style="padding: 0px 40px 40px;" align="left">
+                            <table role="presentation" style="" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="" class="XbgBody width-100">
+                              <tbody>
+                                <tr>
+                                  <td bgcolor="7F7F7F" height="1">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td height="30px"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <p style="font-family: Arial, sans-serif; font-size:11px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; Margin: 0 0 10px;" class="para hauto">
+                              [1] Chery Panda Plush Toy Offer
+                            </p>
+                            <p style="font-family: Arial, sans-serif; font-size:11px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; Margin: 0 0 20px;" class="para hauto">
+                              These terms and conditions apply to the Chery Panda (“Promotion”) provided by Chery UK to eligible customers. Offer Details: Eligible customers can claim a Chery Panda Plush Toy at their local participating retailer when they book at the Love at First Drive Event from 20th February 2026 – 27th February 2026. Eligibility: To qualify for the Promotion, you must meet the following conditions (collectively referred to as the “Eligibility Criteria”): Be a resident of the UK. Retail customers only – excludes business users, leasing, and Motability customers and Chery UK employees, dealers, it’s agencies or anyone else connected with the creation and administration of this promotion. Customer must arrive on the booking time and date to qualify for Chery Panda Plush Toy Be the person booking through the event. Only one Chery panda Plush Toy reward will be issued per booking. Chery UK reserves the right to amend, suspend, or withdraw this Promotion at any time without prior notice. Personal data collected in connection with this Promotion will be processed in accordance with the Promoter’s Privacy Policy. These terms are governed by English law. The courts of England and Wales shall have exclusive jurisdiction to resolve any disputes arising from or in connection with&nbsp;them.
+                            </p>
+                            <p style="font-family: Arial, sans-serif; font-size:11px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; Margin: 0 0 10px;" class="para hauto">
+                              [2] Uber Eats Vouchers&nbsp;Offer
+                            </p>
+                            <p style="font-family: Arial, sans-serif; font-size:11px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; Margin: 0 0 20px;" class="para hauto">
+                              These terms and conditions apply to the £40 Uber Eats voucher monthly offer (“Promotion”) provided by Chery UK to eligible customers. Offer Details: Eligible customers can claim a £40 Uber Eats voucher, each month for 12 consecutive months, with the purchase of a TIGGO 7, TIGGO 8 or TIGGO 9, subject to the terms outlined below. Eligibility: To qualify for the Promotion, you must meet the following conditions (collectively referred to as the “Eligibility Criteria”): Be a resident of the UK. Retail customers only – excludes business users, leasing, and Motability customers and Chery UK employees, dealers, it’s agencies or anyone else connected with the creation and administration of this promotion. Purchase a TIGGO 7, TIGGO 8 or TIGGO 9 20th February 2026 – 27th February 2026. Vehicle must be Delivered and Registered by 31st March Be the registered keeper of the vehicle. Be the person purchasing or financing (as applicable) the vehicle. The Uber Eats reward can start to be claimed after the vehicle has been delivered and registered in the customer’s name. Uber Eats Voucher Redemption: Qualifying customers will receive a dedicated reward email within 10 working days of the end of the promotional period (27th February 2026). The reward email will contain a unique code and a link to the reward site cheryreward.co.uk, enabling customers to claim their first £40 Uber Eats voucher no later than 30.04.26. Customer can then return to cheryreward.co.uk from the start of the following month (a new month starts on the 1st from 5am) and use their unique code again for the next £40 Uber Eats voucher. Customers repeat this process a further 10 consecutive months to claim all 12 £40 Uber Eats vouchers. Please note that failure to claim a £40 Uber Eats voucher during one of the consecutive 12 months means a customer forfeits their right to the monthly voucher. No vouchers can be issued retrospectively following the end of a consecutive month. Additional Information: Only one Uber Eats reward will be issued per vehicle purchase. Each monthly £40 Uber Eats voucher, successfully claimed, can be added as a credit in your Uber Eats account (new customers are required to register) and then redeemed for orders placed via the Uber Eats app or online, for part or full payment of goods, excluding the purchase of alcohol. Each £40 Uber Eats voucher successfully claimed will be valid for a minimum of 3 months from date of claim. An Uber Eats voucher is valid for UK households only. Only a single £40 Uber Eats voucher can be used against an individual order on the app or online. Offer does not enable you to combine more than one £40 Uber Eats voucher to place an order greater than £40 using voucher(s). Each individual £40 voucher successfully claimed will appear separately in your wallet in your Uber Eats account once added to your account. The promoter accepts no liability for a lost or stolen £40 Uber Eats voucher. A £40 Uber Eats voucher cannot be used in conjunction with any other offer or promotion. A £40 Uber Eats voucher hold no cash value and is not for sale or re&#8209;sale. Cash value 0.001p. The promoter and its agents cannot be held responsible for the quality of products, service or featured dishes availability on the Uber Eats app. Check the Uber Eats app for availability of deliveries and restaurants. Service fees, delivery fees and tips will be covered for Uber Eats orders, provided that the value of the Uber Eats voucher is greater than the total order amount. Offer is non&#8209;transferable, subject to change or cancellation. For Uber Eats terms of use please visit;  https://www.uber.com/legal/en/document/?name=general-terms-of-use&country=great-britain&lang=en-gb Chery UK reserves the right to amend, suspend, or withdraw this Promotion at any time without prior notice. If you cancel or withdraw from the purchase of your TIGGO 7, TIGGO 8 or TIGGO 9, you will forfeit this Uber Eats offer. If you have already made a successful Uber Eats claim your voucher and unique code will be cancelled. Chery UK is not responsible for any technical issues, delays, or errors that prevent you from receiving or redeeming the Uber Eats vouchers. Participants are required to have access to the internet. By participating in this promotion the details you provide online, via the dedicated reward site, will be processed by our intermediary, Grace &amp; Courage Ltd, to issue the £40 Uber Eats vouchers. The Promoter reserves the right to: Delay, postpone, cancel or terminate early the Promotion; Replace the Promotion with a similar or lesser offer (as determined by the Promoter), in the event of circumstances outside its reasonable control, which it considers make it necessary for it to do so. If the Promotor exercises these rights it will make available another offer on similar terms to the Promotion. Any persons taking advantage of this offer does so on complete acceptance of these terms and conditions. The Promoter and its associated agencies and companies will not be liable for any loss (including, without limitation, indirect, special or consequential loss or loss of profits), expense or damage which is suffered or sustained (whether or not arising from any person’s negligence) in connection with this promotion, except for any liability which cannot be excluded by law (including personal injury, death and fraud) in which case that liability is limited to the minimum allowable by law. For the avoidance of doubt, Uber Technologies Inc. and each of its respective subsidiaries, affiliates, owners, shareholders, officers, directors, agents, members, representatives and employees (“Uber”) will have no liability or responsibility of any claim arising in connection with participation in this promotion or any prize awarded, except for any liability that cannot be excluded by law. By entering this promotion, you acknowledge and accept that the Promoter is the sole promoter in relation to the promotion and that Uber have not offered or sponsored this promotion in any way. Personal data collected in connection with this Promotion will be processed in accordance with the Promoter’s Privacy Policy. These terms are governed by English law. The courts of England and Wales shall have exclusive jurisdiction to resolve any disputes arising from or in connection with&nbsp;them.
+                            </p>
+                            <p style="font-family: Arial, sans-serif; font-size:11px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; Margin: 0 0 10px;" class="para hauto">
+                              [3] Exclusive event&#8209;only&nbsp;Offers
+                            </p>
+                            <p style="font-family: Arial, sans-serif; font-size:11px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; Margin: 0 0 0px;" class="para hauto">
+                              These terms and conditions apply to the Exclusive Event&#8209;only Offers (“Promotion”) provided by Chery UK to eligible customers. Offer Details: Eligible customers can claim Exclusive Event&#8209;only Offers at their local participating retailer when they book at the Love at First Drive Event from 20th February 2026 – 27th February 2026. Eligibility: To qualify for the Promotion, you must meet the following conditions (collectively referred to as the “Eligibility Criteria”): Be a resident of the UK. Retail customers only – excludes business users, leasing, and Motability customers and Chery UK employees, dealers, it’s agencies or anyone else connected with the creation and administration of this promotion. Purchase a TIGGO 7, TIGGO 8 or TIGGO 9 20th February 2026 – 27th February 2026. Vehicle must be Delivered and Registered by 31st March Be the person purchasing or financing (as applicable) the vehicle. Chery UK reserves the right to amend, suspend, or withdraw this Promotion at any time without prior&nbsp;notice.
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- !========== -->
+    </table>
+  </body>
+</html>
