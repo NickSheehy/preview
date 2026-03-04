@@ -16,84 +16,13 @@
       </o:OfficeDocumentSettings>
     </xml>
     <![endif]-->
-    <style>
-      /*
-      * @import url("https://use.typekit.net/tja6pah.css");
-      * breaks design
-      * */
-    </style>
     <style type="text/css">
-      :root {
-      /*
-      color-scheme: light dark;
-      supported-color-schemes: light dark;
-      */
-      }
+      /* Dark Mode Overrides */
       @media (prefers-color-scheme: dark) {
-      .darkimage {
-      display: block !important;
-      width: auto !important;
-      overflow: visible !important;
-      float: none !important;
-      max-height: inherit !important;
-      max-width: inherit !important;
-      line-height: auto !important;
-      margin-top: 0px !important;
-      visibility: inherit !important;
-      background-color: #000000;
-      }
-      .lightimage {
-      display: none !important;
-      }
-      .light-logo {display: none}
-      .dark-logo {display: inline !important}
-      .bgBody {
-      background-color: #000000 !important;
-      }
-      .header {
-      background-color: white;
-      }
-      .bgBodyPage {
-      background-color: #333132 !important;
-      }
-      .preview, .page {
-      background-color: #000000 !important;
-      }
-      .bgBodyPage .preview {
-      background-color: #000000 !important;
-      }
-      .module {
-      background-color: #000000 !important;
-      }
-      .heroBG {
-      background-color: none !important;
-      }
-      .width-100 {
-      width: 100%;
-      }
-      .card {
-      background-color: #2D2E2F !important;
-      }
-      .button td {
-      border: 2px solid #ffffff !important;
-      }
-      .button, .button td {
-      text-decoration: none !important;
-      }
-      .button a {
-      color: #FFFFFF !important;
-      text-decoration: none !important;
-      }
-      h1, h2, h3, h4, h5, h6, p, td, th, ul, ol, li, b, .heading, .heading span, .paragraph, .paragraph span, .p1, .p2, .p3, .p4 {
-      Xcolor: #ffffff !important;
-      }
-      .lightDark {
-      color: #000000 !important;
-      }
-      a {
-      color: inherit !important;
-      text-decoration: underline;
-      }
+      .bgBodyPage { background-color: #333132 !important; }
+      .width-100 { width: 100%; }
+      h1, h2, h3, h4, p, td, th, b { color: #ffffff !important; }
+      a { color: inherit !important; text-decoration: underline; }
       a[href^="x-apple-data-detectors"], a[href^="tel"], a[href^="sms"] {
       text-decoration: none;
       pointer-events: none;
@@ -101,370 +30,56 @@
       color: #FFFFFF !important;
       }
       }
-    </style>
-    <style type="text/css">
-      @media (prefers-color-scheme: light) {
-      }
-    </style>
-    <style type="text/css">
-      /*----------------------------- Interactive ------------------------------*/
-      /* Buttons */
-      @media screen {
-      .button:hover {
-      filter: brightness(110%);
-      transition: all ease 0.5s !important;
-      }
-      .button:hover a {
-      Xcolor: inherit !important;
-      transition: all ease 0.5s !important;
-      }
-      .btn-ghost:hover, .btn-ghost:hover a {
-      background-color: rgba(255, 255, 255, 0.025) !important;
-      transition: all ease 0.5s !important;
-      }
-      }
-    </style>
-    <style type="text/css">
-      body {
-      Margin: 0px !important;
-      padding: 0px !important;
-      width: 100% !important;
-      height: 100% !important;
-      -webkit-text-size-adjust: none;
-      -ms-text-size-adjust: none;
-      }
-      a {
-      color: #ffffff
-      }
-      a img {
-      border: none !important;
-      }
-      p {
-      Margin: 0px;
-      padding: 0px;
-      }
-      a[x-apple-data-detectors] {
-      color: inherit !important;
-      text-decoration: none !important;
-      font-size: inherit !important;
-      font-family: inherit !important;
-      font-weight: inherit !important;
-      line-height: inherit !important;
-      }
-      #MessageViewBody, #MessageWebViewDiv {
-      width: 100% !important;
-      }
-      #MessageViewBody a {
-      color: inherit;
-      text-decoration: none;
-      font-size: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      line-height: inherit;
-      }
-      table {
-      box-sizing: border-box; /* Experiment with this */
-      border-spacing: 0;
-      border-collapse: separate; /* This supports border-radius */
-      table-layout: auto; /* Adjust as necessary */
-      Margin: 0 auto;
-      mso-table-lspace: 0pt;
-      mso-table-rspace: 0pt;
-      }
-      table td {
-      border-collapse: collapse;
-      }
-    </style>
-    <style type="text/css">
-      strong {
-      }
-      h1, h2, h3, h4 {
-      font-family: Calibri, Helvetica, Arial, sans-serif;
-      }
-      p {
-      font-family: Calibri, Helvetica, Arial, sans-serif;
-      }
-      .heading, .para {
-      }
-      .button a {
-      padding: 9px 20px 13px 20px !important;
-      }
-    </style>
-    <style type="text/css">
+      /* Base Resets & Client Fixes */
+      body { Margin: 0px !important; padding: 0px !important; width: 100% !important; height: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+      a { color: #ffffff; text-decoration: none; }
+      a img { border: none !important; }
+      p { Margin: 0px; padding: 0px; font-family: Helvetica, Arial, sans-serif; }
+      h1, h2, h3, h4 { font-family: Helvetica, Arial, sans-serif; Margin: 0; }
+      table { border-spacing: 0; border-collapse: separate; table-layout: auto; Margin: 0 auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+      table td { border-collapse: collapse; }
+      a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+      #MessageViewBody, #MessageWebViewDiv { width: 100% !important; }
+      /* Mobile Responsiveness */
       @media only screen and (max-width: 640px) {
-      .width-30 {width: 30px !important}
-      .width-100, table .width-100 {width:100%!important; height:auto!important; ;}
-      .stack-column {
-      display: block !important;
-      max-width: 100% !important;}
-      .round {border-radius: 20%;}
-      .inline-fix {display: inline!important}
-      .imageCol, .contentCol, .contentColInner {
-      padding: 0 !important;
+      .width-30 { width: 30px !important; }
+      .width-100 { width: 100% !important; height: auto !important; }
+      .stack-column { display: block !important; max-width: 100% !important; }
+      .resp { width: 100% !important; height: auto !important; }
+      .hauto { height: auto !important; }
+      .hom { display: none !important; visibility: hidden !important; overflow: hidden !important; width: 0px !important; height: 0px !important; }
+      .som { display: block !important; width: auto !important; visibility: visible !important; height: auto !important; }
       }
-      .align-icon {
-      text-align: center;
-      width: 70px !important;
-      }
-      .card .imageCol .imgWrap, .card .imageTD {
-      overflow: hidden;
-      border-radius: 3px 3px 0 0 !important;
-      }
-      .card-cta {
-      padding: 40px 30px 40px !important; 
-      }
-      .contentCol {
-      padding: 20px 0 !important;
-      }
-      .contentCol-card {
-      padding: 20px !important;
-      }
-      .mobileRowFW {
-      padding-left: 0px !important;
-      padding-right: 0px !important;
-      }
-      .mobileRowFWContent {
-      padding-left: 20px !important;
-      padding-right: 20px !important;
-      }
-      .mobileColPad {
-      padding-left: 20px !important;
-      padding-right: 20px !important;
-      }
-      .mobileColPad-right {
-      padding-right: 20px !important;
-      }
-      .mobileColPad-left {
-      padding-left: 20px !important;
-      }
-      .contentSplit {
-      width: 100% !important;
-      }
-      .splitSides {
-      width: 20px !important;
-      }
-      .appBadges, .appBadges img {
-      width: 130px !important;
-      height: auto !important;
-      }
-      .heading {
-      font-size: 24px !important;
-      line-height: 30px !important;
-      }
-      .paragraph, .p1, .p2, .p3, .p4 {
-      font-size: 14px !important;
-      line-height: 20px !important;
-      }
-      .sct, th.sct .sct th {
-      display: block !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      }
-      .sctc, th.sctc, .sctc th {
-      display: block !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      text-align: center !important;
-      }
-      .sctc .button {
-      float: none !important;
-      Margin: 0 auto 0 auto !important;
-      }
-      .hauto {
-      height: auto !important;
-      }
-      .wauto {
-      width: auto !important;
-      }
-      .resp {
-      width: 100% !important;
-      height: auto !important;
-      }
-      .hom {
-      display: none !important;
-      visibility: hidden !important;
-      overflow: hidden !important;
-      width: 0px !important;
-      height: 0px !important;
-      }
-      .som {
-      display: block !important;
-      width: auto !important;
-      max-height: inherit !important;
-      overflow: visible !important;
-      float: none !important;
-      visibility: visible !important;
-      height: auto !important;
-      }
-      .al {
-      text-align: center !important;
-      }
-      .heroBG {
-      height: auto !important;
-      }
-      .dtSpacer {
-      padding: 40px 0 0 0;
-      }
-      .overlayBG {
-      background-image: none !important;
-      }
-      .overlapBG {
-      background-size: contain !important;
-      }
-      .overlapPad {
-      padding: 0 20px 0 20px !important;
-      height: auto !important;
-      }
-      .overlapImg {
-      width: 100% !important;
-      height: auto !important;
-      }
-      .timer .side {
-      display: none !important;
-      }
-      .timer .center {
-      width: 100% !important;
-      }
-      .mpl20 {
-      padding-left: 20px !important;
-      }
-      .mpx20 {
-      padding: 0 20px 0 20px !important;
-      }
-      .mp20 {
-      padding: 20px !important;
-      }
-      .mw20 {
-      width: 20px !important;
-      }
-      .headerBG {
-      background-position: right top !important;
-      background-clip: padding-box;
-      }
-      .headerLogo img {
-      display: none !important;
-      visibility: hidden !important;
-      }
-      .mHeroBG {
-      width: 100% !important;
-      height: auto !important;
-      }
-      .footer-content {
-      padding: 30px !important;
-      }
-      }
-    </style>
-    <style type="text/css">
       @media only screen and (max-width: 425px) {
-      .scml, th.scml, .scml th, .td-head, .td-content {
-      display: block !important;
-      width:94% !important;
-      max-width: 100% !important;
-      text-align: left !important;
+      h2 { font-size: 36px !important; }
       }
-      .td-head, .td-content {
-      padding: 10px !important;
-      }
-      .td-head {
-      text-transform: uppercase;
-      padding-top: 16px !important;
-      padding-bottom: 4px !important;
-      }
-      .td-content {
-      font-weight: normal !important;
-      border-top: 0 !important;
-      padding-top: 0 !important;
-      padding-bottom: 16px !important;
-      }
-      .first-row .td-content {
-      display: none !important;
-      }
-      .last-row .td-content {
-      border-top:0 !important;
-      }
-      .last-row .td-head {
-      border-bottom:0 !important;
-      }
-      .loml {
-      text-align: left !important;
-      float: left !important;
-      }
-      h2 {
-      xletter-spacing: 1px !important; 
-      font-size: 36px !important;
-      }
-      }
-    </style>
-    <style type="text/css">
-      @media only screen and (max-width: 375px) {
-      .hos {
-      display: none !important;
-      visibility: hidden !important;
-      overflow: hidden !important;
-      width: 0px !important;
-      height: 0px !important;
-      }
-      .menuFBtr {
-      text-align: right !important;
-      }
-      .fbMenuItem1 {
-      width: 30% !important;
-      }
-      }
+      /* Outlook Fixes */
+      [id="x_hide-outlook-web"] { display: none !important; visibility: hidden !important; height: 0px !important; }
+      body[data-outlook-cycle] .hide-on-om { display: none !important; visibility: hidden !important; height: 0px !important; }
     </style>
     <!--[if mso]>
     <style type="text/css">
-      .body-text { font-family: Arial, Helvetica, sans-serif !important; }
-      body { Margin: 0px !important; padding: 0px !important; width: 100% !important; height: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+      body, table, td, p, a { font-family: Arial, Helvetica, sans-serif !important; }
     </style>
     <![endif]-->
-    <!--[if gte mso 9]>
-    <style type="text/css">
-      p { padding:0px; Margin:0px; }
-      o:p { font-size: 0px; line-height: 0px; Margin: 0; }
-    </style>
-    <![endif]-->
-    <!-- Outlook 365 & .com Interactive Fix -->
-    <style type="text/css">
-      [id="x_hide-outlook-web"] {
-      display: none !important;
-      visibility: hidden !important;
-      height: 0px !important;
-      max-height: 0px !important;
-      }
-      [id="x_show-outlook-web"] {
-      display: inline-block !important;
-      visibility: visible !important;
-      }
-      body[data-outlook-cycle] .hide-on-om {
-      display: none !important;
-      visibility: hidden !important;
-      height: 0px !important;
-      overflow: hidden !important;
-      }
-      body[data-outlook-cycle] .fallback {
-      display: inline-block;
-      }
-    </style>
-    <style>
-      @media only screen and (max-width: 480px) {
-      .responsive-button-table {
-      display: block !important;
-      margin-bottom: 10px !important;
-      width: 100% !important;
-      }
-      .responsive-spacer {
-      display: none !important;
-      }
-      }
-    </style>
   </head>
   <body class="bgBodyPage" bgcolor="#939597" style="-webkit-font-smoothing: antialiased; width:100% !important; -webkit-text-size-adjust:none; Margin: 0 auto !important; padding: 0px">
     <table role="presentation" align="center" class="darkmode" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%">
-      <!-- Preheader -->
-      <span style="display:none !important; color:#000000; font-size:1px; line-height:0; overflow:hidden; mso-hide:all;">The all new OMODA 9 offers over 700 miles of combined WLTP range, premium comfort and innovative technology through its Super Hybrid System.&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­͏‌&nbsp; ­
-      </span>
+      
+      
+      
+      
+      <!-- Preheader Hidden Text -->
+      <div style="display: none; max-height: 0px; overflow: hidden; font-size: 1px; line-height: 1px; color: #333132; opacity: 0; mso-hide: all;">
+        The all‑new OMODA 5 HEV is a self‑charging, full hybrid, mated to the worlds most thermally efficient engine. With up to 53.3 MPG, efficiency and performance are no longer mutually exclusive ‑ now you can have the best of both worlds.
+        <!-- Padding to prevent email clients from pulling in other text -->
+        &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+      </div>
       <!-- !========== -->
+      
+      
+      
+      
       <!-- Preheader -->
       <tr class="hom">
         <td align="center" bgcolor="#939598">
@@ -478,6 +93,10 @@
         </td>
       </tr>
       <!-- !========== -->
+      
+      
+      
+      
       <!-- Hero - Image + h1 -->
       <tr>
         <td align="center" bgcolor="#939598">
@@ -493,6 +112,10 @@
         </td>
       </tr>
       <!-- !========== -->
+      
+      
+      
+      
       <!-- Hero - Content -->
       <tr>
         <td align="center" bgcolor="#939598">
@@ -547,6 +170,10 @@
         </td>
       </tr>
       <!-- !========== -->
+      
+      
+      
+      
       <!-- Mod 1 -->
       <tr>
         <td align="center" bgcolor="#939598">
@@ -573,7 +200,6 @@
                                 <p style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color: #ffffff; Margin: 0 0 20px;">
                                   Strong acceleration that builds confidence in every&nbsp;drive.
                                 </p>
-                                
                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="Margin:0;">
                                   <tr>
                                     <td width="12" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 20px; color: #bbbbbb;">&bull;</td>
@@ -600,7 +226,6 @@
                                     </td>
                                   </tr>
                                 </table>
-
                               </td>
                             </tr>
                           </table>
@@ -609,7 +234,7 @@
                     </tbody>
                   </table>
                 </td>
-                <td width="50" style="width: 50px" class="">
+                <td width="50" style="width: 50px" class="width-30">
                   <!-- Spacer -->
                 </td>
               </tr>
@@ -623,6 +248,10 @@
         </td>
       </tr>
       <!-- !========== -->
+      
+      
+      
+      
       <!-- Mod 2 -->
       <tr>
         <td align="center" bgcolor="#939598">
@@ -649,11 +278,6 @@
                                 <p style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color: #ffffff; Margin: 0 0 20px;">
                                   Say goodbye to range anxiety. Travel further with&nbsp;ease.
                                 </p>
-                                
-                                
-                                
-                                
-                                
                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="Margin:0;">
                                   <tr>
                                     <td width="12" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 20px; color: #bbbbbb;">&bull;</td>
@@ -673,7 +297,6 @@
                                       Extremely low fuel consumption&nbsp;53.3MPG
                                     </td>
                                   </tr>
-                                  
                                 </table>
                               </td>
                             </tr>
@@ -683,7 +306,7 @@
                     </tbody>
                   </table>
                 </td>
-                <td width="50" style="width: 50px" class="">
+                <td width="50" style="width: 50px" class="width-30">
                   <!-- Spacer -->
                 </td>
               </tr>
@@ -697,7 +320,11 @@
         </td>
       </tr>
       <!-- !========== -->
-      <!-- Mod 1 -->
+      
+      
+      
+      
+      <!-- Mod 3 -->
       <tr>
         <td align="center" bgcolor="#939598">
           <table role="presentation" style="max-width: 600px; width: 600px;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000" class="XbgBody width-100">
@@ -723,12 +350,6 @@
                                 <p style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color: #ffffff; Margin: 0 0 20px;">
                                   Silence, smoothness &amp; control — refined in every&nbsp;detail.
                                 </p>
-                                
-                                
-                                
-                                
-                                
-                                
                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="Margin:0;">
                                   <tr>
                                     <td width="12" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 20px; color: #bbbbbb;">&bull;</td>
@@ -755,10 +376,6 @@
                                     </td>
                                   </tr>
                                 </table>
-                                
-                                
-                                
-                                
                               </td>
                             </tr>
                           </table>
@@ -767,7 +384,7 @@
                     </tbody>
                   </table>
                 </td>
-                <td width="50" style="width: 50px" class="">
+                <td width="50" style="width: 50px" class="width-30">
                   <!-- Spacer -->
                 </td>
               </tr>
@@ -781,7 +398,11 @@
         </td>
       </tr>
       <!-- !========== -->
-      <!-- Mod 2 -->
+      
+      
+      
+      
+      <!-- Mod 4 -->
       <tr>
         <td align="center" bgcolor="#939598">
           <table role="presentation" style="max-width: 600px; width: 600px;background-image: url('images/mod-5-bg-top.jpg'); background-size: 100% 100%;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000" class="XbgBody width-100">
@@ -807,11 +428,6 @@
                                 <p style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color: #ffffff; Margin: 0 0 20px;">
                                   Advanced protection for each and every&nbsp;journey.
                                 </p>
-                                
-                                
-                                
-                                
-                                
                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="Margin:0;">
                                   <tr>
                                     <td width="12" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 20px; color: #bbbbbb;">&bull;</td>
@@ -846,7 +462,7 @@
                     </tbody>
                   </table>
                 </td>
-                <td width="50" style="width: 50px" class="">
+                <td width="50" style="width: 50px" class="width-30">
                   <!-- Spacer -->
                 </td>
               </tr>
@@ -860,7 +476,11 @@
         </td>
       </tr>
       <!-- !========== -->
-      <!-- Hero - Image + h1 -->
+      
+      
+      
+      
+      <!-- Mod 5 - Image -->
       <tr>
         <td align="center" bgcolor="#939598">
           <table role="presentation" style="max-width: 600px;width: 600px" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000" class="XbgBody width-100">
@@ -875,7 +495,11 @@
         </td>
       </tr>
       <!-- !========== -->
-      <!-- Hero - Content -->
+      
+      
+      
+      
+      <!-- Mod 5 - Text -->
       <tr>
         <td align="center" bgcolor="#939598">
           <table role="presentation" style="max-width: 600px; width: 600px; background-image: url('images/mod-5-bg-bottom.jpg'); background-size: 100% 100%;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#000000" class="XbgBody width-100">
@@ -929,6 +553,10 @@
         </td>
       </tr>
       <!-- !========== -->
+      
+      
+      
+      
       <!-- Footer - Contact & Social -->
       <tr>
         <td align="center" bgcolor="#939598">
@@ -988,6 +616,10 @@
         </td>
       </tr>
       <!-- !========== -->
+      
+      
+      
+      
       <!-- Footer - Address -->
       <tr>
         <td align="center" bgcolor="#939598">
@@ -1017,6 +649,10 @@
         </td>
       </tr>
       <!-- !========== -->
+      
+      
+      
+      
       <!-- Footer - Links -->
       <tr>
         <td align="center" bgcolor="#939598">
@@ -1037,6 +673,10 @@
         </td>
       </tr>
       <!-- !========== -->
+      
+      
+      
+      
     </table>
   </body>
 </html>
