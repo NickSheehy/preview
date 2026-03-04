@@ -17,19 +17,21 @@
     </xml>
     <![endif]-->
     <style type="text/css">
+      
       /* Dark Mode Overrides */
       @media (prefers-color-scheme: dark) {
-      .bgBodyPage { background-color: #333132 !important; }
-      .width-100 { width: 100%; }
-      h1, h2, h3, h4, p, td, th, b { color: #ffffff !important; }
-      a { color: inherit !important; text-decoration: underline; }
-      a[href^="x-apple-data-detectors"], a[href^="tel"], a[href^="sms"] {
-      text-decoration: none;
-      pointer-events: none;
-      cursor: default;
-      color: #FFFFFF !important;
+        .bgBodyPage { background-color: #333132 !important; }
+        .width-100 { width: 100%; }
+        h1, h2, h3, h4, p, td, th, b { color: #ffffff !important; }
+        a { color: inherit !important; text-decoration: underline; }
+        a[href^="x-apple-data-detectors"], a[href^="tel"], a[href^="sms"] {
+        text-decoration: none;
+        pointer-events: none;
+        cursor: default;
+        color: #FFFFFF !important;
+        }
       }
-      }
+      
       /* Base Resets & Client Fixes */
       body { Margin: 0px !important; padding: 0px !important; width: 100% !important; height: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
       a { color: #ffffff; text-decoration: none; }
@@ -40,19 +42,22 @@
       table td { border-collapse: collapse; }
       a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
       #MessageViewBody, #MessageWebViewDiv { width: 100% !important; }
+      
       /* Mobile Responsiveness */
       @media only screen and (max-width: 640px) {
-      .width-30 { width: 30px !important; }
-      .width-100 { width: 100% !important; height: auto !important; }
-      .stack-column { display: block !important; max-width: 100% !important; }
-      .resp { width: 100% !important; height: auto !important; }
-      .hauto { height: auto !important; }
-      .hom { display: none !important; visibility: hidden !important; overflow: hidden !important; width: 0px !important; height: 0px !important; }
-      .som { display: block !important; width: auto !important; visibility: visible !important; height: auto !important; }
+        .width-30 { width: 30px !important; }
+        .width-100 { width: 100% !important; height: auto !important; }
+        .stack-column { display: block !important; max-width: 100% !important; }
+        .resp { width: 100% !important; height: auto !important; }
+        .hauto { height: auto !important; }
+        .hom { display: none !important; visibility: hidden !important; overflow: hidden !important; width: 0px !important; height: 0px !important; }
+        .som { display: block !important; width: auto !important; visibility: visible !important; height: auto !important; }
       }
+      
       @media only screen and (max-width: 425px) {
-      h2 { font-size: 36px !important; }
+        h2 { font-size: 36px !important; }
       }
+      
       /* Outlook Fixes */
       [id="x_hide-outlook-web"] { display: none !important; visibility: hidden !important; height: 0px !important; }
       body[data-outlook-cycle] .hide-on-om { display: none !important; visibility: hidden !important; height: 0px !important; }
