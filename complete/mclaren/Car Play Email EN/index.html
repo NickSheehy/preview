@@ -17,6 +17,39 @@
     </xml>
     <![endif]-->
     <style type="text/css">
+      /* FONT STYLES - Placed at top for best loading in WebKit/Mac Mail */
+      @font-face {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: url('https://fonts.gstatic.com/s/notosans/v42/o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc5a7du3mhPy0.woff2') format('woff2');
+      }
+      /* Brand Font - Regular */
+      @font-face {
+        font-family: 'McLarenBespoke';
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: 'Arial';
+        src: url('https://tmw-email.s3.amazonaws.com/McLaren/McLarenBespoke_W_Rg.woff') format('woff');
+      }
+      /* Brand Font - Bold */
+      @font-face {
+        font-family: 'McLarenBespoke';
+        font-weight: 700;
+        font-style: normal;
+        mso-font-alt: 'Arial';
+        src: url('https://tmw-email.s3.amazonaws.com/McLaren/McLarenBespoke_W_Bd.woff') format('woff');
+      }
+      /* Brand Font - Thin */
+      @font-face {
+        font-family: 'McLarenBespoke';
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: 'Arial';
+        src: url('https://tmw-email.s3.amazonaws.com/McLaren/McLarenBespoke_W_Bd.woff') format('woff');
+      }
+
       :root {
         color-scheme: light dark;
         supported-color-schemes: light dark;
@@ -70,38 +103,7 @@
       table td {
         border-collapse: collapse;
       }
-      /* FONT STYLES */
-      @font-face {
-        font-family: 'Noto Sans';
-        font-style: normal;
-        font-weight: 400;
-        mso-font-alt: 'Arial';
-        src: url('https://fonts.gstatic.com/s/notosans/v42/o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc5a7du3mhPy0.woff2') format('woff2');
-      }
-      /* Brand Font - Regular */
-      @font-face {
-        font-family: 'McLarenBespoke';
-        font-weight: 400;
-        font-style: normal;
-        mso-font-alt: 'Arial';
-        src: url('https://tmw-email.s3.amazonaws.com/McLaren/McLarenBespoke_W_Rg.woff') format('woff');
-      }
-      /* Brand Font - Bold */
-      @font-face {
-        font-family: 'McLarenBespoke';
-        font-weight: 700;
-        font-style: normal;
-        mso-font-alt: 'Arial';
-        src: url('https://tmw-email.s3.amazonaws.com/McLaren/McLarenBespoke_W_Bd.woff') format('woff');
-      }
-      /* Brand Font - Thin */
-      @font-face {
-        font-family: 'McLarenBespoke';
-        font-weight: 300;
-        font-style: normal;
-        mso-font-alt: 'Arial';
-        src: url('https://tmw-email.s3.amazonaws.com/McLaren/McLarenBespoke_W_Bd.woff') format('woff');
-      }
+      
       h1, h2, h3, h4 {
         font-weight: 300 !important;
         font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif;
@@ -109,6 +111,7 @@
       p, .para {
         font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
       }
+
       @media only screen and (max-width: 640px) {
         .mobileColPad {
           padding-left: 30px !important;
@@ -221,7 +224,7 @@
                     <!--[if !mso]><!-->
                     <img class="resp som" align="center" src="images/hero-h1-m.png" alt="McLAREN CONNECTED INFOTAINMENT" border="0" style="display: none; width: 100%; max-width: 100%;height: auto">
                     <!--<![endif]-->
-                    <span style="font-size: 18px; line-height: 1.5; font-family:'Noto Sans', Arial, sans-serif; ">MAKE YOUR McLAREN COMPATIBLE WITH&nbsp;CARPLAY</span>
+                    <span style="font-size: 18px; line-height: 28px; font-family:'Noto Sans', Arial, sans-serif; ">MAKE YOUR McLAREN COMPATIBLE WITH&nbsp;CARPLAY</span>
                   </h1>
                 </td>
               </tr>
