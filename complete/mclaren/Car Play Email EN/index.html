@@ -9,7 +9,7 @@
     <meta name="supported-color-schemes" content="light dark" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     
-    <!-- Link for Noto Sans (Apple Mail prefers <link> for Google Fonts) -->
+    <!-- Link for Noto Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" type="text/css" />
 
     <!--[if gte mso 9]>
@@ -22,19 +22,19 @@
     <![endif]-->
 
     <style type="text/css">
-      /* FONT STYLES */
-      /* Brand Font - Regular */
+      /* 1. FONT DEFINITIONS AT THE VERY TOP */
       @font-face {
         font-family: 'McLarenBespoke';
         font-weight: 400;
         font-style: normal;
+        font-display: swap;
         src: url('https://tmw-email.s3.amazonaws.com/McLaren/McLarenBespoke_W_Rg.woff') format('woff');
       }
-      /* Brand Font - Bold */
       @font-face {
         font-family: 'McLarenBespoke';
         font-weight: 700;
         font-style: normal;
+        font-display: swap;
         src: url('https://tmw-email.s3.amazonaws.com/McLaren/McLarenBespoke_W_Bd.woff') format('woff');
       }
 
@@ -42,17 +42,13 @@
         color-scheme: light dark;
         supported-color-schemes: light dark;
       }
+
       @media (prefers-color-scheme: dark) {
-        .bgBodyPage {
-          background-color: #333132 !important;
-        }
-        h1, h2, h3, h4, p, td, th, b, .para {
-          color: #FFFFFF !important;
-        }
-        a {
-          color: inherit !important;
-        }
+        .bgBodyPage { background-color: #333132 !important; }
+        h1, h2, h3, h4, p, td, th, b, .para { color: #FFFFFF !important; }
+        a { color: inherit !important; }
       }
+
       body {
         margin: 0px !important;
         padding: 0px !important;
@@ -61,25 +57,28 @@
         -webkit-text-size-adjust: none;
         -ms-text-size-adjust: none;
       }
-      a img { border: none !important; }
-      p { margin: 0px; padding: 0px; }
-      
+
       table {
         box-sizing: content-box;
         border-spacing: 0;
         border-collapse: collapse;
         table-layout: fixed;
         margin: 0 auto;
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
       }
-      
-      /* Standardizing Font Assignments */
-      h1, h2, h3, h4 {
+
+      /* 2. SPECIFIC SELECTORS FOR BRAND FONT */
+      h1, h2, h3, h4, .brand-font {
         font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif !important;
       }
       p, .para, td {
         font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+      }
+
+      /* 3. WEBKIT HACK - Specifically forces Mac Mail/iOS to prioritize the font */
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        .brand-font, h1, h2, h3, h4 {
+          font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif !important;
+        }
       }
 
       @media only screen and (max-width: 640px) {
@@ -88,9 +87,8 @@
         .resp { width: 100% !important; height: auto !important; }
         .width-100 { width: 100% !important; }
         .stack { display: block !important; width: 100% !important; max-width: 100% !important; }
-        .removeBorder { border: 0 !important; }
-        .hom { display: none !important; visibility: hidden !important; overflow: hidden !important; width: 0px !important; height: 0px !important; }
-        .som { display: block !important; width: auto !important; visibility: visible !important; height: auto !important; }
+        .hom { display: none !important; }
+        .som { display: block !important; width: auto !important; height: auto !important; }
       }
     </style>
 
@@ -142,7 +140,7 @@
                     <!--[if !mso]><!-->
                     <img class="resp som" align="center" src="images/hero-h1-m.png" alt="McLAREN CONNECTED INFOTAINMENT" border="0" style="display: none; width: 100%; max-width: 100%;height: auto">
                     <!--<![endif]-->
-                    <span style="font-size: 18px; line-height: 28px; font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; ">MAKE YOUR McLAREN COMPATIBLE WITH&nbsp;CARPLAY</span>
+                    <span style="font-size: 18px; line-height: 28px; font-family: 'Noto Sans', Helvetica, Arial, sans-serif; font-weight: 400">MAKE YOUR McLAREN COMPATIBLE WITH&nbsp;CARPLAY</span>
                   </h1>
                 </td>
               </tr>
