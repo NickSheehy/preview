@@ -8,6 +8,10 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="supported-color-schemes" content="light dark" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- Link for Noto Sans (Apple Mail prefers <link> for Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" type="text/css" />
+
     <!--[if gte mso 9]>
     <xml>
       <o:OfficeDocumentSettings>
@@ -16,14 +20,9 @@
       </o:OfficeDocumentSettings>
     </xml>
     <![endif]-->
+
     <style type="text/css">
       /* FONT STYLES */
-      @font-face {
-        font-family: 'Noto Sans';
-        font-style: normal;
-        font-weight: 400;
-        src: url('https://fonts.gstatic.com/s/notosans/v42/o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc5a7du3mhPy0.woff2') format('woff2');
-      }
       /* Brand Font - Regular */
       @font-face {
         font-family: 'McLarenBespoke';
@@ -94,9 +93,10 @@
         .som { display: block !important; width: auto !important; visibility: visible !important; height: auto !important; }
       }
     </style>
+
     <!--[if mso]>
     <style type="text/css">
-      h1, h2, h3, h4, p, td, th { font-family: Arial, sans-serif !important; }
+      h1, h2, h3, h4, p, td, th, span { font-family: Arial, sans-serif !important; }
     </style>
     <![endif]-->
   </head>
@@ -108,7 +108,6 @@
           <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181C1F" class="hom width-100" >
             <tbody>
               <tr>
-                <!-- Fixed font reference here -->
                 <th valign="bottom" style="padding: 6px 60px 10px; vertical-align: bottom; font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size:12px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;"><a style="color:#FFFFFF; text-decoration: none;" target="_blank" href="http://www.mclaren.com">Click here</a> if you can’t see this&nbsp;email.</th>
               </tr>
             </tbody>
@@ -138,13 +137,11 @@
             <tbody>
               <tr>
                 <td style="padding: 20px 60px 0" align="center" class="mobileColPad">
-                  <!-- Removed the font-weight: bold override to allow CSS Thin/Light styles to work -->
-                  <h1 style="color: #ffffff; text-align: center; line-height: 36px; Margin:0 0 30px; font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif;">
+                  <h1 style="color: #ffffff; text-align: center; line-height: 36px; margin:0 0 30px; font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif;">
                     <img class="resp hom" align="center" src="images/hero-h1-d.png" alt="McLAREN CONNECTED INFOTAINMENT" width="520" border="0" style="display: block; width: 100%; max-width: 100%;height: auto">
                     <!--[if !mso]><!-->
                     <img class="resp som" align="center" src="images/hero-h1-m.png" alt="McLAREN CONNECTED INFOTAINMENT" border="0" style="display: none; width: 100%; max-width: 100%;height: auto">
                     <!--<![endif]-->
-                    <!-- Updated font-family here to reference brand font, not Noto Sans -->
                     <span style="font-size: 18px; line-height: 28px; font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; ">MAKE YOUR McLAREN COMPATIBLE WITH&nbsp;CARPLAY</span>
                   </h1>
                 </td>
@@ -207,7 +204,7 @@
                   <!-- HTML Email Button -->
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
                     <tr>
-                      <td bgcolor="#E3813E" style="padding: 12px 40px; text-align: center; background-color: #F47920; font-family: 'Noto Sans', Helvetica, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; color: #FFFFFF; font-weight: bold;">
+                      <td bgcolor="#F47920" style="padding: 12px 40px; text-align: center; background-color: #F47920; font-family: 'Noto Sans', Helvetica, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; color: #FFFFFF; font-weight: bold;">
                         <a href="http://www.mclaren.com" style="color: #FFFFFF; text-decoration: none; display: inline-block;">CONTACT US</a>
                       </td>
                     </tr>
@@ -246,11 +243,11 @@
                       <td width="40" valign="top" style="width: 40px" class="hom"></td>
                       <td width="300" valign="top" style="width: 300px; padding: 30px 0 0" class="stack">
                         <div class="mobileColPad">
-                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">1. PLUG IN</h3>
+                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; margin: 0 0 0px">1. PLUG IN</h3>
                           <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">Connect your iPhone to your McLaren’s USB port via the supplied&nbsp;cable.
                           </p>
-                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">2. TAP TO CONFIRM</h3>
-                          <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;Margin: 0 0 20px" class="para hauto">A CarPlay prompt will appear on your display – select&nbsp;Enable.
+                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; margin: 0 0 0px">2. TAP TO CONFIRM</h3>
+                          <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">A CarPlay prompt will appear on your display – select&nbsp;Enable.
                           </p>
                         </div>
                       </td>
@@ -284,10 +281,10 @@
                       <td width="40" valign="top" style="width: 40px" class="hom"></td>
                       <td width="300" valign="top" style="width: 300px; padding: 30px 0 0" class="stack" dir="ltr">
                         <div class="mobileColPad">
-                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">3. SYNC ONCE</h3>
+                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; margin: 0 0 0px">3. SYNC ONCE</h3>
                           <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">Agree to connect on your iPhone – future connections will be&nbsp;automatic.
                           </p>
-                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">4. DRIVE CONNECTED</h3>
+                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; margin: 0 0 0px">4. DRIVE CONNECTED</h3>
                           <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">Access instantly from your touchscreen or by&nbsp;voice.
                           </p>
                         </div>
@@ -332,7 +329,7 @@
                   </p>
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
                     <tr>
-                      <td bgcolor="#E3813E" style="padding: 12px 40px 13px; text-align: center; background-color: #F47920; font-family: 'Noto Sans', Helvetica, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; color: #FFFFFF; font-weight: bold;">
+                      <td bgcolor="#F47920" style="padding: 12px 40px 13px; text-align: center; background-color: #F47920; font-family: 'Noto Sans', Helvetica, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; color: #FFFFFF; font-weight: bold;">
                         <a href="http://www.mclaren.com" style="color: #FFFFFF; text-decoration: none; display: inline-block;">CONTACT US</a>
                       </td>
                     </tr>
