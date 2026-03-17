@@ -17,12 +17,11 @@
     </xml>
     <![endif]-->
     <style type="text/css">
-      /* FONT STYLES - Placed at top for best loading in WebKit/Mac Mail */
+      /* FONT STYLES */
       @font-face {
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 400;
-        mso-font-alt: 'Arial';
         src: url('https://fonts.gstatic.com/s/notosans/v42/o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc5a7du3mhPy0.woff2') format('woff2');
       }
       /* Brand Font - Regular */
@@ -30,7 +29,6 @@
         font-family: 'McLarenBespoke';
         font-weight: 400;
         font-style: normal;
-        mso-font-alt: 'Arial';
         src: url('https://tmw-email.s3.amazonaws.com/McLaren/McLarenBespoke_W_Rg.woff') format('woff');
       }
       /* Brand Font - Bold */
@@ -38,15 +36,6 @@
         font-family: 'McLarenBespoke';
         font-weight: 700;
         font-style: normal;
-        mso-font-alt: 'Arial';
-        src: url('https://tmw-email.s3.amazonaws.com/McLaren/McLarenBespoke_W_Bd.woff') format('woff');
-      }
-      /* Brand Font - Thin */
-      @font-face {
-        font-family: 'McLarenBespoke';
-        font-weight: 300;
-        font-style: normal;
-        mso-font-alt: 'Arial';
         src: url('https://tmw-email.s3.amazonaws.com/McLaren/McLarenBespoke_W_Bd.woff') format('woff');
       }
 
@@ -73,24 +62,9 @@
         -webkit-text-size-adjust: none;
         -ms-text-size-adjust: none;
       }
-      a img {
-        border: none !important;
-      }
-      p {
-        margin: 0px;
-        padding: 0px;
-      }
-      a[x-apple-data-detectors] {
-        color: inherit !important;
-        text-decoration: none !important;
-        font-size: inherit !important;
-        font-family: inherit !important;
-        font-weight: inherit !important;
-        line-height: inherit !important;
-      }
-      #MessageViewBody, #MessageWebViewDiv {
-        width: 100% !important;
-      }
+      a img { border: none !important; }
+      p { margin: 0px; padding: 0px; }
+      
       table {
         box-sizing: content-box;
         border-spacing: 0;
@@ -100,103 +74,52 @@
         mso-table-lspace: 0pt;
         mso-table-rspace: 0pt;
       }
-      table td {
-        border-collapse: collapse;
-      }
       
+      /* Standardizing Font Assignments */
       h1, h2, h3, h4 {
-        font-weight: 300 !important;
-        font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif;
+        font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif !important;
       }
-      p, .para {
+      p, .para, td {
         font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
       }
 
       @media only screen and (max-width: 640px) {
-        .mobileColPad {
-          padding-left: 30px !important;
-          padding-right: 30px !important;
-        }
-        .hauto {
-          height: auto !important;
-        }
-        .resp {
-          width: 100% !important;
-          height: auto !important;
-        }
-        .width-100 {
-          width: 100% !important;
-        }
-        .stack {
-          display: block !important;
-          width: 100% !important;
-          max-width: 100% !important;
-        }
-        .border {
-          border-bottom: 1px solid #ffffff !important;
-        }
-        .removeBorder {
-          border: 0 !important;
-        }
-        .hom {
-          display: none !important;
-          visibility: hidden !important;
-          overflow: hidden !important;
-          width: 0px !important;
-          height: 0px !important;
-        }
-        .som {
-          display: block !important;
-          width: auto !important;
-          max-height: inherit !important;
-          overflow: visible !important;
-          float: none !important;
-          visibility: visible !important;
-          height: auto !important;
-        }
-      }
-      /* Outlook 365 & .com Interactive Fix */
-      [id="x_hide-outlook-web"] {
-        display: none !important;
-        visibility: hidden !important;
-        height: 0px !important;
-        max-height: 0px !important;
-      }
-      [id="x_show-outlook-web"] {
-        display: inline-block !important;
-        visibility: visible !important;
+        .mobileColPad { padding-left: 30px !important; padding-right: 30px !important; }
+        .hauto { height: auto !important; }
+        .resp { width: 100% !important; height: auto !important; }
+        .width-100 { width: 100% !important; }
+        .stack { display: block !important; width: 100% !important; max-width: 100% !important; }
+        .removeBorder { border: 0 !important; }
+        .hom { display: none !important; visibility: hidden !important; overflow: hidden !important; width: 0px !important; height: 0px !important; }
+        .som { display: block !important; width: auto !important; visibility: visible !important; height: auto !important; }
       }
     </style>
     <!--[if mso]>
     <style type="text/css">
-      .mclaren-font { font-family: Arial, Helvetica, sans-serif !important; }
-      h1, h2, h3, h4 { font-family: Arial, Helvetica, sans-serif !important; font-weight: normal !important; }
+      h1, h2, h3, h4, p, td, th { font-family: Arial, sans-serif !important; }
     </style>
     <![endif]-->
   </head>
   <body class="bgBodyPage" bgcolor="#333132" style="-webkit-font-smoothing: antialiased; width:100% !important; -webkit-text-size-adjust:none; margin: 0 auto !important; padding: 0px">
-    <table role="presentation" align="center" class="darkmode" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%">
+    <table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%">
       <!-- Preheader -->
       <tr>
         <td align="center" bgcolor="#333132">
           <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181C1F" class="hom width-100" >
             <tbody>
               <tr>
-                <th valign="bottom" style="padding: 6px 60px 10px; vertical-align: bottom; font-family: 'CFont', Helvetica, Arial, sans-serif; font-size:12px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;"><a style="color:#FFFFFF" target="_blank" href="http://www.mclaren.com">Click here</a> if you can’t see this&nbsp;email.</th>
+                <!-- Fixed font reference here -->
+                <th valign="bottom" style="padding: 6px 60px 10px; vertical-align: bottom; font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size:12px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;"><a style="color:#FFFFFF; text-decoration: none;" target="_blank" href="http://www.mclaren.com">Click here</a> if you can’t see this&nbsp;email.</th>
               </tr>
             </tbody>
           </table>
         </td>
       </tr>
-      <!-- !========== -->
-      
-      
-      
       
       <!-- Hero image -->
       <tr>
         <td align="center" bgcolor="#333132">
-          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181C1F" class="XbgBody width-100" >
+          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181C1F" class="width-100" >
             <tbody>
               <tr>
                 <td>
@@ -207,24 +130,22 @@
           </table>
         </td>
       </tr>
-      <!-- !========== -->
-      
-      
-      
-      
+
       <!-- Hero H1 -->
       <tr>
         <td align="center" bgcolor="#333132">
-          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181C1F" class="XbgBody width-100" >
+          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181C1F" class="width-100" >
             <tbody>
               <tr>
                 <td style="padding: 20px 60px 0" align="center" class="mobileColPad">
-                  <h1 style="color: #ffffff; text-align: center; line-height: 36px; Margin:0 0 30px; font-weight: bold">
+                  <!-- Removed the font-weight: bold override to allow CSS Thin/Light styles to work -->
+                  <h1 style="color: #ffffff; text-align: center; line-height: 36px; Margin:0 0 30px; font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif;">
                     <img class="resp hom" align="center" src="images/hero-h1-d.png" alt="McLAREN CONNECTED INFOTAINMENT" width="520" border="0" style="display: block; width: 100%; max-width: 100%;height: auto">
                     <!--[if !mso]><!-->
                     <img class="resp som" align="center" src="images/hero-h1-m.png" alt="McLAREN CONNECTED INFOTAINMENT" border="0" style="display: none; width: 100%; max-width: 100%;height: auto">
                     <!--<![endif]-->
-                    <span style="font-size: 18px; line-height: 28px; font-family:'Noto Sans', Arial, sans-serif; ">MAKE YOUR McLAREN COMPATIBLE WITH&nbsp;CARPLAY</span>
+                    <!-- Updated font-family here to reference brand font, not Noto Sans -->
+                    <span style="font-size: 18px; line-height: 28px; font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; ">MAKE YOUR McLAREN COMPATIBLE WITH&nbsp;CARPLAY</span>
                   </h1>
                 </td>
               </tr>
@@ -232,29 +153,25 @@
           </table>
         </td>
       </tr>
-      <!-- !========== -->
-      
-      
-      
-      
+
       <!-- Content -->
       <tr>
         <td align="center" bgcolor="#333132">
-          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="XbgBody width-100" >
+          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="width-100" >
             <tbody>
               <tr>
                 <td style="padding: 10px 60px 0" align="center" class="mobileColPad">
-                  <p style="font-family:'Noto Sans', Arial, sans-serif; font-size:16px; line-height: 20px; color:#FFFFFF; margin: 0 0 20px" class="para hauto">Dear <span style="color:magenta">[Insert name]</span>,</p>
-                  <p style="font-family:'Noto Sans', Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF; margin: 0 0 20px" class="para hauto">
+                  <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 20px; color:#FFFFFF; margin: 0 0 20px" class="para hauto">Dear <span style="color:magenta">[Insert name]</span>,</p>
+                  <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF; margin: 0 0 20px" class="para hauto">
                     McLaren Connected Infotainment (MCI) brings Apple CarPlay to your McLaren for the first&nbsp;time.
                   </p>
-                  <p style="font-family:'Noto Sans', Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">
+                  <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">
                     This intelligent upgrade connects your smartphone directly to your car’s touchscreen, giving you control of your favourite apps, music, and navigation while you&nbsp;drive.
                   </p>
-                  <p style="font-family:'Noto Sans', Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">
+                  <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">
                     Installed by McLaren&#8209;trained technicians, it integrates seemlessly with your car’s existing interior and electronic&nbsp;systems.
                   </p>
-                  <p style="font-family:'Noto Sans', Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px; font-weight: bold" class="para hauto">
+                  <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px; font-weight: bold" class="para hauto">
                     Contact us to book your installation today or find out&nbsp;more.
                   </p>
                 </td>
@@ -263,33 +180,34 @@
           </table>
         </td>
       </tr>
-      <!-- !========== -->
+
       <tr>
         <td align="center" bgcolor="#333132">
-          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="XbgBody width-100" >
+          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="width-100" >
             <tbody>
               <tr>
                 <td style="padding: 0 60px" align="center">
-                  <p style="font-family:'Noto Sans', Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">
+                  <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">
                     <span style="color:magenta">[Managers Name]</span> <br>
                     <span style="color:magenta">[McLaren of Location]</span>
                   </p>
+                </td>
               </tr>
             </tbody>
           </table>
         </td>
       </tr>
-      <!-- !========== -->
+
       <tr>
         <td align="center" bgcolor="#333132">
-          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="XbgBody width-100" >
+          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="width-100" >
             <tbody>
               <tr>
                 <td style="padding: 20px 60px 0px" align="center"  class="mobileColPad">
                   <!-- HTML Email Button -->
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
                     <tr>
-                      <td bgcolor="#E3813E" style="padding: 12px 40px; text-align: center; background-color: #F47920; font-family: 'Noto Sans', Arial, sans-serif; font-size: 14px; letter-spacing: 2px; color: #FFFFFF; font-weight: bold;">
+                      <td bgcolor="#E3813E" style="padding: 12px 40px; text-align: center; background-color: #F47920; font-family: 'Noto Sans', Helvetica, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; color: #FFFFFF; font-weight: bold;">
                         <a href="http://www.mclaren.com" style="color: #FFFFFF; text-decoration: none; display: inline-block;">CONTACT US</a>
                       </td>
                     </tr>
@@ -306,41 +224,33 @@
           </table>
         </td>
       </tr>
-      <!-- !========== -->
-      
-      
-      
       
       <!-- Mod 1 -->
       <tr>
         <td align="center" bgcolor="#333132">
-          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="XbgBody width-100" >
+          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="width-100" >
             <tbody>
               <tr>
                 <td style="padding: 0px 60px" align="center"  class="mobileColPad">
-                  <!-- Wrapper table -->
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom: 1px solid #ffffff;" class="removeBorder">
                     <tr>
-                      <!-- Column 1 -->
                       <td width="180" valign="top" style="width: 180px; padding: 30px 0 0" class="stack">
-                        <!-- Image wrapper table -->
-                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" class=" border" style="border-collapse: collapse;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse;">
                           <tr>
-                            <td class="border" style="border-top:1px solid #ffffff;border-right:1px solid #ffffff;border-left:1px solid #ffffff;border-bottom:0;padding:0;">
+                            <td style="border:1px solid #ffffff; border-bottom:0; padding:0;">
                               <img class="resp" src="images/mod-1-img.jpg" alt="" width="178" border="0" style="display:block;width:180px;max-width:100%;height:auto;">
                             </td>
                           </tr>
                         </table>
                       </td>
                       <td width="40" valign="top" style="width: 40px" class="hom"></td>
-                      <!-- Column 2 -->
                       <td width="300" valign="top" style="width: 300px; padding: 30px 0 0" class="stack">
                         <div class="mobileColPad">
-                          <h3 style="font-family: 'McLarenBespoke', 'Noto Sans', Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">1. PLUG IN</h3>
-                          <p style="font-family:'Noto Sans', Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">Connect your iPhone to your McLaren’s USB port via the supplied&nbsp;cable.
+                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">1. PLUG IN</h3>
+                          <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">Connect your iPhone to your McLaren’s USB port via the supplied&nbsp;cable.
                           </p>
-                          <h3 style="font-family: 'McLarenBespoke', 'Noto Sans', Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">2. TAP TO CONFIRM</h3>
-                          <p style="font-family:'Noto Sans', Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;Margin: 0 0 20px" class="para hauto">A CarPlay prompt will appear on your display – select&nbsp;Enable.
+                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">2. TAP TO CONFIRM</h3>
+                          <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;Margin: 0 0 20px" class="para hauto">A CarPlay prompt will appear on your display – select&nbsp;Enable.
                           </p>
                         </div>
                       </td>
@@ -352,41 +262,33 @@
           </table>
         </td>
       </tr>
-      <!-- !========== -->
-      
-      
-      
-      
+
       <!-- Mod 2 -->
       <tr>
         <td align="center" bgcolor="#333132">
-          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="XbgBody width-100" >
+          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="width-100" >
             <tbody>
               <tr>
                 <td style="padding: 0px 60px" align="center" class="mobileColPad">
-                  <!-- Wrapper table -->
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom: 1px solid #ffffff" dir="rtl" class="removeBorder">
                     <tr>
-                      <!-- Column 1 -->
                       <td width="180" valign="top" style="width: 180px; padding: 30px 0 0" class="stack">
-                        <!-- Image wrapper table -->
-                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" class=" border" style="border-collapse: collapse;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse;">
                           <tr>
-                            <td class="border" style="border-top:1px solid #ffffff;border-right:1px solid #ffffff;border-left:1px solid #ffffff;border-bottom:0;padding:0;">
+                            <td style="border:1px solid #ffffff; border-bottom:0; padding:0;">
                               <img class="resp" src="images/mod-2-img.jpg" alt="" width="178" border="0" style="display:block;width:180px;max-width:100%;height:auto;">
                             </td>
                           </tr>
                         </table>
                       </td>
                       <td width="40" valign="top" style="width: 40px" class="hom"></td>
-                      <!-- Column 2 -->
                       <td width="300" valign="top" style="width: 300px; padding: 30px 0 0" class="stack" dir="ltr">
                         <div class="mobileColPad">
-                          <h3 style="font-family: 'McLarenBespoke', 'Noto Sans', Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">3. SYNC ONCE</h3>
-                          <p style="font-family:'Noto Sans', Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">Agree to connect on your iPhone – future connections will be&nbsp;automatic.
+                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">3. SYNC ONCE</h3>
+                          <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">Agree to connect on your iPhone – future connections will be&nbsp;automatic.
                           </p>
-                          <h3 style="font-family: 'McLarenBespoke', 'Noto Sans', Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">4. DRIVE CONNECTED</h3>
-                          <p style="font-family:'Noto Sans', Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">Access instantly from your touchscreen or by&nbsp;voice.
+                          <h3 style="font-family: 'McLarenBespoke', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #F47920; Margin: 0 0 0px">4. DRIVE CONNECTED</h3>
+                          <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px" class="para hauto">Access instantly from your touchscreen or by&nbsp;voice.
                           </p>
                         </div>
                       </td>
@@ -398,15 +300,11 @@
           </table>
         </td>
       </tr>
-      <!-- !========== -->
-      
-      
-      
-      
+
       <!-- Mod 3 image -->
       <tr>
         <td align="center" bgcolor="#333132">
-          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="XbgBody width-100" >
+          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="width-100" >
             <tbody>
               <tr>
                 <td style="padding: 40px 0 0">
@@ -421,25 +319,20 @@
           </table>
         </td>
       </tr>
-      <!-- !========== -->
-      
-      
-      
-      
+
       <!-- Upgrade your McLaren -->
       <tr>
         <td align="center" bgcolor="#333132">
-          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="XbgBody width-100" >
+          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="width-100" >
             <tbody>
               <tr>
                 <td style="padding: 40px 60px 60px" align="center">
-                  <p style="font-family:'Noto Sans', Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px; font-weight: bold" class="para hauto">
+                  <p style="font-family:'Noto Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height: 24px; color:#FFFFFF;margin: 0 0 20px; font-weight: bold" class="para hauto">
                     Upgrade your McLaren today. Contact us now to book your installation or find out&nbsp;more.
                   </p>
-                  <!-- HTML Email Button -->
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
                     <tr>
-                      <td bgcolor="#E3813E" style="padding: 12px 40px 13px; text-align: center; background-color: #F47920; font-family: 'Noto Sans', Arial, sans-serif; font-size: 14px; letter-spacing: 2px; color: #FFFFFF; font-weight: bold;">
+                      <td bgcolor="#E3813E" style="padding: 12px 40px 13px; text-align: center; background-color: #F47920; font-family: 'Noto Sans', Helvetica, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; color: #FFFFFF; font-weight: bold;">
                         <a href="http://www.mclaren.com" style="color: #FFFFFF; text-decoration: none; display: inline-block;">CONTACT US</a>
                       </td>
                     </tr>
@@ -450,70 +343,21 @@
           </table>
         </td>
       </tr>
-      <!-- !========== -->
-      
-      
-      
-      
-      <!-- Socials -->
-      <tr>
-        <td align="center" bgcolor="#333132">
-          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="XbgBody width-100" >
-            <tbody>
-              <tr>
-                <td style="padding: 30px 60px">
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="table-layout: auto;">
-                    <tr>
-                      <td>
-                        <a target="_blank" href="https://www.facebook.com/mclarenautomotive">
-                          <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-social-fb-dk-40x40-2x.png" alt="Facebook" width="30" height="30" border="0" style="width:30px; height:30px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
-                        </a>
-                      </td>
-                      <td width="20" style="width: 20px;">&nbsp;</td>
-                      <td>
-                        <a target="_blank" href="https://twitter.com/mclarenauto">
-                          <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-social-x-dk-40x40-2x.png" alt="X" width="30" height="30" border="0" style="width:30px; height:30px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
-                        </a>
-                      </td>
-                      <td width="20" style="width: 20px;">&nbsp;</td>
-                      <td>
-                        <a target="_blank" href="https://www.instagram.com/mclarenauto/">
-                          <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-social-in-dk-40x40-2x.png" alt="Instagram" width="30" height="30" border="0" style="width:30px; height:30px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
-                        </a>
-                      </td>
-                      <td width="20" style="width: 20px;">&nbsp;</td>
-                      <td>
-                        <a target="_blank" href="https://www.youtube.com/c/McLarenAutomotivetv">
-                          <div class="img" style="display:inline-block; overflow:hidden; float:left; width:auto; max-height:none; max-width:none; line-height:0px; visibility:visible;"><img src="images/icon-social-yt-dk-40x40-2x.png" alt="YouTube" width="30" height="30" border="0" style="width:30px; height:30px; display:block; border:none; margin: 0px; max-width: 100%;" /></div>
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <!-- !========== -->
-      
-      
-      
-      
+
       <!-- Footer -->
       <tr>
         <td align="center" bgcolor="#333132">
-          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="XbgBody width-100" >
+          <table role="presentation" style="max-width: 640px; width:640px;" width="640px" cellspacing="0" cellpadding="0" border="0" bgcolor="#181c20" class="width-100" >
             <tbody>
               <tr>
                 <td style="padding: 20px 20px 30px" align="center">
-                  <p style="font-family: 'Noto Sans', Arial, sans-serif; font-size:11px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; font-weight: normal; margin: 0 0 20px" class="para hauto">
-                    <a style="color:#FFFFFF;" target="_blank" href="http://www.mclaren.com">Emissions Statement</a><span class="hom">&nbsp; |&nbsp;</span><br class="som" style="display: none">
-                    <a style="color:#FFFFFF" target="_blank" href="http://www.mclaren.com">Manage your preferences</a><span class="hom">&nbsp; |&nbsp;</span><br class="som" style="display: none">
-                    <a style="color:#FFFFFF;" target="_blank" href="http://www.mclaren.com">Terms and Conditions</a><span class="hom">&nbsp; |&nbsp;</span><br class="som" style="display: none">
-                    <a style="color:#FFFFFF;" target="_blank" href="http://www.mclaren.com">Privacy Policy</a>
+                  <p style="font-family: 'Noto Sans', Helvetica, Arial, sans-serif; font-size:11px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; font-weight: normal; margin: 0 0 20px" class="para hauto">
+                    <a style="color:#FFFFFF; text-decoration: underline;" target="_blank" href="http://www.mclaren.com">Emissions Statement</a><span class="hom">&nbsp; |&nbsp;</span><br class="som" style="display: none">
+                    <a style="color:#FFFFFF; text-decoration: underline;" target="_blank" href="http://www.mclaren.com">Manage your preferences</a><span class="hom">&nbsp; |&nbsp;</span><br class="som" style="display: none">
+                    <a style="color:#FFFFFF; text-decoration: underline;" target="_blank" href="http://www.mclaren.com">Terms and Conditions</a><span class="hom">&nbsp; |&nbsp;</span><br class="som" style="display: none">
+                    <a style="color:#FFFFFF; text-decoration: underline;" target="_blank" href="http://www.mclaren.com">Privacy Policy</a>
                   </p>
-                  <p style="font-family: 'Noto Sans', Arial, sans-serif; font-size:10px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;" class="para hauto">
+                  <p style="font-family: 'Noto Sans', Helvetica, Arial, sans-serif; font-size:10px; color:#FFFFFF; mso-line-height-rule:exactly; line-height:16px; font-weight: normal;" class="para hauto">
                     Registered address: McLaren Automotive Limited, McLaren Technology Centre, Chertsey Road, Woking, Surrey&nbsp;GU21&nbsp;4YH, UK<br>
                     Company Number: 01967717
                   </p>
@@ -523,11 +367,6 @@
           </table>
         </td>
       </tr>
-      <!-- !========== -->
-      
-      
-      
-      
     </table>
   </body>
 </html>
